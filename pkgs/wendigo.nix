@@ -32,12 +32,9 @@
 	imv
 	speedtest-rs
 	speedtest-go
-	lftp
-	ncftp
 	weechat
 	megatools
 	socat
-	whois
 	mktorrent
   ];
 }

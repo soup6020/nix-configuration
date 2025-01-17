@@ -5,7 +5,7 @@
     wget
     neovim
     ripgrep
-    pkgs.kitty
+    kitty
     git
     nmap
     radare2
@@ -17,11 +17,11 @@
     gcc
     clang
     gnumake
-    pkgs.uv
-    pkgs.fzf
-    pkgs.skim
-    pkgs.eza
-    pkgs.htop
+    uv
+    fzf
+    skim
+    eza
+    htop
     rsync
     gptfdisk
     uv
@@ -32,5 +32,13 @@
     aria2
     iperf
     nh
+    fd
+    fastfetch
+    gping
+    dust
+    hx
+    lftp
+    ncftp
+    whois
   ];
 }

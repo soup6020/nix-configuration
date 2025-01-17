@@ -4,6 +4,7 @@
     ./packages.nix
     ./packages-gui.nix
     ./configuration.nix
+    ../pkgs/fonts.nix
   ];
 
   nix.settings = {
