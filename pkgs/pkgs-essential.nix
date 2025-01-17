@@ -36,7 +36,7 @@
     fastfetch
     gping
     dust
-    hx
+    hex
     lftp
     ncftp
     whois
