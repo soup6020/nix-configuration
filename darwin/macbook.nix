@@ -14,23 +14,14 @@
     "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
     experimental-features = [ "nix-command" "flakes" ];
-    auto-optimise-store = true;
-  };
-
-  nix.gc = {
-  automatic = true;
-  dates = "weekly";
+    auto-optimise-store = false;
   };
 
   nixpkgs.config.allowUnfree = true;
   services.nix-daemon.enable = true;
   programs.fish.enable = true;
 
-  # Set Git commit hash for darwin-version.
-  system.configurationRevision = self.rev or self.dirtyRev or null;
-
-  # Used for backwards compatibility, please read the changelog before changing.
-  # $ darwin-rebuild changelog
+  # Read changelog via darwin-rebuild changelog before changing (ie. do not change)
   system.stateVersion = 5;
 
   # The platform the configuration will be used on.
