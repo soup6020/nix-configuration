@@ -81,3 +81,4 @@ pkgs.idevicerestore
 pkgs.android-tools
 pkgs.starship
 ];
+}
