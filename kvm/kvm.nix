@@ -12,7 +12,7 @@
       ../pkgs/pkgs.nix
       ../pkgs/fonts.nix
       ../pkgs/hypr.nix
-      ../pkgs/wendigo.nix
+      ../pkgs/wendigo-pkgs.nix
       ./services.nix
     ];
 
