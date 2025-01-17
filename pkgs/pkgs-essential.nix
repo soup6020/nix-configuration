@@ -12,7 +12,6 @@
     mpv
     ffmpeg
     gdu
-    imv
     libarchive
     gcc
     clang
