@@ -2,7 +2,9 @@
 {
   environment.systemPackages = with pkgs; [
     vim
+    tmux
     wget
+    curl
     neovim
     ripgrep
     kitty
@@ -22,7 +24,9 @@
     eza
     htop
     rsync
+    rclone
     gptfdisk
+    dosfstools
     uv
     samurai
     restic
@@ -35,9 +39,11 @@
     fastfetch
     gping
     dust
+    duf
     hex
     lftp
     ncftp
     whois
+    mosh
   ];
 }
