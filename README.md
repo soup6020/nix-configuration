@@ -1,5 +1,7 @@
 Welcome to my (shitty) Nix configuration!
+
 Here's a handy guide:
+
 bak: old configs I'm keeping around just in case
 
 common: stuff that's shared by multiple machines
