@@ -1,0 +1,95 @@
+{ pkgs, inputs, ... }:
+
+{
+  # packages to be installed _system wide_
+  environment.systemPackages = with pkgs; [
+pkgs.aria2
+pkgs.bat
+pkgs.binutils
+pkgs.btop
+pkgs.bundletool
+pkgs.bzip3
+pkgs.cabextract
+pkgs.cdrtools
+pkgs.cmake
+pkgs.coreutils
+pkgs.croc
+pkgs.curl
+pkgs.dosfstools
+pkgs.duf
+pkgs.duti
+pkgs.fastfetch
+pkgs.fd
+pkgs.libarchive
+pkgs.rav1e
+pkgs.tesseract
+pkgs.ffmpeg
+pkgs.fish
+pkgs.fzf
+pkgs.gdu
+pkgs.gifsicle
+pkgs.gnused
+pkgs.gradle
+pkgs.libtool
+pkgs.graphicsmagick
+pkgs.hidapi
+pkgs.htop
+pkgs.imagemagick
+pkgs.ipfs
+pkgs.kalker
+pkgs.lftp
+pkgs.lsd
+pkgs.megatools
+pkgs.meson
+pkgs.minisign
+pkgs.mksh
+pkgs.mosh
+pkgs.ncftp
+pkgs.neovim
+pkgs.openjdk
+pkgs.openssh
+pkgs.pandoc
+pkgs.pngcrush
+pkgs.pngquant
+pkgs.poetry
+pkgs.radare2
+pkgs.rclone
+pkgs.ripgrep
+pkgs.rizin
+pkgs.rsync
+pkgs.rustscan
+pkgs.scrcpy
+pkgs.sox
+pkgs.speedtest-cli
+pkgs.starship
+pkgs.tealdeer
+pkgs.testdisk
+pkgs.tmux
+pkgs.torsocks
+pkgs.unar
+pkgs.upx
+pkgs.vulkan-headers
+pkgs.wavpack
+pkgs.weechat
+pkgs.wget
+pkgs.wimlib
+pkgs.wireguard-tools
+pkgs.yara
+pkgs.yarn
+pkgs.yt-dlp
+pkgs.idevicerestore
+pkgs.android-tools
+pkgs.starship
+];
+
+fonts.packages = [
+  pkgs.nerd-fonts.jetbrains-mono
+  pkgs.nerd-fonts.iosevka-term
+  pkgs.nerd-fonts.droid-sans-mono
+  pkgs.nerd-fonts.blex-mono
+  pkgs.nerd-fonts.hack
+  pkgs.nerd-fonts.meslo-lg
+  pkgs.ibm-plex
+  pkgs.noto-fonts
+         ];
+}

@@ -1,0 +1,36 @@
+{ pkgs, inputs, ... }:
+{
+  environment.systemPackages = with pkgs; [
+    vim
+    wget
+    neovim
+    ripgrep
+    pkgs.kitty
+    git
+    nmap
+    radare2
+    mpv
+    ffmpeg
+    gdu
+    imv
+    libarchive
+    gcc
+    clang
+    gnumake
+    pkgs.uv
+    pkgs.fzf
+    pkgs.skim
+    pkgs.eza
+    pkgs.htop
+    rsync
+    gptfdisk
+    uv
+    samurai
+    restic
+    unzipNLS
+    testdisk
+    aria2
+    iperf
+    nh
+  ];
+}
