@@ -1,9 +1,9 @@
 { pkgs, inputs, ... }:
 {
   programs.neovim = {
-    enable = "true";
-    vimAlias = "true";
-    viAlias = "true";
+    enable = true;
+    vimAlias = true;
+    viAlias = true;
   };
 
   environment.systemPackages = with pkgs; [
