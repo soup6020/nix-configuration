@@ -1,40 +1,40 @@
 { pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
-  	easyeffects
-	calibre
-	mgba
-	protonup-ng
-	melonDS
-	pcsx2
-	audacity
-	ghidra-bin
-	gimp
-	prismlauncher
-	iaito
-	tor-browser
-	brave
-	kodi-wayland
-	ares
-	bsnes-hd
+    easyeffects
+    calibre
+    mgba
+    protonup-ng
+    melonDS
+    pcsx2
+    audacity
+    ghidra-bin
+    gimp
+    prismlauncher
+    iaito
+    tor-browser
+    brave
+    kodi-wayland
+    ares
+    bsnes-hd
 
-	unzrip
-	yara-x
-	lynis
-	lf
-	debootstrap
-	shellcheck
-	lazygit
-	grim
-	grimblast
-	sway-contrib.grimshot
-	gammastep
-	imv
-	speedtest-rs
-	speedtest-go
-	weechat
-	megatools
-	socat
-	mktorrent
+    unzrip
+    yara-x
+    lynis
+    lf
+    debootstrap
+    shellcheck
+    lazygit
+    grim
+    grimblast
+    sway-contrib.grimshot
+    gammastep
+    imv
+    speedtest-rs
+    speedtest-go
+    weechat
+    megatools
+    socat
+    mktorrent
   ];
 }

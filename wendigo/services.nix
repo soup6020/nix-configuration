@@ -1,4 +1,10 @@
-{ config, lib, pkgs, inputs, ...}:
+{
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   programs.firefox.enable = true;
 
@@ -6,7 +12,7 @@
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   xdg.portal.config.common.default = "gtk";
-  
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   programs.mtr.enable = true;
@@ -19,25 +25,24 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
- 
 
   virtualisation.docker = {
-  enable = true;
-  enableOnBoot = true;
-  daemon.settings.live-restore = true;
-  storageDriver = "btrfs";
+    enable = true;
+    enableOnBoot = true;
+    daemon.settings.live-restore = true;
+    storageDriver = "btrfs";
   };
 
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
 
   services.greetd = {
-      enable = true;
-      settings = {
-        default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions ${config.services.displayManager.sessionData.desktops}/share/xsessions:${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session";
-          user = "greeter";
-        };
+    enable = true;
+    settings = {
+      default_session = {
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions ${config.services.displayManager.sessionData.desktops}/share/xsessions:${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session";
+        user = "greeter";
       };
     };
+  };
 }

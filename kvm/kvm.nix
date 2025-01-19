@@ -2,22 +2,28 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{ config, lib, pkgs, inputs, ... }:
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ../common/default.nix
-      ../pkgs/pkgs-essential.nix
-      ../pkgs/pkgs.nix
-      ../pkgs/fonts.nix
-      ../pkgs/hypr.nix
-      ../pkgs/wendigo-pkgs.nix
-      ./services.nix
-    ];
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
+{
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ../common/default.nix
+    ../pkgs/pkgs-essential.nix
+    ../pkgs/pkgs.nix
+    ../pkgs/fonts.nix
+    ../pkgs/hypr.nix
+    ../pkgs/wendigo-pkgs.nix
+    ./services.nix
+  ];
 
   networking.hostName = "nixos-kvm"; # Define your hostname.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
@@ -27,7 +33,7 @@
   services.qemuGuest.enable = true;
   services.spice-vdagentd.enable = true;
   hardware.graphics.enable = true;
-  
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
@@ -37,7 +43,7 @@
   };
 
   programs.fish = {
-  enable = true;
+    enable = true;
   };
 
   services.pipewire = {
@@ -51,7 +57,12 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ezra = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "video" "input" "docker" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [
+      "wheel"
+      "video"
+      "input"
+      "docker"
+    ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
       tmux
       fastfetch
@@ -98,4 +109,3 @@
   system.stateVersion = "24.11"; # Did you read the comment?
 
 }
-
