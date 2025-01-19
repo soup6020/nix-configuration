@@ -1,11 +1,16 @@
 { pkgs, inputs, ... }:
 {
+  programs.neovim = {
+    enable = "true";
+    vimAlias = "true";
+    viAlias = "true";
+  };
+
   environment.systemPackages = with pkgs; [
     vim
     tmux
     wget
     curl
-    neovim
     ripgrep
     kitty
     git

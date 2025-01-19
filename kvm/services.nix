@@ -36,6 +36,11 @@
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
 
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+  };
+
   services.greetd = {
     enable = true;
     settings = {

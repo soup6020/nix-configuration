@@ -32,7 +32,14 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+    ];
   };
+  
+  systemd.tmpfiles.rules = [
+    "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
+  ];
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;
@@ -44,11 +51,6 @@
 
   programs.fish = {
     enable = true;
-  };
-
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
   };
 
   # Enable touchpad support (enabled default in most desktopManager).

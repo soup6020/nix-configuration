@@ -35,6 +35,12 @@
 
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
+  services.xserver.videoDrivers = [ "amdgpu" ];
+
+  services.pipewire = {
+    enable = true;
+    pulse.enable = true;
+  };
 
   services.greetd = {
     enable = true;
@@ -44,5 +50,14 @@
         user = "greeter";
       };
     };
+  };
+
+  services.transmission = {
+    enable = false; #changeme
+    user = "ezra";
+    group = "ezra";
+    home = "/home/ezra";
+    settings.rpc-port = "9091";
+    settings.peer-port = "51413";
   };
 }
