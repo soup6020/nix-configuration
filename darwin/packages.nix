@@ -33,6 +33,7 @@
     pkgs.torsocks
     pkgs.unar
     pkgs.upx
+    pkgs.cargo
     pkgs.vulkan-headers
     pkgs.wavpack
     pkgs.weechat

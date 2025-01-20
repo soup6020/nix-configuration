@@ -41,6 +41,7 @@
       "wireshark"
       "blockblock"
       "xld"
+      "ghostty"
     ];
   };
 }
