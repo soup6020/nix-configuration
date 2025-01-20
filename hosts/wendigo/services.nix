@@ -56,6 +56,7 @@
     };
   };
 
+  #TODO: Remove this? Transmission is now in docker.
   services.transmission = {
     enable = false; #changeme
     user = "ezra";
