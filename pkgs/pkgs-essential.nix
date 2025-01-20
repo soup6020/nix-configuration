@@ -1,7 +1,7 @@
 { config, libs, pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    vim
+    neovim
     tmux
     wget
     curl
