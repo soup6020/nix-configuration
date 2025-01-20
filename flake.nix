@@ -24,7 +24,7 @@
           system = "x86_64-linux";
           specialArgs = { inherit inputs; }; # this is the important part
           modules = [
-            ./host/kvm/kvm.nix
+            ./hosts/kvm/kvm.nix
           ];
         };
         wendigo = nixpkgs.lib.nixosSystem {
