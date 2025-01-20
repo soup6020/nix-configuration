@@ -1,11 +1,5 @@
-{ pkgs, inputs, ... }:
+{ config, libs, pkgs, inputs, ... }:
 {
-  programs.neovim = {
-    enable = true;
-    vimAlias = true;
-    viAlias = true;
-  };
-
   environment.systemPackages = with pkgs; [
     vim
     tmux
