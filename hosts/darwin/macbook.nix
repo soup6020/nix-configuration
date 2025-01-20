@@ -10,8 +10,8 @@
     ./packages.nix
     ./packages-gui.nix
     ./configuration.nix
-    ../pkgs/pkgs-essential.nix
-    ../pkgs/fonts.nix
+    .../../pkgs/pkgs-essential.nix
+    ../../pkgs/fonts.nix
   ];
 
   nix.settings = {

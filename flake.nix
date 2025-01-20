@@ -24,20 +24,20 @@
           system = "x86_64-linux";
           specialArgs = { inherit inputs; }; # this is the important part
           modules = [
-            ./kvm/kvm.nix
+            ./host/kvm/kvm.nix
           ];
         };
         wendigo = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
-            ./wendigo/wendigo.nix
+            ./hosts/wendigo/wendigo.nix
           ];
         };
       };
       darwinConfigurations.Ezras-MacBook-Pro = nix-darwin.lib.darwinSystem {
         modules = [
-          ./darwin/macbook.nix
+          ./hosts/darwin/macbook.nix
         ];
       };
     };

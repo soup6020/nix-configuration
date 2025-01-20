@@ -13,12 +13,12 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    ../common/default.nix
-    ../pkgs/pkgs-essential.nix
-    ../pkgs/pkgs.nix
-    ../pkgs/fonts.nix
-    ../pkgs/hypr.nix
-    ../pkgs/wendigo-pkgs.nix
+    ../../common/default.nix
+    ../../pkgs/pkgs-essential.nix
+    ../../pkgs/pkgs.nix
+    ../../pkgs/fonts.nix
+    ../../pkgs/hypr.nix
+    ../../pkgs/wendigo-pkgs.nix
     ./services.nix
   ];
 
