@@ -34,6 +34,7 @@
     aria2
     iperf
     nh
+    pkgs.cachix
     fd
     fastfetch
     gping
