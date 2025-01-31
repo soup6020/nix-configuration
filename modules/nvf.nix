@@ -23,6 +23,7 @@
         style = "dark";
       };
       vim.ui.breadcrumbs.enable = true;
+        vim.ui.breadcrumbs.lualine.winbar.alwaysRender = false;
       vim.statusline.lualine = {
         enable = true;
         theme = "horizon";
@@ -39,7 +40,6 @@
       "mode",
       icons_enabled = true,
       separator = {
-        left = ' ',
         right = ''
       },
     }
@@ -48,7 +48,7 @@
     {
       "",
       draw_empty = true,
-      separator = { left = ' ', right = '' }
+      separator = { left = '', right = '' }
     }
   ''
 ];
@@ -72,7 +72,7 @@
     {
       "",
       draw_empty = true,
-      separator = { left = ' ', right = '' }
+      separator = { left = '', right = '' }
     }
   ''
 ];
@@ -111,7 +111,7 @@ activeSection.x = [
     
         -- Get the name of the LSP server active in the current buffer
         local clients = vim.lsp.get_active_clients()
-        local msg = 'No Active Lsp'
+        local msg = 'No Lsp'
     
         -- if no lsp client is attached then return the msg
         if next(clients) == nil then
@@ -152,7 +152,7 @@ activeSection.y = [
     {
       "",
       draw_empty = true,
-      separator = { left = '', right = ' ' }
+      separator = { left = '', right = '' }
     }
   ''
   ''
@@ -176,7 +176,7 @@ activeSection.z = [
     {
       "",
       draw_empty = true,
-      separator = { left = '', right = ' ' }
+      separator = { left = '', right = '' }
     }
   ''
   ''
@@ -222,6 +222,7 @@ activeSection.z = [
         markdown.enable = true;
         nix.enable = true;
         nix.format.enable = true;
+        nix.format.type = "nixfmt";
         nu.enable = true;
         python.enable = true;
         rust.enable = true;
