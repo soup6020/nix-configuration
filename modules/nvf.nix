@@ -51,7 +51,7 @@
       separator = { left = '', right = '' }
     }
   ''
-]
+];
           };
       };
       vim.lazy = {
