@@ -22,6 +22,7 @@
         name = "oxocarbon";
         style = "dark";
       };
+      vim.ui.breadcrumbs.enable = true;
       vim.statusline.lualine = {
         enable = true;
         theme = "horizon";
