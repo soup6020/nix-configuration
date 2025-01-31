@@ -1,7 +1,7 @@
 {
   #Enable sftp explicitly.
   services.openssh.allowSFTP = true;
-  
+
   # Do not allow forwarding X11 (graphical) applications.
   services.openssh.settings.X11Forwarding = false;
 
@@ -16,7 +16,6 @@
 
   #Explicitly disable gateway ports.
   services.openssh.settings.GatewayPorts = "no";
-
 
   # Mozilla's Modern OpenSSH 6.7+ configuration, modified by me (soup6020)
   # Source: https://infosec.mozilla.org/guidelines/openssh

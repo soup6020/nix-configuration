@@ -14,6 +14,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../common/default.nix
+    ../../modules/nvf.nix
     ../../pkgs/pkgs-essential.nix
     ../../pkgs/pkgs.nix
     ../../pkgs/fonts.nix

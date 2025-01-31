@@ -6,15 +6,53 @@
     settings = {
       vim.viAlias = false;
       vim.vimAlias = true;
+      vim.lineNumberMode = "number";
       vim.enableLuaLoader = true;
-       vim.filetree.neo-tree {
-       enable = true;
-       setupOpts.git_status_async = true;
-       }
+      vim.useSystemClipboard = true;
+      vim.syntaxHighlighting = true;
+      vim.filetree.neo-tree = {
+        enable = true;
+        setupOpts.git_status_async = true;
+      };
       vim.lsp = {
         enable = true;
       };
+      vim.statusline.lualine = {
+        enable = true;
+        theme = "horizon";
+        refresh.statusline = "100";
+        globalstatus = true;
+        sectionSeparator.left = "";
+        sectionSeparator.right = "";
+        componentSeparator.left = "";
+        componentSeparator.right = "";
+      };
+      vim.lazy = {
+        enable = true;
+      };
+      vim.treesitter = {
+        enable = true;
+        highlight.enable = true;
+        indent.enable = true;
+      };
+      vim.languages = {
+        enableLSP = true;
+        enableTreesitter = true;
+        assembly.enable = true;
+        bash.enable = true;
+        clang.enable = true;
+        css.enable = true;
+        go.enable = true;
+        java.enable = true;
+        lua.enable = true;
+        markdown.enable = true;
+        nix.enable = true;
+        nix.format.enable = true;
+        nu.enable = true;
+        python.enable = true;
+        rust.enable = true;
+        sql.enable = true;
+      };
     };
   };
-}
 }

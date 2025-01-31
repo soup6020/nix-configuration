@@ -1,4 +1,10 @@
-{ config, libs, pkgs, inputs, ... }:
+{
+  config,
+  libs,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   environment.systemPackages = with pkgs; [
     neovim
@@ -35,6 +41,7 @@
     iperf
     nh
     pkgs.cachix
+    pkgs.nixfmt-rfc-style
     fd
     fastfetch
     gping
