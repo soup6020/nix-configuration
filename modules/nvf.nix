@@ -17,11 +17,16 @@
       vim.lsp = {
         enable = true;
       };
+      vim.theme = {
+        enable = true;
+        name = "oxocarbon";
+        style = "dark";
+      };
       vim.statusline.lualine = {
         enable = true;
         theme = "horizon";
-        refresh.statusline = "100";
-        globalstatus = true;
+        refresh.statusline = 100;
+        globalStatus = true;
         sectionSeparator.left = "";
         sectionSeparator.right = "";
         componentSeparator.left = "";
