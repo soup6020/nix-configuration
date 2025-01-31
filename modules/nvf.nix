@@ -48,7 +48,7 @@
     {
       "",
       draw_empty = true,
-      separator = { left = '', right = '' }
+      separator = { left = ' ', right = '' }
     }
   ''
 ];
