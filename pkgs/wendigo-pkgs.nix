@@ -36,5 +36,7 @@
     megatools
     socat
     mktorrent
+    gef
+    pwndbg
   ];
 }
