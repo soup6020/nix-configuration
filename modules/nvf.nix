@@ -31,6 +31,27 @@
         sectionSeparator.right = "";
         componentSeparator.left = "";
         componentSeparator.right = "";
+        vim.statusline.lualine.activeSection.a = {
+          [
+  ''
+    {
+      "mode",
+      icons_enabled = true,
+      separator = {
+        left = ' ',
+        right = ''
+      },
+    }
+  ''
+  ''
+    {
+      "",
+      draw_empty = true,
+      separator = { left = '', right = '' }
+    }
+  ''
+]
+          };
       };
       vim.lazy = {
         enable = true;
