@@ -10,7 +10,7 @@
     ./packages.nix
     ./packages-gui.nix
     ./configuration.nix
-    .../../pkgs/pkgs-essential.nix
+    ../../pkgs/pkgs-essential.nix
     ../../pkgs/fonts.nix
   ];
 
