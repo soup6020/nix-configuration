@@ -40,7 +40,8 @@
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
   services.xserver.videoDrivers = [ "amdgpu" ];
-
+  services.xserver.excludePackages = with  pkgs; [ xterm ];
+  
   services.pipewire = {
     enable = true;
     pulse.enable = true;
