@@ -1,6 +1,25 @@
 { pkgs, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    pkgs.retroarch.withCores (cores: with cores; [
+    bsnes
+    mgba
+    beetle-psx-hw
+    mupen64plus-next
+    tgbdual
+    mesen
+    mesen-s
+    mame
+    fbneo
+    np2kai
+    ppsspp
+    easyrpg
+    bsnes-hd-beta
+    sameboy
+    swanstation
+    genesis-plus-gx
+    melonds
+  ]));
     easyeffects
     calibre
     mgba
@@ -17,6 +36,13 @@
     kodi-wayland
     ares
     bsnes-hd
+    alacritty
+    wezterm
+    ghostty
+    nicotine-plus
+    xournalpp
+    pavucontrol
+    vesktop
 
     unzrip
     yara-x
@@ -38,5 +64,23 @@
     mktorrent
     gef
     pwndbg
+    swww
+    wl-clipboard
+    swaynotificationcenter
+    wofi
+    hyprshot
+    ncmpcpp
+    rmpc
+    libimobiledevice
+    idevicerestore
+    ugrep
+    lsiutil
+    btop
+    bottom
+    dosfstools
+    exfatprogs
+    modprobed-db
+    yt-dlp
+    pamixer
   ];
 }

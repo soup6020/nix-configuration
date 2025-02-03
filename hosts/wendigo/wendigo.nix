@@ -74,16 +74,6 @@
       "docker"
     ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      tmux
-      fastfetch
-      wofi
-      swaynotificationcenter
-      vesktop
-      wl-clipboard
-      swww
-      hyprshot
-      pavucontrol
-      pamixer
     ];
     shell = pkgs.zsh;
   };
