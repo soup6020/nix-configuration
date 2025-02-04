@@ -66,4 +66,10 @@
     settings.rpc-port = "9091";
     settings.peer-port = "51413";
   };
+
+  services.chrony = {
+    enable = true;
+    enableNTS = true;
+    servers = [ "time.cloudflare.com" ];
+  };
 }
