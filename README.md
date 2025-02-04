@@ -6,10 +6,10 @@ bak: old configs I'm keeping around just in case
 
 common: stuff that's shared by multiple machines
 
-darwin: macOS specific stuff
-
-kvm: configurations for my current KVM virtual machine
-
 pkgs: package collections, currently a mess
 
-wendigo: what will eventually become my desktop system's configuration
+hosts: configurations for individual machines
+
+modules: things that are too large or too complex to include in other files, also often shared
+
+home: home manager configuration I may or may not use
