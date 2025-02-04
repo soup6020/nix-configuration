@@ -35,6 +35,7 @@
     uv
     samurai
     restic
+    pass-nodmenu
     unzipNLS
     testdisk
     aria2
