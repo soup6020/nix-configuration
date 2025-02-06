@@ -37,4 +37,7 @@
     ];
     attack_threshold = 30;
   };
+  pam.services.passwd.rules.password."unix".settings.rounds = 65536;
+  services.jitterentropy-rngd.enable = true;
+  boot.kernelModules = [ "jitterentropy_rng" ];
 }
