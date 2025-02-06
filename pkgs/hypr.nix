@@ -19,7 +19,7 @@
 
   programs.sway = {
     enable = true;
-    package = "pkgs.swayfx";
+    package = pkgs.swayfx;
     wrapperFeatures.gtk = true;
     xwayland.enable = true;
   };
