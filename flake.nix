@@ -39,6 +39,8 @@
     darwinConfigurations.Ezras-MacBook-Pro = nix-darwin.lib.darwinSystem {
       modules = [
         ./hosts/darwin/macbook.nix
+        nvf.nixosModules.default
+
       ];
     };
   };
