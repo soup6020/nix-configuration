@@ -1,4 +1,5 @@
 {
+  #NOTE: deliberately omits modules that only install packages without configuration
   imports = [
     ./metapod.nix
     ./openssh.nix

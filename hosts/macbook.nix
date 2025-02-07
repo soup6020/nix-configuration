@@ -10,7 +10,7 @@
     ../modules/nvf.nix
     ../modules/macbrew.nix
     ../pkgs/pkgs-essential.nix
-    ../pkgs/fonts.nix
+    ../modules/fonts.nix
   ];
   
   nix.gc = {
