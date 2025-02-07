@@ -5,5 +5,6 @@
     ./nvf.nix
     ./sysctl.nix
     ./mpd.nix
+    ./wm.nix
   ];
 }

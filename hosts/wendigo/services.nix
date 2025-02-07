@@ -12,9 +12,6 @@
   programs.firefox.enable = true;
 
   services.flatpak.enable = true;
-  xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  xdg.portal.config.common.default = "gtk";
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
@@ -24,10 +21,6 @@
     enableSSHSupport = true;
   };
 
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
 
   virtualisation.docker = {
     enable = true;
@@ -51,16 +44,6 @@
       "context.properties" = {
         "default.clock.rate" = 192000;
         "default.allowed-rates" = [ 192000 ];
-      };
-    };
-  };
-
-  services.greetd = {
-    enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --sessions ${config.services.displayManager.sessionData.desktops}/share/xsessions:${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session";
-        user = "greeter";
       };
     };
   };
