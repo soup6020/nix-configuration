@@ -14,6 +14,16 @@
     ../../pkgs/pkgs-essential.nix
     ../../pkgs/fonts.nix
   ];
+  
+  nix.gc = {
+    automatic = true;
+    interval = {
+      Weekday = 0;
+      Hour = 0;
+      Minute = 0;
+    };
+    options = "--delete-older-than 14d";
+  };
 
   nix.settings = {
     substituters = [
