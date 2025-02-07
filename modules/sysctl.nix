@@ -36,7 +36,7 @@
     "dev.tty.legacy_tiocsti" = 0;
 
     #Kinda insecure but breaks OCI containers and bwrap if not enabled
-    #"kernel.unprivileged_userns_clone" = 1;
+    "kernel.unprivileged_userns_clone" = 1;
     "vm.max_map_count" = 262144;
     "vm.mmap_rnd_bits" = 32;
     "vm.mmap_rnd_compat_bits" = 16;
