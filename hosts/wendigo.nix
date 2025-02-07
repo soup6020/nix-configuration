@@ -114,16 +114,6 @@
     };
   };
 
-  #TODO: Remove this? Transmission is now in docker.
-  services.transmission = {
-    enable = false; # changeme
-    user = "ezra";
-    group = "ezra";
-    home = "/home/ezra";
-    settings.rpc-port = "9091";
-    settings.peer-port = "51413";
-  };
-
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 
