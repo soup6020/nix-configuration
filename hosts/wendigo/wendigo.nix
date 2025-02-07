@@ -11,18 +11,10 @@
 }:
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     ../../common/default.nix
-    ../../modules/nvf.nix
-    ../../modules/sysctl.nix
-    ../../modules/metapod.nix
-    ../../modules/openssh.nix
-    ../../pkgs/pkgs-essential.nix
-    ../../pkgs/pkgs.nix
-    ../../pkgs/fonts.nix
-    ../../pkgs/hypr.nix
-    ../../pkgs/wendigo-pkgs.nix
+    ../../modules/all.nix
+    ../../pkgs/allpkgs.nix
     ./services.nix
   ];
 
@@ -76,7 +68,8 @@
       "video"
       "input"
       "docker"
-    ]; # Enable ‘sudo’ for the user.
+      "libvirt"
+    ];
     packages = with pkgs; [
     ];
     shell = pkgs.zsh;
