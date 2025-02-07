@@ -31,14 +31,14 @@
         system = "x86_64-linux";
         specialArgs = {inherit inputs;};
         modules = [
-          ./hosts/wendigo/wendigo.nix
+          ./hosts/wendigo.nix
 	  nvf.nixosModules.default
         ];
       };
     };
     darwinConfigurations.Ezras-MacBook-Pro = nix-darwin.lib.darwinSystem {
       modules = [
-        ./hosts/darwin/macbook.nix
+        ./hosts/macbook.nix
         nvf.nixosModules.default
 
       ];
