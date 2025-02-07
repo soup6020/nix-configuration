@@ -1,4 +1,11 @@
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
+{
   users.groups.libvirtd.members = ["ezra"];      
   programs.virt-manager.enable = true;
   virtualisation.libvirtd = {
@@ -12,6 +19,6 @@
     enableOnBoot = true;
     daemon.settings.live-restore = true;
     storageDriver = "btrfs";
-    liveRestore = false; #work around a strange issue where shutdowns hang, not ideal
+    liveRestore = lib.mkForce false; #work around a strange issue where shutdowns hang, not ideal
   };
 }
