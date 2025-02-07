@@ -32,7 +32,6 @@
     rclone
     gptfdisk
     dosfstools
-    uv
     samurai
     restic
     pass-nodmenu
