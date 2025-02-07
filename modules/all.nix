@@ -9,5 +9,6 @@
     ./mpd.nix
     ./wm.nix
     ./vm-oci.nix
+    ./printing.nix
   ];
 }
