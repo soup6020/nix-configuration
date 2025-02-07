@@ -20,7 +20,7 @@
   networking.hostName = "wendigo"; # Define your hostname.
   networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
-  boot.kernelPackages = pkgs.linuxPackages_latest_hardened;
+  boot.kernelPackages = pkgs.linuxPackages_hardened;
   
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
