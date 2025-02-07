@@ -1,5 +1,5 @@
 {
-        
+  users.groups.libvirtd.members = ["ezra"];      
   programs.virt-manager.enable = true;
   virtualisation.libvirtd = {
     enable = true;
