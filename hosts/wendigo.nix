@@ -25,6 +25,7 @@
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
   networking.hostId = "ba24c0d6";
+  boot.zfs.extraPools = [ "coldstorage" "storage" "data" ];
 
   hardware.graphics = {
     enable = true;

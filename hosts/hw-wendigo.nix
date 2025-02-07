@@ -43,26 +43,6 @@
     fsType = "btrfs";
   };
 
-  fileSystems."/data" = {
-    device = "storage";
-    fsType = "zfs";
-  };
-
-  fileSystems."/mnt/cold" = {
-    device = "coldstorage";
-    fsType = "zfs";
-  };
-
-  fileSystems."/mnt/cold/nfsv4" = {
-    device = "coldstorage/nfsv4";
-    fsType = "zfs";
-  };
-
-  fileSystems."/mnt/zfs" = {
-    device = "data";
-    fsType = "zfs";
-  };
-
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

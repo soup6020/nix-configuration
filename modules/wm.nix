@@ -21,6 +21,12 @@
     };
   };
 
+  #Prevent systemd from putting logs all over tuigreet
+  systemd.services.greetd = {
+  serviceConfig.Type = "idle";
+  unitConfig.After = [ "docker.service" ];
+};      
+
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-wlr ];
   xdg.portal.config.common.default = "gtk";

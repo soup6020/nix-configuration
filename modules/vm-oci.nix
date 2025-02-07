@@ -12,5 +12,6 @@
     enableOnBoot = true;
     daemon.settings.live-restore = true;
     storageDriver = "btrfs";
+    liveRestore = false; #work around a strange issue where shutdowns hang, not ideal
   };
 }
