@@ -20,6 +20,7 @@
     "net.ipv4.tcp_max_syn_backlog" = 8192;
 
     #Security
+    "kernel.kptr_restrict" = 2;
     "kernel.sysrq" = 0;
     "kernel.dmesg_restrict" = 1;
     "net.core.bpf_jit_harden" = 2;

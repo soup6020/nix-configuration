@@ -1,5 +1,11 @@
 {
-  security = {
+    boot.kernelParams = [
+      "slab_nomerge"
+      "page_poison=1"
+      "page_alloc.shuffle=1"
+      "debugfs=off"
+    ];
+    security = {
     polkit.enable = true;
     apparmor = {
       enable = true;
