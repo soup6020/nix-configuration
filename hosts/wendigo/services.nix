@@ -7,7 +7,6 @@
 }:
 {
   imports = [
-    ../../modules/openssh.nix
   ];
 
   programs.firefox.enable = true;
@@ -40,8 +39,8 @@
   services.xserver.enable = true;
   services.xserver.xkb.layout = "us";
   services.xserver.videoDrivers = [ "amdgpu" ];
-  services.xserver.excludePackages = with  pkgs; [ xterm ];
-  
+  services.xserver.excludePackages = with pkgs; [ xterm ];
+
   services.pipewire = {
     enable = true;
     pulse.enable = true;
@@ -59,7 +58,7 @@
 
   #TODO: Remove this? Transmission is now in docker.
   services.transmission = {
-    enable = false; #changeme
+    enable = false; # changeme
     user = "ezra";
     group = "ezra";
     home = "/home/ezra";
@@ -72,4 +71,11 @@
     enableNTS = true;
     servers = [ "time.cloudflare.com" ];
   };
+
+  programs.virt-manager.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu.ovmf.enable = true;
+  };
+  virtualisation.spiceUSBRedirection.enable = true;
 }
