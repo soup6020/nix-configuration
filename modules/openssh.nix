@@ -1,4 +1,6 @@
 {
+  services.openssh.enable = true;
+  programs.mosh.enable = true;
   #Enable sftp explicitly.
   services.openssh.allowSFTP = true;
 

@@ -12,9 +12,9 @@
     "net.core.somaxconn" = 65535;
     "net.core.netdev_max_backlog" = 65536;
     "net.core.optmem_max" = 25165824;
-    "net.ipv4.tcp_rmem" = 8192 87380 33554432;
+    "net.ipv4.tcp_rmem" = "8192 87380 33554432";
     "net.ipv4.udp_rmem_min" = 16384;
-    "net.ipv4.tcp_wmem" = 8192 65536 33554432;
+    "net.ipv4.tcp_wmem" = "8192 65536 33554432";
     "net.ipv4.udp_wmem_min" = 16384;
     "net.ipv4.tcp_fastopen" = 3;
     "net.ipv4.tcp_max_syn_backlog" = 8192;
@@ -31,11 +31,11 @@
     "fs.protected_regular" = 2;
     "fs.suid_dumpable" = 0;
     "fs.protected_hardlinks" = 1;
-    "fs.protected_symlinks" = 2;
+    #"fs.protected_symlinks" = 1;
     "dev.tty.legacy_tiocsti" = 0;
 
     #Kinda insecure but breaks OCI containers and bwrap if not enabled
-    "kernel.unprivileged_userns_clone" = 1;
+    #"kernel.unprivileged_userns_clone" = 1;
     "vm.max_map_count" = 262144;
     "vm.mmap_rnd_bits" = 32;
     "vm.mmap_rnd_compat_bits" = 16;

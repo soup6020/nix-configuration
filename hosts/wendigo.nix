@@ -68,8 +68,6 @@
 
   users.users.ezra = {
     isNormalUser = true;
-    uid = 1000;
-    gid = 1000;
     extraGroups = [
       "wheel"
       "video"
@@ -107,6 +105,10 @@
         "default.clock.rate" = 192000;
         "default.allowed-rates" = [ 192000 ];
       };
+                };
+    wireplumber = {
+      enable = true;
+      package = pkgs.wireplumber;
     };
   };
 
