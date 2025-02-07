@@ -51,6 +51,8 @@
     lftp
     ncftp
     whois
+    ldns
+    dogdns
     mosh
   ];
 }
