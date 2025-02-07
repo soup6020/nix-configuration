@@ -6,5 +6,6 @@
     ./sysctl.nix
     ./mpd.nix
     ./wm.nix
+    ./vm-oci.nix
   ];
 }

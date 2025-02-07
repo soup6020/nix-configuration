@@ -40,6 +40,8 @@
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
+  programs.firefox.enable = true;
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -55,10 +57,16 @@
     viAlias = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
+  services.flatpak.enable = true;
+
+  programs.mtr.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+  };
+
   # services.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.ezra = {
     isNormalUser = true;
     uid = 1000;
@@ -82,6 +90,36 @@
   #networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   networking.firewall.enable = false;
+
+  services.chrony = {
+    enable = true;
+    enableNTS = true;
+    servers = [ "time.cloudflare.com" ];
+  };
+  
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    extraConfig.pipewire.adjust-sample-rate = {
+      "context.properties" = {
+        "default.clock.rate" = 192000;
+        "default.allowed-rates" = [ 192000 ];
+      };
+    };
+  };
+
+  #TODO: Remove this? Transmission is now in docker.
+  services.transmission = {
+    enable = false; # changeme
+    user = "ezra";
+    group = "ezra";
+    home = "/home/ezra";
+    settings.rpc-port = "9091";
+    settings.peer-port = "51413";
+  };
 
   # Does not work with flakes
   #system.copySystemConfiguration = true;
