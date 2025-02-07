@@ -14,6 +14,7 @@
     iaito
     tor-browser
     brave
+    inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
     kodi-wayland
     ares
     bsnes-hd
@@ -24,6 +25,7 @@
     xournalpp
     pavucontrol
     vesktop
+    transmission-remote-gtk
 
     unzrip
     yara-x
