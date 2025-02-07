@@ -11,11 +11,10 @@
 }:
 {
   imports = [
-    ./hardware-configuration.nix
-    ../../common/default.nix
-    ../../modules/all.nix
-    ../../pkgs/allpkgs.nix
-    ./services.nix
+    ./hw-wendigo.nix
+    ../common/default.nix
+    ../modules/all.nix
+    ../pkgs/allpkgs.nix
   ];
 
   networking.hostName = "wendigo"; # Define your hostname.
