@@ -31,6 +31,7 @@
     yara-x
     lynis
     lf
+    _7zz-rar
     debootstrap
     shellcheck
     lazygit
