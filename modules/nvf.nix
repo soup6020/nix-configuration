@@ -224,7 +224,7 @@ activeSection.z = [
         nix.format.enable = true;
         nix.format.type = "nixfmt";
         nu.enable = true;
-        python.enable = true;
+        python.enable = false; #temporary, basedpyright broken
         rust.enable = true;
         sql.enable = true;
       };
