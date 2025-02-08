@@ -1,28 +1,6 @@
 { config, pkgs, lib, inputs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    (retroarch.override {
-        cores = with libretro; [
-          bsnes
-          mesen
-          mesen-s
-          swanstation
-          sameboy
-          np2kai
-          mupen64plus
-          mgba
-          melonds
-          genesis-plus-gx
-          flycast
-          easyrpg
-          dolphin
-          citra
-          bsnes-hd
-          beetle-psx-hw
-          tgbdual
-          ppsspp
-        ];
-                })
     easyeffects
     calibre
     mgba
