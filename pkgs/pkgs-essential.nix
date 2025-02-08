@@ -40,6 +40,7 @@
     aria2
     iperf
     nh
+    nix-tree
     nix-search-cli
     pkgs.cachix
     pkgs.nixfmt-rfc-style
