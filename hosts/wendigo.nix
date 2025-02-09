@@ -39,8 +39,6 @@
     "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
   ];
 
-  # Enable CUPS to print documents.
-  # services.printing.enable = true;
   programs.firefox.enable = true;
 
   programs.zsh = {
