@@ -9,6 +9,7 @@
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
+    walker.url = "github:abenz1267/walker";
   };
 
   outputs = {
