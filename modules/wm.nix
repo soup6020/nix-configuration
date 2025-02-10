@@ -10,7 +10,7 @@
   services.xserver.xkb.layout = "us";
   services.xserver.videoDrivers = [ "amdgpu" ];
   services.xserver.excludePackages = with pkgs; [ xterm ];
-  
+
   services.greetd = {
     enable = true;
     settings = {
@@ -23,12 +23,40 @@
 
   #Prevent systemd from putting logs all over tuigreet
   systemd.services.greetd = {
-  serviceConfig.Type = "idle";
-  unitConfig.After = [ "docker.service" ];
-};      
+    serviceConfig.Type = "idle";
+    unitConfig.After = [ "docker.service" ];
+  };
 
   xdg.portal.enable = true;
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk pkgs.xdg-desktop-portal-wlr ];
+  xdg.portal.config = {
+    common = {
+      default = [
+        "gtk"
+      ];
+    };
+    sway = {
+      default = [ "gtk" ];
+      "org.freedesktop.impl.portal.Screenshot" = [ "wlr" ];
+      "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
+      "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
+    };
+  };
+  xdg.portal.wlr = {
+    enable = true;
+    settings = {
+      screencast = {
+        output_name = "HDMI-A-1";
+        max_fps = 60;
+        chooser_type = "simple";
+        chooser_cmd = "${pkgs.slurp}/bin/slurp -f %o -or";
+      };
+    };
+  };
+
+  xdg.portal.extraPortals = [
+    pkgs.xdg-desktop-portal-gtk
+    pkgs.xdg-desktop-portal-wlr
+  ];
   xdg.portal.config.common.default = "gtk";
 
   programs.hyprland = {
