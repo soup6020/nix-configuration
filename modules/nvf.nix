@@ -238,7 +238,7 @@ activeSection.z = [
       };
         vim.tabline.nvimBufferline.enable = true;
         vim.dashboard.dashboard-nvim = {
-        enable = true;
+        enable = false;
         };
     };
   };
