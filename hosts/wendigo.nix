@@ -26,6 +26,7 @@
   boot.zfs.forceImportRoot = false;
   networking.hostId = "ba24c0d6";
   boot.zfs.extraPools = [ "coldstorage" "storage" "data" ];
+  services.zfs.autoScrub.enable = true;
 
   hardware.graphics = {
     enable = true;
