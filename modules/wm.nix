@@ -57,7 +57,6 @@
     pkgs.xdg-desktop-portal-gtk
     pkgs.xdg-desktop-portal-wlr
   ];
-  xdg.portal.config.common.default = "gtk";
 
   programs.hyprland = {
     enable = true;

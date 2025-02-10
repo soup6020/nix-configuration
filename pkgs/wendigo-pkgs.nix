@@ -50,6 +50,7 @@
     pwndbg
     swww
     wl-clipboard
+    slurp
     swaynotificationcenter
     wofi
     hyprshot
