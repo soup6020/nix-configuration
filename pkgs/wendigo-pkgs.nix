@@ -30,6 +30,7 @@
     nicotine-plus
     xournalpp
     pavucontrol
+#Currently necessary for screen sharing
     (vesktop.override {
       electron = pkgs.electron_32;
     })
