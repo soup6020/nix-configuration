@@ -24,7 +24,9 @@
     nicotine-plus
     xournalpp
     pavucontrol
-    vesktop
+    (vesktop.override {
+      electron = pkgs.electron_32;
+    })
     transmission-remote-gtk
 
     unzrip

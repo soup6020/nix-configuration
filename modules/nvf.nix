@@ -166,6 +166,7 @@ activeSection.y = [
   ''
     {
       "branch",
+      draw_empty = true,
       icon = ' •',
       separator = {left = ''}
     }
@@ -204,6 +205,13 @@ activeSection.z = [
       vim.lazy = {
         enable = true;
       };
+      vim.binds = {
+        cheatsheet.enable = true;
+        whichKey.enable = true;
+        };
+        vim.telescope = {
+                enable = true;
+                        };
       vim.treesitter = {
         enable = true;
         highlight.enable = true;
@@ -228,6 +236,10 @@ activeSection.z = [
         rust.enable = true;
         sql.enable = true;
       };
+        vim.tabline.nvimBufferline.enable = true;
+        vim.dashboard.dashboard-nvim = {
+        enable = true;
+        };
     };
   };
 }
