@@ -111,6 +111,10 @@
       package = pkgs.wireplumber;
     };
   };
+environment.systemPackages = with pkgs; [ lact ];
+systemd.packages = with pkgs; [ lact ];
+systemd.services.lactd.wantedBy = ["multi-user.target"];
+
 
   # Does not work with flakes
   #system.copySystemConfiguration = true;
