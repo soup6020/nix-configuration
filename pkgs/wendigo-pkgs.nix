@@ -21,7 +21,7 @@
     tor-browser
     brave
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
-    inputs.walker.packages.${pkgs.systems}.default
+    inputs.walker.packages.${pkgs.system}.default
     kodi-wayland
     ares
     bsnes-hd
