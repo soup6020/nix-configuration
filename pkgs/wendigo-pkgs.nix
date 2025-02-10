@@ -16,7 +16,6 @@
     audacity
     ghidra-bin
     gimp
-    prismlauncher
     iaito
     tor-browser
     brave
