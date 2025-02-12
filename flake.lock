@@ -33,22 +33,6 @@
         "type": "github"
       }
     },
-    "blink-cmp": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1739129359,
-        "narHash": "sha256-nUrXXiJ7NRxS21H53U323lwEKdo08Y011l8XskXC/vw=",
-        "owner": "saghen",
-        "repo": "blink.cmp",
-        "rev": "b2485c76cb7877de6fe9c8670af59ba3d72fd74d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "saghen",
-        "repo": "blink.cmp",
-        "type": "github"
-      }
-    },
     "cachix": {
       "locked": {
         "lastModified": 1635350005,
@@ -74,11 +58,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1739323097,
-        "narHash": "sha256-EBCX4rGsVlHXdwYF30eZoSWmlCZZbPPWamE2GKWXH2E=",
+        "lastModified": 1739380645,
+        "narHash": "sha256-S+daNo5oB9uo/8nKpBo+BXAMMwwHdpp6T75AYU3un+o=",
         "owner": "nix-community",
         "repo": "flake-firefox-nightly",
-        "rev": "c5b029b78554bc5ef3a04430130f368a08af3e40",
+        "rev": "d96888c780785e7338eacaba62924732e1070959",
         "type": "github"
       },
       "original": {
@@ -268,11 +252,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1739285923,
-        "narHash": "sha256-2G2qqyx9MIlWTxNVm+ADZvZSwrNhrV6UtazonxZ9FJ0=",
+        "lastModified": 1739368482,
+        "narHash": "sha256-SHDq4bk3tJsh0wyXs20OztvsCGT2+6c6sj92+qBKjfI=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "f83fe9986b34c53c67b113a015d54fe8c084e9bd",
+        "rev": "68bb3e7f0a1d528a8b2da1f92d2005889587561d",
         "type": "github"
       },
       "original": {
@@ -712,7 +696,6 @@
     },
     "nvf": {
       "inputs": {
-        "blink-cmp": "blink-cmp",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils_2",
         "mnw": "mnw",
@@ -722,11 +705,11 @@
         "systems": "systems_4"
       },
       "locked": {
-        "lastModified": 1739300609,
-        "narHash": "sha256-3UrvMpaT82sXPAZNnyNClTfAKF8r8j+IbVR1w3aC/+Y=",
+        "lastModified": 1739361262,
+        "narHash": "sha256-wJkh9T6lqiLlo5de27FABu3P4wIZgfRwQUpLrLE7WRU=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "14d25e4153781cdac2cbe0c7415e1bd445c2008e",
+        "rev": "6e7e91fc111218917d67b9ee44f718633bddac33",
         "type": "github"
       },
       "original": {
