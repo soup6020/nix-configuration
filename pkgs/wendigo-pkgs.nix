@@ -9,10 +9,7 @@
   environment.systemPackages = with pkgs; [
     easyeffects
     calibre
-    mgba
     protonup-ng
-    melonDS
-    pcsx2
     audacity
     ghidra-bin
     gimp
@@ -22,8 +19,6 @@
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
     inputs.walker.packages.${pkgs.system}.default
     kodi-wayland
-    ares
-    bsnes-hd
     alacritty
     wezterm
     ghostty

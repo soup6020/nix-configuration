@@ -29,5 +29,13 @@ in
 {
   environment.systemPackages = [
     retroarchWithCores
+    pkgs.retroarch-assets
+    pkgs.retroarch-joypad-autoconfig
+    pkgs.ares
+    pkgs.pcsx2
+    pkgs.melonDS
+    pkgs.mgba
+    pkgs.bsnes-hd
+    
   ];
 }
