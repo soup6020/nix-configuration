@@ -24,7 +24,7 @@
     "sd_mod"
   ];
   boot.initrd.kernelModules = [ "amdgpu" ];
-  boot.kernelModules = [ "kvm-amd" ];
+  boot.kernelModules = [ "kvm-amd" "nct6775" ];
   boot.extraModulePackages = [ ];
 
    fileSystems."/" =

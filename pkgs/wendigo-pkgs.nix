@@ -31,6 +31,7 @@
     })
     transmission-remote-gtk
 
+    lm_sensors
     unzrip
     yara-x
     lynis
