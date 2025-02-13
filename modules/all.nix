@@ -10,5 +10,6 @@
     ./wm.nix
     ./vm-oci.nix
     ./printing.nix
+    ./retroarch.nix
   ];
 }
