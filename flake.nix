@@ -10,6 +10,10 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
     walker.url = "github:abenz1267/walker";
+    nixos-generators = {
+      url = "github:nix-community/nixos-generators";
+      inputs.nixpkgs.follows = "nixpkgs";
+};
   };
 
   outputs = {
@@ -18,6 +22,7 @@
     nixpkgs,
     nvf,
     firefox-nightly,
+    nixos-generators,
     ...
   } @ inputs: {
     nixosConfigurations = {
@@ -29,7 +34,17 @@
 	  nvf.nixosModules.default
         ];
       };
-    };
+
+      live-iso = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./hosts/iso.nix  # Define a separate configuration for the ISO
+          nixos-generators.nixosModules.iso
+        ];
+      };
+};
+
     darwinConfigurations.Ezras-MacBook-Pro = nix-darwin.lib.darwinSystem {
       modules = [
         ./hosts/macbook.nix

@@ -49,11 +49,13 @@
     weechat
     megatools
     socat
+    nvme-cli
     mktorrent
     gef
     pwndbg
     swww
     wl-clipboard
+    waybar
     slurp
     swaynotificationcenter
     wofi
@@ -68,6 +70,8 @@
     bottom
     dosfstools
     exfatprogs
+    xfsprogs
+    jfsutils
     modprobed-db
     yt-dlp
     pamixer
