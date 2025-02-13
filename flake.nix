@@ -34,13 +34,16 @@
 	  nvf.nixosModules.default
         ];
       };
+};
 
-      live-iso = nixpkgs.lib.nixosSystem {
+packages.x86_64-linux = {
+      live-iso = nixos-generators.nixosGenerate {
         system = "x86_64-linux";
+        format = "iso";
         specialArgs = { inherit inputs; };
         modules = [
           ./hosts/iso.nix  # Define a separate configuration for the ISO
-          nixos-generators.nixosModules.iso
+          nvf.nixosModules.default
         ];
       };
 };

@@ -1,11 +1,11 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    btrfsprogs
+    btrfs-progs
     dosfstools
     chntpw
     clamav
-    clonezilla
+    partclone
     cifs-utils
     restic
     dcfldd
@@ -14,12 +14,11 @@
     flashrom
     gparted
     ddrescue
-    dd_rescue
     iperf3
     jfsutils
     xfsprogs
     xfs-undelete
-    memst86plus
+    memtest86plus
     memtester
     memtest_vulkan
     tmux

@@ -1,13 +1,19 @@
-{ config, pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  inputs,
+  ...
+}:
 
 {
-  imports = [ 
-nixos-generators.nixosModules.iso
-../modules/wm.nix
-../modules/nvf.nix
-../pkgs/pkgs-essential.nix
-../pkgs/liveiso.nix
-        ];
+  imports = [
+    ../modules/wm.nix
+    ../modules/nvf.nix
+    ../pkgs/pkgs-essential.nix
+    ../pkgs/liveiso.nix
+    ../modules/openssh.nix
+  ];
 
   nix.settings = {
     substituters = [
@@ -28,20 +34,18 @@ nixos-generators.nixosModules.iso
     ];
     auto-optimise-store = true;
   };
+  nixpkgs.config.allowUnfree = true;
 
-  isoImage.squashfsCompression = "gzip";  # Optional: Adjust compression level
-  isoImage.volumeID = "SoupNixOS";      # Set ISO name
+  isoImage.squashfsCompression = "lz4"; # Optional: Adjust compression level
+  isoImage.volumeID = "SoupNixOS"; # Set ISO name
 
-  boot.loader.grub.enable = false;
-  boot.loader.systemd-boot.enable = false;
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.networkmanager.enable = true;
   services.openssh.enable = true;
-  services.getty.autologin = lib.mkDefault "nixos";
 
   environment.systemPackages = with pkgs; [
-    firefox-nightly.packages.x86_64-linux.default  # Include Firefox Nightly
+    inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
     nixos-anywhere
     nixos-install
     nixos-install-tools
@@ -49,10 +53,13 @@ nixos-generators.nixosModules.iso
 
   users.users.nixos = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "sudo" ];
-    password = "nixos";  # Change for security
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+      "sudo"
+    ];
+    password = "nixos"; # Change for security
   };
 
-  system.stateVersion = "24.05";  # Adjust to match your system version
+  system.stateVersion = "24.05"; # Adjust to match your system version
 }
-
