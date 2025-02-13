@@ -38,7 +38,6 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-  services.nix-daemon.enable = true;
   programs.fish.enable = true;
 
   # Read changelog via darwin-rebuild changelog before changing (ie. do not change)
