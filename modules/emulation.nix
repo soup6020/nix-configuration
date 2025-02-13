@@ -37,5 +37,6 @@ in
     pkgs.mgba
     pkgs.bsnes-hd
     pkgs.easyrpg-player
+    pkgs.flips
   ];
 }
