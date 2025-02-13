@@ -112,6 +112,22 @@
       package = pkgs.wireplumber;
     };
   };
+
+  services.smartd = {
+    enable = true;
+    devices = [
+      { device = "/dev/sda"; }
+      { device = "/dev/sdb"; }
+      { device = "/dev/sdc"; }
+      { device = "/dev/sdd"; }
+      { device = "/dev/sde"; }
+      { device = "/dev/sdf"; }
+      { device = "/dev/sdg"; }
+      { device = "/dev/nvme0n1"; }
+      { device = "/dev/nvme1n1"; }
+    ];
+  };
+        
 environment.systemPackages = with pkgs; [ lact ];
 systemd.packages = with pkgs; [ lact ];
 systemd.services.lactd.wantedBy = ["multi-user.target"];

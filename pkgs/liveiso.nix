@@ -90,7 +90,6 @@
     go-exploitdb
     keedump
     sploitscan
-
     ddrescueview
     dislocker
     dismember
@@ -116,7 +115,6 @@
     xorex
     capstone
     pdf-parser
-
     exiflooter
     socialscan
     enumerepo
