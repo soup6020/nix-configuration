@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
-# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
-
 {
   config,
   lib,
@@ -17,8 +13,8 @@
     ../pkgs/allpkgs.nix
   ];
 
-  networking.hostName = "wendigo"; # Define your hostname.
-  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+  networking.hostName = "wendigo";
+  networking.networkmanager.enable = true;
 
   boot.kernelPackages = pkgs.linuxPackages_hardened;
   
@@ -123,8 +119,6 @@
       { device = "/dev/sde"; }
       { device = "/dev/sdf"; }
       { device = "/dev/sdg"; }
-      { device = "/dev/nvme0n1"; }
-      { device = "/dev/nvme1n1"; }
     ];
   };
         
@@ -141,10 +135,6 @@ systemd.services.lactd.wantedBy = ["multi-user.target"];
   #
   # Most users should NEVER change this value after the initial install, for any reason,
   # even if you've upgraded your system to a new NixOS release.
-  #
-  # This value does NOT affect the Nixpkgs version your packages and OS are pulled from,
-  # so changing it will NOT upgrade your system - see https://nixos.org/manual/nixos/stable/#sec-upgrading for how
-  # to actually do that.
   #
   # This value being lower than the current NixOS release does NOT mean your system is
   # out of date, out of support, or vulnerable.
