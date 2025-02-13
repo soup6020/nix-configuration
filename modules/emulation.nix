@@ -36,6 +36,6 @@ in
     pkgs.melonDS
     pkgs.mgba
     pkgs.bsnes-hd
-    
+    pkgs.easyrpg-player
   ];
 }
