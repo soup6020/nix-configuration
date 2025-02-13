@@ -61,5 +61,11 @@
     password = "nixos"; # Change for security
   };
 
+  services.chrony = {
+    enable = true;
+    enableNTS = true;
+    servers = [ "time.cloudflare.com" ];
+  };
+
   system.stateVersion = "24.05"; # Adjust to match your system version
 }

@@ -89,7 +89,6 @@
     exploitdb
     go-exploitdb
     keedump
-    padre
     sploitscan
 
     ddrescueview
@@ -121,7 +120,6 @@
     exiflooter
     socialscan
     enumerepo
-    ntopng
     ali
     drill
     cassowary
@@ -145,13 +143,10 @@
     mtr
     ncftp
     netcat-gnu
-    netexec
     netdiscover
-    netkittftp
     netmask
     nload
     nuttcp
-    p0f
     pingu
     pwnat
     responder
@@ -159,28 +154,22 @@
     rustcat
     sshping
     sslh
-    tunnelgraf
     wbox
     whois
     yersinia
     badtouch
     authoscope
     bruteforce-luks
-    brutespray
     conpass
     crunch
     h8mail
     hashcat
     hashcat-utils
     hashdeep
-    john
-    medusa
     nasty
-    ncrack
     nth
     phrasendrescher
     thc-hydra
-    truecrack
     crowbar
     hcxtools
     arp-scan
@@ -197,7 +186,6 @@
     wireshark
     wireshark-cli
     adidnsdump
-    adreaper
     bloodhound-py
     breads-ad
     certi
@@ -234,7 +222,6 @@
     reaverwps
     reaverwps-t6x
     wavemon
-    wifite2
     gqrx
     kalibrate-hackrf
     kalibrate-rtl
