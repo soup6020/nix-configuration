@@ -38,5 +38,6 @@ in
     pkgs.bsnes-hd
     pkgs.easyrpg-player
     pkgs.flips
+    pkgs.rpcs3
   ];
 }
