@@ -53,7 +53,6 @@
     nvme-cli
     mktorrent
     gef
-    pwndbg
     swww
     wl-clipboard
     waybar

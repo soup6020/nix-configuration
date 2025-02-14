@@ -112,13 +112,13 @@
   services.smartd = {
     enable = true;
     devices = [
-      { device = "/dev/sda"; }
-      { device = "/dev/sdb"; }
-      { device = "/dev/sdc"; }
-      { device = "/dev/sdd"; }
-      { device = "/dev/sde"; }
-      { device = "/dev/sdf"; }
-      { device = "/dev/sdg"; }
+      { device = "/dev/disk/by-id/ata-HGST_HUH721212ALE600_8CGJ70YE"; }
+      { device = "/dev/disk/by-id/ata-ST4000DM005-2DP166_ZDH1DYMA"; }
+      { device = "/dev/disk/by-id/ata-ST8000VN004-2M2101_WKD023SS"; }
+      { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ69XZN"; }
+      { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ4273E"; }
+      { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZR800P6Y"; }
+      { device = "/dev/disk/by-id/ata-WDC_WD40EZRZ-00GXCB0_WD-WCC7K5ZLRDJJ "; }
     ];
   };
         
