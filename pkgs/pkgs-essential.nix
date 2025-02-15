@@ -42,6 +42,7 @@
     nh
     nix-tree
     nix-search-cli
+    nix-index
     pkgs.cachix
     pkgs.nixfmt-rfc-style
     fd
