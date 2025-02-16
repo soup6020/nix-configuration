@@ -10,6 +10,7 @@
     neovim
     tmux
     wget
+    wget2
     curl
     ripgrep
     kitty
