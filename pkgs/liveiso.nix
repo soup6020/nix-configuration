@@ -96,8 +96,8 @@
     python3Packages.distorm3
     exiv2
     ext4magic
-    extundelete
     foremost
+    scalpel
     gef
     gzrt
     hivex
@@ -117,56 +117,24 @@
     pdf-parser
     exiflooter
     socialscan
-    enumerepo
-    ali
-    drill
-    cassowary
-    ddosify
-    oha
-    siege
-    tsung
-    vegeta
     arping
     atftp
     arpoison
-    bandwhich
-    bngblaster
-    cdncheck
-    evillimiter
     ipcalc
     iperf2
     iputils
     lftp
-    mitm6
     mtr
     ncftp
     netcat-gnu
-    netdiscover
-    netmask
-    nload
-    nuttcp
-    pingu
-    pwnat
-    responder
-    route-graph
-    rustcat
     sshping
     sslh
     wbox
     whois
     yersinia
-    badtouch
-    authoscope
     bruteforce-luks
-    conpass
-    crunch
-    h8mail
     hashcat
     hashcat-utils
-    hashdeep
-    nasty
-    nth
-    phrasendrescher
     thc-hydra
     crowbar
     hcxtools
@@ -183,46 +151,17 @@
     netsniff-ng
     wireshark
     wireshark-cli
-    adidnsdump
     bloodhound-py
-    breads-ad
-    certi
-    certipy
-    certsync
-    coercer
-    donpapi
-    enum4linux
-    enum4linux-ng
-    erosmb
-    evil-winrm
-    go365
-    gomapenum
-    kerbrute
-    knowsmore
-    lil-pwny
-    nbtscan
-    nbtscanner
-    offensive-azure
     python3Packages.lsassy
     python3Packages.pypykatz
-    rdwatool
     smbmap
     smbscan
     aircrack-ng
     airgeddon
-    bully
-    cowpatty
-    dbmonster
-    horst
-    killerbee
     kismet
     pixiewps
     reaverwps
     reaverwps-t6x
-    wavemon
-    gqrx
-    kalibrate-hackrf
-    kalibrate-rtl
     multimon-ng
   ];
 }
