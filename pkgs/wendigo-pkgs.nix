@@ -40,9 +40,6 @@
     debootstrap
     shellcheck
     lazygit
-    grim
-    grimblast
-    sway-contrib.grimshot
     gammastep
     imv
     speedtest-rs
@@ -53,13 +50,6 @@
     nvme-cli
     mktorrent
     gef
-    swww
-    wl-clipboard
-    waybar
-    slurp
-    swaynotificationcenter
-    wofi
-    hyprshot
     ncmpcpp
     rmpc
     libimobiledevice

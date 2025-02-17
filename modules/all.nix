@@ -7,7 +7,8 @@
     ./fonts.nix
     ./sysctl.nix
     ./mpd.nix
-    ./wm.nix
+    ./greetd.nix
+    ./hypr-sway.nix
     ./vm-oci.nix
     ./printing.nix
     ./emulation.nix
