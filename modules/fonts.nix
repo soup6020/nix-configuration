@@ -10,5 +10,7 @@
     pkgs.nerd-fonts.meslo-lg
     pkgs.ibm-plex
     pkgs.noto-fonts
+    pkgs.nerd-fonts.mononoki
+    pkgs.twitter-color-emoji
   ];
 }

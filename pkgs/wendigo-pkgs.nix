@@ -71,5 +71,8 @@
     modprobed-db
     yt-dlp
     pamixer
+    pngcrush
+    gifsicle
+    exiftool
   ];
 }
