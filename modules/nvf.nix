@@ -24,6 +24,10 @@
       };
       vim.ui.breadcrumbs.enable = true;
       vim.ui.breadcrumbs.lualine.winbar.alwaysRender = false;
+      vim.autocomplete = {
+        blink-cmp.enable = true;
+        enableSharedCmpSources = true;
+        };
       vim.statusline.lualine = {
         enable = true;
         theme = "horizon";
