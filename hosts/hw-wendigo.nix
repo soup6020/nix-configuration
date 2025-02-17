@@ -24,19 +24,25 @@
     "sd_mod"
   ];
   boot.initrd.kernelModules = [ "amdgpu" ];
-  boot.kernelModules = [ "kvm-amd" "nct6775" ];
+  boot.kernelModules = [
+    "kvm-amd"
+    "nct6775"
+  ];
   boot.extraModulePackages = [ ];
 
-   fileSystems."/" =
-     { device = "/dev/disk/by-uuid/3fd8f070-8a7b-40b6-b221-e126093e7f4a";
-       fsType = "btrfs";
-     };
+  fileSystems."/" = {
+    device = "/dev/disk/by-uuid/3fd8f070-8a7b-40b6-b221-e126093e7f4a";
+    fsType = "btrfs";
+  };
 
-   fileSystems."/boot" =
-     { device = "/dev/disk/by-uuid/2718-66B4";
-       fsType = "vfat";
-       options = [ "fmask=0022" "dmask=0022" ];
-     };
+  fileSystems."/boot" = {
+    device = "/dev/disk/by-uuid/2718-66B4";
+    fsType = "vfat";
+    options = [
+      "fmask=0022"
+      "dmask=0022"
+    ];
+  };
 
   fileSystems."/mnt/ssd" = {
     device = "/dev/disk/by-uuid/e174a240-d4cc-4389-9c7a-a6460518a68e";

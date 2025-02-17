@@ -12,7 +12,7 @@
     ../pkgs/pkgs-essential.nix
     ../modules/fonts.nix
   ];
-  
+
   nix.gc = {
     automatic = true;
     interval = {

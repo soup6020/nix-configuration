@@ -17,11 +17,15 @@
   networking.networkmanager.enable = true;
 
   boot.kernelPackages = pkgs.linuxPackages_hardened;
-  
+
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
   networking.hostId = "ba24c0d6";
-  boot.zfs.extraPools = [ "coldstorage" "storage" "data" ];
+  boot.zfs.extraPools = [
+    "coldstorage"
+    "storage"
+    "data"
+  ];
   services.zfs.autoScrub.enable = true;
 
   hardware.graphics = {
@@ -31,7 +35,7 @@
       rocmPackages.clr.icd
     ];
   };
-  
+
   systemd.tmpfiles.rules = [
     "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
   ];
@@ -90,7 +94,7 @@
     enableNTS = true;
     servers = [ "time.cloudflare.com" ];
   };
-  
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -102,7 +106,7 @@
         "default.clock.rate" = 192000;
         "default.allowed-rates" = [ 192000 ];
       };
-                };
+    };
     wireplumber = {
       enable = true;
       package = pkgs.wireplumber;
@@ -121,11 +125,10 @@
       { device = "/dev/disk/by-id/ata-WDC_WD40EZRZ-00GXCB0_WD-WCC7K5ZLRDJJ "; }
     ];
   };
-        
-environment.systemPackages = with pkgs; [ lact ];
-systemd.packages = with pkgs; [ lact ];
-systemd.services.lactd.wantedBy = ["multi-user.target"];
 
+  environment.systemPackages = with pkgs; [ lact ];
+  systemd.packages = with pkgs; [ lact ];
+  systemd.services.lactd.wantedBy = [ "multi-user.target" ];
 
   # Does not work with flakes
   #system.copySystemConfiguration = true;

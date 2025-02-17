@@ -24,18 +24,18 @@
     nicotine-plus
     xournalpp
     pavucontrol
-#Currently necessary for screen sharing
+    #Currently necessary for screen sharing
     (vesktop.override {
       electron = pkgs.electron_32;
     })
     transmission-remote-gtk
     (pkgs.wrapOBS {
-    plugins = with pkgs.obs-studio-plugins; [
-      wlrobs
-      obs-backgroundremoval
-      obs-pipewire-audio-capture
-    ];
-  })
+      plugins = with pkgs.obs-studio-plugins; [
+        wlrobs
+        obs-backgroundremoval
+        obs-pipewire-audio-capture
+      ];
+    })
 
     lm_sensors
     unzrip

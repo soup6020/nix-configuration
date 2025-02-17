@@ -27,7 +27,7 @@
       vim.autocomplete = {
         blink-cmp.enable = true;
         enableSharedCmpSources = true;
-        };
+      };
       vim.statusline.lualine = {
         enable = true;
         theme = "horizon";

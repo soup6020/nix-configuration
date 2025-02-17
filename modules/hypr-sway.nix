@@ -60,16 +60,16 @@
   };
 
   environment.systemPackages = with pkgs; [
-                grim
-                grimblast
-                sway-contrib.grimshot
-                gammastep
-                swww
-                wl-clipboard
-                waybar
-                slurp
-                swaynotificationcenter
-                wofi
-                hyprshot
-        ];
+    grim
+    grimblast
+    sway-contrib.grimshot
+    gammastep
+    swww
+    wl-clipboard
+    waybar
+    slurp
+    swaynotificationcenter
+    wofi
+    hyprshot
+  ];
 }

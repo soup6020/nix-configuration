@@ -6,7 +6,7 @@
   ...
 }:
 {
-  users.groups.libvirtd.members = ["ezra"];      
+  users.groups.libvirtd.members = [ "ezra" ];
   programs.virt-manager.enable = true;
   virtualisation.libvirtd = {
     enable = true;
@@ -19,6 +19,6 @@
     enableOnBoot = true;
     daemon.settings.live-restore = true;
     storageDriver = "btrfs";
-    liveRestore = lib.mkForce false; #work around a strange issue where shutdowns hang, not ideal
+    liveRestore = lib.mkForce false; # work around a strange issue where shutdowns hang, not ideal
   };
 }
