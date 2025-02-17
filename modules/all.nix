@@ -13,5 +13,6 @@
     ./printing.nix
     ./emulation.nix
     ./gaming.nix
+    ./overlays.nix
   ];
 }
