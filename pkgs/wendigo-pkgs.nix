@@ -9,7 +9,6 @@
   environment.systemPackages = with pkgs; [
     easyeffects
     calibre
-    protonup-ng
     audacity
     ghidra-bin
     gimp
@@ -30,6 +29,13 @@
       electron = pkgs.electron_32;
     })
     transmission-remote-gtk
+    (pkgs.wrapOBS {
+    plugins = with pkgs.obs-studio-plugins; [
+      wlrobs
+      obs-backgroundremoval
+      obs-pipewire-audio-capture
+    ];
+  })
 
     lm_sensors
     unzrip

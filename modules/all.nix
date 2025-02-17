@@ -12,5 +12,6 @@
     ./vm-oci.nix
     ./printing.nix
     ./emulation.nix
+    ./gaming.nix
   ];
 }
