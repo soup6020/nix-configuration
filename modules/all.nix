@@ -14,5 +14,6 @@
     ./emulation.nix
     ./gaming.nix
     ./overlays.nix
+    ./custompkgs.nix
   ];
 }
