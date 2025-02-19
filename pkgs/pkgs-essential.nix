@@ -41,6 +41,7 @@
     aria2
     iperf
     nh
+    niv
     nix-tree
     nix-search-cli
     nix-index

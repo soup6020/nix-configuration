@@ -63,6 +63,7 @@
     ugrep
     lsiutil
     btop
+    torsocks
     bottom
     dosfstools
     exfatprogs
