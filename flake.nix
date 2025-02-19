@@ -14,6 +14,10 @@
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    capa = {
+      url = "github:soup6020/capa";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
