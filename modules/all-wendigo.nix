@@ -1,5 +1,5 @@
 {
-  #NOTE: deliberately omits modules that only install packages without configuration
+  #NOTE: This file is intended for wendigo, it may cause undesirable operation on other hosts.
   imports = [
     ./metapod.nix
     ./openssh.nix
