@@ -7,7 +7,7 @@
 }:
 {
   imports = [
-    ./hw-wendigo.nix
+    ./hw/hw-wendigo.nix
     ../common/default.nix
     ../modules/all-wendigo.nix
     ../pkgs/allpkgs.nix
