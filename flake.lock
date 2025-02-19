@@ -57,11 +57,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1740004784,
-        "narHash": "sha256-fJK7jiXjhAz+lXzQnQlsspWu18N3Qe26WmgvvEpeP4I=",
+        "lastModified": 1740006664,
+        "narHash": "sha256-RilpKOnlfkibTtKO8tnT+FAH7ol4UfY+bjpxJ2n2mwc=",
         "owner": "soup6020",
         "repo": "capa",
-        "rev": "d65114c8d9c3c13554dba6a51c1deaaa965d2e47",
+        "rev": "7f1f1e5bd3bcd8476c4eb1994c7732aefbff7732",
         "type": "github"
       },
       "original": {
