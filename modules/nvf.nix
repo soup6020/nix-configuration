@@ -1,3 +1,4 @@
+{ config, pkgs, lib, ...}:
 {
   programs.nvf = {
     enable = true;
@@ -14,6 +15,7 @@
         enable = true;
         setupOpts.git_status_async = true;
       };
+      vim.visuals.indent-blankline.enable = true;
       vim.lsp = {
         enable = true;
       };
@@ -218,7 +220,12 @@
       vim.treesitter = {
         enable = true;
         highlight.enable = true;
-        indent.enable = true;
+        indent.enable = false; #this shit sucks, prefer default autoindent
+        grammars = with pkgs; [ 
+                vimPlugins.nvim-treesitter-parsers.dockerfile
+                tree-sitter-grammars.tree-sitter-yaml 
+                tree-sitter-grammars.tree-sitter-latex
+        ];
       };
       vim.languages = {
         enableLSP = true;
