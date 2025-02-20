@@ -36,7 +36,6 @@
         obs-pipewire-audio-capture
       ];
     })
-    nemo
 
     lm_sensors
     unzrip
