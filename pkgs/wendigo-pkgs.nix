@@ -48,6 +48,7 @@
     lazygit
     gammastep
     imv
+    swayimg
     speedtest-rs
     speedtest-go
     weechat
