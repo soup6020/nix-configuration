@@ -147,8 +147,6 @@
         "owner": "nix-community",
         "repo": "flake-firefox-nightly",
         "rev": "1ec7df597d8967546904da0844e8505724703c70",
-        "type": "github"
-      },
       "original": {
         "owner": "nix-community",
         "repo": "flake-firefox-nightly",
@@ -373,11 +371,19 @@
         "xdph": "xdph"
       },
       "locked": {
+<<<<<<< HEAD
         "lastModified": 1740169613,
         "narHash": "sha256-csu+2ZOIvyX4ftUrPv6u/25aO4Yt1WAECxTWEGioVsc=",
         "owner": "hyprwm",
         "repo": "Hyprland",
         "rev": "f4b148df1e2d8edc96bd878a4cfde32ca6515ac8",
+=======
+        "lastModified": 1740157102,
+        "narHash": "sha256-2kAWrgHiv8GJdLxji29THlwfntEAoL5EIlCyf99Q5Io=",
+        "owner": "hyprwm",
+        "repo": "Hyprland",
+        "rev": "0e24f9c0d55fcd9a5b2461a865d0e5dc2ea195c8",
+>>>>>>> 8c17602 (update flake.lock)
         "type": "github"
       },
       "original": {
