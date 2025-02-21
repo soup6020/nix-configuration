@@ -23,8 +23,6 @@
     libarchive
     gcc
     clang
-    lldb
-    gdb
     gnumake
     uv
     fzf

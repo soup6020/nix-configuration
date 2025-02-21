@@ -59,6 +59,8 @@
     nvme-cli
     mktorrent
     gef
+    gdb
+    lldb
     ncmpcpp
     rmpc
     libimobiledevice
