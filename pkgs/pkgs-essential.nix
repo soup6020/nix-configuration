@@ -19,7 +19,7 @@
     nmap
     radare2
     mpv
-    ffmpeg
+    ffmpeg-full
     gdu
     libarchive
     gcc
