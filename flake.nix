@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    agenix.url = "github:ryantm/agenix";
     hyprland.url = "github:hyprwm/Hyprland";
     rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
     nvf.url = "github:notashelf/nvf";
@@ -29,6 +30,7 @@
       nvf,
       firefox-nightly,
       nixos-generators,
+      agenix,
       ...
     }@inputs:
     {
@@ -51,6 +53,7 @@
           modules = [
             ./hosts/iso.nix # Define a separate configuration for the ISO
             nvf.nixosModules.default
+            agenix.nixosModules.default
           ];
         };
       };

@@ -2,6 +2,7 @@
   #NOTE: This file is intended for wendigo, it may cause undesirable operation on other hosts.
   imports = [
     ./metapod.nix
+    ./agenix.nix
     ./openssh.nix
     ./nvf.nix
     ./fonts.nix

@@ -7,6 +7,7 @@
 }:
 {
   environment.systemPackages = with pkgs; [
+    inputs.agenix.packages.${system}.default
     neovim
     tmux
     wget
