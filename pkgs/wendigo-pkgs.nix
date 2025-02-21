@@ -37,6 +37,7 @@
       ];
     })
 
+    inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.default
     lm_sensors
     unzrip
     yara-x
@@ -76,5 +77,6 @@
     pngcrush
     gifsicle
     exiftool
+    binwalk
   ];
 }

@@ -8,7 +8,7 @@
 
 {
   imports = [
-    ../modules/wm.nix
+    ../modules/hypr-sway.nix
     ../modules/nvf.nix
     ../pkgs/pkgs-essential.nix
     ../pkgs/liveiso.nix

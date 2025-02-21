@@ -10,6 +10,7 @@
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
     firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
     walker.url = "github:abenz1267/walker";
+    pwndbg.url = "github:pwndbg/pwndbg";
     nixos-generators = {
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";
