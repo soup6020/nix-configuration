@@ -37,7 +37,8 @@
       ];
     })
 
-    inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
+    inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
     lm_sensors
     unzrip
     yara-x
