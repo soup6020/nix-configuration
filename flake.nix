@@ -41,6 +41,8 @@
           modules = [
             ./hosts/wendigo.nix
             nvf.nixosModules.default
+            agenix.nixosModules.default
+
           ];
         };
       };

@@ -1,3 +1,4 @@
+{config, lib, inputs, ... }:
 {
   services.mpd = {
     enable = true;
@@ -15,11 +16,12 @@
   systemd.services.mpd.environment = {
     XDG_RUNTIME_DIR = "/run/user/1000"; # hardcoded and ugly, should fix later
   };
+  age.secrets.mpdscribble.file = ../secrets/mpdscribble.age;
   services.mpdscribble = {
         enable = true;
         endpoints = {
           "last.fm" = {
-                passwordFile = "config.age.secrets.mpdscribble.path";
+                passwordFile = config.age.secrets.mpdscribble.path;
                 username = "soup6020";
                 };
         };
