@@ -36,6 +36,8 @@
         obs-pipewire-audio-capture
       ];
     })
+    mkvtoolnix
+    handbrake
 
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
