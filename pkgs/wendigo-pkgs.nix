@@ -59,6 +59,8 @@
     megatools
     socat
     nvme-cli
+    pciutils
+    usbutils
     mktorrent
     gef
     gdb

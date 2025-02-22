@@ -11,7 +11,7 @@
       enable = true;
       killUnconfinedConfinables = true;
     };
-    audit.enable = true;
+    audit.enable = false;
     audit.rules = [
       "-w /bin/wish -p x -k susp_shell"
       "-w /usr/bin/wish -p x -k susp_shell"
