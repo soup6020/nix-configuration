@@ -61,10 +61,11 @@
       };
 
       darwinConfigurations.Ezras-MacBook-Pro = nix-darwin.lib.darwinSystem {
+        specialArgs = { inherit inputs; };
         modules = [
           ./hosts/macbook.nix
           nvf.nixosModules.default
-
+          agenix.darwinModules.default
         ];
       };
     };
