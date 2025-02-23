@@ -82,7 +82,7 @@
     jfsutils
     modprobed-db
     yt-dlp
-    pamixer
+    #pamixer - broken
     pngcrush
     gifsicle
     exiftool
