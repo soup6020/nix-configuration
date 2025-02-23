@@ -48,7 +48,7 @@
   };
 
   programs.fish = {
-    enable = true;
+    enable = false;
   };
 
   programs.neovim = {
