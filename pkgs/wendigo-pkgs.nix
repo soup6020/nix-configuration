@@ -58,6 +58,8 @@
     weechat
     megatools
     socat
+    netcat-openbsd
+    mg
     nvme-cli
     pciutils
     usbutils
