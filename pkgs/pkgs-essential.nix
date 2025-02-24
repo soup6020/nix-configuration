@@ -21,6 +21,7 @@
     mpv
     ffmpeg-full
     gdu
+    file
     libarchive
     gcc
     clang
