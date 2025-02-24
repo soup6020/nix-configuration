@@ -5,6 +5,7 @@
   inputs,
   ...
 }:
+#This list is supposed to be universal, only add packages that have cached binaries for Linux and Darwin
 {
   environment.systemPackages = with pkgs; [
     inputs.agenix.packages.${system}.default
