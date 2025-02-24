@@ -222,9 +222,9 @@
         highlight.enable = true;
         indent.enable = false; #this shit sucks, prefer default autoindent
         grammars = with pkgs; [ 
-                vimPlugins.nvim-treesitter-parsers.dockerfile
                 tree-sitter-grammars.tree-sitter-yaml 
                 tree-sitter-grammars.tree-sitter-latex
+                tree-sitter-grammars.tree-sitter-dockerfile
         ];
       };
       vim.languages = {
