@@ -83,6 +83,8 @@
     modprobed-db
     yt-dlp
     #pamixer - broken
+    ffmpegthumbnailer
+    ctpv
     pngcrush
     gifsicle
     exiftool
