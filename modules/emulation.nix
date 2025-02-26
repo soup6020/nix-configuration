@@ -36,7 +36,7 @@ in
     pkgs.melonDS
     pkgs.mgba
     pkgs.bsnes-hd
-    #pkgs.easyrpg-player - currently broken
+    #pkgs.easyrpg-player #currently broken
     pkgs.flips
     pkgs.rpcs3
   ];
