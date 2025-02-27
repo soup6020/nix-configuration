@@ -65,6 +65,8 @@
     enableSSHSupport = true;
   };
 
+  programs.adb.enable = true;
+
   # services.libinput.enable = true;
 
   users.users.ezra = {
@@ -75,6 +77,7 @@
       "input"
       "docker"
       "libvirt"
+      "adbusers"
     ];
     packages = with pkgs; [
     ];
