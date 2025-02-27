@@ -89,5 +89,7 @@
     gifsicle
     exiftool
     binwalk
+    bomber-go
+    sbomnix
   ];
 }
