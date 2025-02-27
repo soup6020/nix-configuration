@@ -8,6 +8,7 @@
     pkgs.nerd-fonts.blex-mono
     pkgs.nerd-fonts.hack
     pkgs.nerd-fonts.meslo-lg
+    pkgs.nerd-fonts.zed-mono
     pkgs.ibm-plex
     pkgs.noto-fonts
     pkgs.nerd-fonts.mononoki
