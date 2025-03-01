@@ -77,6 +77,7 @@
     torsocks
     bottom
     dosfstools
+    ntfsprogs
     exfatprogs
     xfsprogs
     jfsutils
