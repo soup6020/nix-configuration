@@ -8,10 +8,14 @@
 {
   imports = [
     ./hw/hw-wendigo.nix
-    ../common/default.nix
     ../modules/all-wendigo.nix
     ../pkgs/allpkgs.nix
   ];
+
+
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 10;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "wendigo";
   networking.networkmanager.enable = true;
@@ -42,7 +46,7 @@
 
   programs.firefox = {
     enable = true;
-    package = pkgs.librewolf;
+    package = pkgs.librewolf-wayland;
     policies = {
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
