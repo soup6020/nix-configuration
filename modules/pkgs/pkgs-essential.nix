@@ -1,0 +1,66 @@
+{
+  config,
+  libs,
+  pkgs,
+  inputs,
+  ...
+}:
+#This list is supposed to be universal, only add packages that have cached binaries for Linux and Darwin
+{
+  environment.systemPackages = with pkgs; [
+    inputs.agenix.packages.${system}.default
+    neovim
+    tmux
+    wget
+    wget2
+    curl
+    ripgrep
+    kitty
+    git
+    nmap
+    radare2
+    mpv
+    ffmpeg-full
+    gdu
+    file
+    libarchive
+    gcc
+    clang
+    gnumake
+    uv
+    fzf
+    skim
+    eza
+    htop
+    rsync
+    rclone
+    gptfdisk
+    dosfstools
+    samurai
+    restic
+    pass-nodmenu
+    unzipNLS
+    testdisk
+    aria2
+    iperf
+    nh
+    niv
+    nix-tree
+    nix-search-cli
+    nix-index
+    pkgs.cachix
+    pkgs.nixfmt-rfc-style
+    fd
+    fastfetch
+    gping
+    dust
+    duf
+    hex
+    lftp
+    ncftp
+    whois
+    ldns
+    dogdns
+    mosh
+  ];
+}
