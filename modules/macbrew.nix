@@ -41,6 +41,7 @@
       "blockblock"
       "xld"
       "ghostty"
+      "librewolf"
     ];
   };
 }
