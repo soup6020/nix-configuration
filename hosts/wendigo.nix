@@ -9,7 +9,6 @@
   imports = [
     ./hw/hw-wendigo.nix
     ../modules/all-wendigo.nix
-    ../pkgs/allpkgs.nix
   ];
 
 
