@@ -9,8 +9,8 @@
   imports = [
     ../modules/nvf.nix
     ../modules/macbrew.nix
-    ../pkgs/pkgs-essential.nix
-    ../modules/fonts.nix
+    ../modules/pkgs/pkgs-essential.nix
+    ../modules/pkgs/fonts.nix
   ];
 
   nix.gc = {
