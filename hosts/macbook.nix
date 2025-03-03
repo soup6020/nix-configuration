@@ -8,7 +8,7 @@
 {
   imports = [
     ../modules/nvf.nix
-    ../modules/macbrew.nix
+    ../modules/pkgs/macbrew.nix
     ../modules/pkgs/pkgs-essential.nix
     ../modules/pkgs/fonts.nix
   ];

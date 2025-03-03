@@ -16,8 +16,8 @@
     ./desktop/emulation.nix
     ./desktop/gaming.nix
     
-    ./overlays.nix
+    ./pkgs/overlays.nix
     ./pkgs/allpkgs.nix
-    ./custompkgs.nix
+    ./pkgs/custompkgs.nix
   ];
 }
