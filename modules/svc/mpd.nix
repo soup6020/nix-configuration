@@ -16,7 +16,6 @@
   systemd.services.mpd.environment = {
     XDG_RUNTIME_DIR = "/run/user/1000"; # hardcoded and ugly, should fix later
   };
-  age.secrets.mpdscribble.file = ../secrets/mpdscribble.age;
   services.mpdscribble = {
         enable = true;
         endpoints = {
