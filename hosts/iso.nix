@@ -8,11 +8,11 @@
 
 {
   imports = [
-    ../modules/hypr-sway.nix
+    ../modules/desktop/hypr-sway.nix
     ../modules/nvf.nix
-    ../pkgs/pkgs-essential.nix
-    ../pkgs/liveiso.nix
-    ../modules/openssh.nix
+    ../modules/pkgs/pkgs-essential.nix
+    ../modules/pkgs/liveiso.nix
+    ../modules/svc/openssh.nix
   ];
 
   nix.settings = {
