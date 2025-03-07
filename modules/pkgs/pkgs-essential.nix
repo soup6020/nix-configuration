@@ -15,7 +15,6 @@
     wget2
     curl
     ripgrep
-    kitty
     git
     nmap
     radare2

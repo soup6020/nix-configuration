@@ -19,6 +19,7 @@
     inputs.walker.packages.${pkgs.system}.default
     kodi-wayland
     alacritty
+    kitty
     wezterm
     ghostty
     nicotine-plus

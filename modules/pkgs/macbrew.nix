@@ -25,7 +25,6 @@
       "uninstallpkg"
       "ghidra"
       "hex-fiend"
-      "kitty"
       "libreoffice"
       "tor-browser"
       "whatsyoursign"
