@@ -26,9 +26,10 @@
     xournalpp
     pavucontrol
     #Currently necessary for screen sharing
-    (vesktop.override {
-      electron = pkgs.electron_32;
-    })
+    #(vesktop.override {
+    #  electron = pkgs.electron_32;
+    #})
+    vesktop
     transmission-remote-gtk
     (pkgs.wrapOBS {
       plugins = with pkgs.obs-studio-plugins; [
