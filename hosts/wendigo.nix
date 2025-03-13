@@ -159,6 +159,10 @@
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = [ "multi-user.target" ];
 
+  fonts.fontconfig.useEmbeddedBitmaps = true;
+  fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
+  fonts.fontDir.enable = true;
+  
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 

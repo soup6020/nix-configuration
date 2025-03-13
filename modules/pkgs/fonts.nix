@@ -1,8 +1,5 @@
 { pkgs, ... }:
 {
-  fonts.fontconfig.useEmbeddedBitmaps = true;
-  fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
-  fonts.fontDir.enable = true;
   fonts.packages = [
     pkgs.nerd-fonts.jetbrains-mono
     pkgs.nerd-fonts.iosevka-term
