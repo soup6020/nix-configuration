@@ -94,5 +94,6 @@
     binwalk
     bomber-go
     sbomnix
+    rustscan
   ];
 }
