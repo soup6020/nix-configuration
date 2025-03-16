@@ -95,5 +95,7 @@
     bomber-go
     sbomnix
     rustscan
+    hashcat
+    hashcat-utils
   ];
 }

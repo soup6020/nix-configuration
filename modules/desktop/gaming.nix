@@ -8,5 +8,6 @@
     protonup-ng
     mangohud
     bottles
+    ironwail
   ];
 }
