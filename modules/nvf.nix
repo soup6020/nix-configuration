@@ -27,7 +27,13 @@
       vim.ui.breadcrumbs.enable = true;
       vim.ui.breadcrumbs.lualine.winbar.alwaysRender = false;
       vim.autocomplete = {
-        blink-cmp.enable = true;
+        blink-cmp = { 
+        enable = true;
+        setupOpts = {
+            cmdline.keymap.preset = "none";
+            cmdline.completion.menu.auto_show = true;
+        };
+        };
         enableSharedCmpSources = true;
       };
       vim.statusline.lualine = {
