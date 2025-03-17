@@ -97,5 +97,6 @@
     rustscan
     hashcat
     hashcat-utils
+    mediainfo
   ];
 }
