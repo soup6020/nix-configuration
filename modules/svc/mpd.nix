@@ -1,4 +1,9 @@
-{config, lib, inputs, ... }:
+{
+  config,
+  lib,
+  inputs,
+  ...
+}:
 {
   services.mpd = {
     enable = true;
@@ -17,12 +22,12 @@
     XDG_RUNTIME_DIR = "/run/user/1000"; # hardcoded and ugly, should fix later
   };
   services.mpdscribble = {
-        enable = true;
-        endpoints = {
-          "last.fm" = {
-                passwordFile = config.age.secrets.mpdscribble.path;
-                username = "soup6020";
-                };
-        };
+    enable = true;
+    endpoints = {
+      "last.fm" = {
+        passwordFile = config.age.secrets.mpdscribble.path;
+        username = "soup6020";
+      };
+    };
   };
 }

@@ -11,7 +11,6 @@
     ../modules/all-wendigo.nix
   ];
 
-
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -162,7 +161,7 @@
   fonts.fontconfig.useEmbeddedBitmaps = true;
   fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
   fonts.fontDir.enable = true;
-  
+
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 

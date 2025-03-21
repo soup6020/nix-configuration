@@ -1,4 +1,9 @@
-{ config, pkgs, lib, ...}:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 {
   programs.nvf = {
     enable = true;
@@ -27,12 +32,12 @@
       vim.ui.breadcrumbs.enable = true;
       vim.ui.breadcrumbs.lualine.winbar.alwaysRender = false;
       vim.autocomplete = {
-        blink-cmp = { 
-        enable = true;
-        setupOpts = {
+        blink-cmp = {
+          enable = true;
+          setupOpts = {
             cmdline.keymap.preset = "none";
             cmdline.completion.menu.auto_show = true;
-        };
+          };
         };
         enableSharedCmpSources = true;
       };
@@ -226,11 +231,11 @@
       vim.treesitter = {
         enable = true;
         highlight.enable = true;
-        indent.enable = false; #this shit sucks, prefer default autoindent
-        grammars = with pkgs; [ 
-                tree-sitter-grammars.tree-sitter-yaml 
-                tree-sitter-grammars.tree-sitter-latex
-                tree-sitter-grammars.tree-sitter-dockerfile
+        indent.enable = false; # this shit sucks, prefer default autoindent
+        grammars = with pkgs; [
+          tree-sitter-grammars.tree-sitter-yaml
+          tree-sitter-grammars.tree-sitter-latex
+          tree-sitter-grammars.tree-sitter-dockerfile
         ];
       };
       vim.languages = {

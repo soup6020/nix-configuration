@@ -15,7 +15,7 @@
     ./svc/printing.nix
     ./desktop/emulation.nix
     ./desktop/gaming.nix
-    
+
     ./pkgs/overlays.nix
     ./pkgs/allpkgs.nix
     ./pkgs/custompkgs.nix
