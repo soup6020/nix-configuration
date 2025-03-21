@@ -71,5 +71,6 @@
     swaynotificationcenter
     wofi
     hyprshot
+    glpaper
   ];
 }
