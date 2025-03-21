@@ -15,7 +15,7 @@ let
         melonds
         genesis-plus-gx
         flycast
-        #easyrpg - currently broken
+        #easyrpg #currently broken
         dolphin
         citra
         bsnes-hd
@@ -36,7 +36,7 @@ in
     pkgs.melonDS
     pkgs.mgba
     pkgs.bsnes-hd
-    #pkgs.easyrpg-player #currently broken
+    pkgs.easyrpg-player
     pkgs.flips
     pkgs.rpcs3
   ];
