@@ -3,15 +3,15 @@
   imports = [
     ./common/locale.nix
     ./common/nix-options.nix
-    ./metapod.nix
+    ./sys/metapod.nix
     ./common/agenix.nix
     ./svc/openssh.nix
     ./nvf.nix
-    ./sysctl.nix
+    ./sys/sysctl.nix
     ./svc/mpd.nix
     ./desktop/greetd.nix
     ./desktop/hypr-sway.nix
-    ./vm-oci.nix
+    ./sys/vm-oci.nix
     ./svc/printing.nix
     ./desktop/emulation.nix
     ./desktop/gaming.nix
