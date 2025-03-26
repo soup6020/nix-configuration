@@ -22,13 +22,10 @@
     kitty
     wezterm
     ghostty
+    #inputs.ghostty.packages.${pkgs.system}.ghostty #builds from git
     nicotine-plus
     xournalpp
     pavucontrol
-    #Currently necessary for screen sharing
-    #(vesktop.override {
-    #  electron = pkgs.electron_32;
-    #})
     vesktop
     transmission-remote-gtk
     (pkgs.wrapOBS {
