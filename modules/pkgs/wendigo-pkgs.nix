@@ -21,8 +21,8 @@
     alacritty
     kitty
     wezterm
-    ghostty
-    #inputs.ghostty.packages.${pkgs.system}.ghostty #builds from git
+    #ghostty
+    inputs.ghostty.packages.${pkgs.system}.ghostty #builds from git
     nicotine-plus
     xournalpp
     pavucontrol
