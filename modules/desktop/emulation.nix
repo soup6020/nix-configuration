@@ -39,5 +39,6 @@ in
     pkgs.easyrpg-player
     pkgs.flips
     pkgs.rpcs3
+    pkgs.nanoboyadvance
   ];
 }
