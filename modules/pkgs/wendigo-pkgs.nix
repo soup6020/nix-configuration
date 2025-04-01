@@ -47,6 +47,7 @@
     lf
     _7zz-rar
     debootstrap
+    arch-install-scripts
     shellcheck
     lazygit
     gammastep
@@ -58,7 +59,6 @@
     megatools
     socat
     netcat-openbsd
-    mg
     nvme-cli
     pciutils
     usbutils
@@ -82,7 +82,6 @@
     jfsutils
     modprobed-db
     yt-dlp
-    #pamixer - broken
     ffmpegthumbnailer
     ctpv
     pngcrush
