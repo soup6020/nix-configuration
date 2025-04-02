@@ -94,5 +94,9 @@
     hashcat
     hashcat-utils
     mediainfo
+    hledger
+    hledger-ui
+    hledger-utils
+    hledger-iadd
   ];
 }
