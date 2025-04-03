@@ -18,7 +18,6 @@
     git
     nmap
     radare2
-    mpv
     ffmpeg-full
     gdu
     file

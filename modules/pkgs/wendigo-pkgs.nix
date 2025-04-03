@@ -7,6 +7,7 @@
 }:
 {
   environment.systemPackages = with pkgs; [
+    mpv
     easyeffects
     calibre
     audacity
