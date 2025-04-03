@@ -81,7 +81,6 @@
     pkgs.vulkan-headers
     pkgs.wavpack
     pkgs.weechat
-    pkgs.wireguard-tools
     pkgs.yara
     pkgs.yt-dlp
     pkgs.idevicerestore
