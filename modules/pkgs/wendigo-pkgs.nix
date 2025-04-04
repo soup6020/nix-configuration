@@ -99,5 +99,6 @@
     hledger-ui
     hledger-utils
     hledger-iadd
+    plan9port
   ];
 }
