@@ -27,7 +27,12 @@
     nicotine-plus
     xournalpp
     pavucontrol
-    vesktop
+    #vesktop
+    (vesktop.override {electron = pkgs.electron_35;})
+    (discord-canary.override {
+      withOpenASAR = true;
+      withVencord = true;
+    })
     transmission-remote-gtk
     (pkgs.wrapOBS {
       plugins = with pkgs.obs-studio-plugins; [
