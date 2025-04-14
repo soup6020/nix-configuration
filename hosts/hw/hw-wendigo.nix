@@ -33,6 +33,7 @@
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/3fd8f070-8a7b-40b6-b221-e126093e7f4a";
     fsType = "btrfs";
+    options = [ "compress=zstd" ];
   };
 
   fileSystems."/boot" = {

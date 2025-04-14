@@ -29,6 +29,8 @@
     "data"
   ];
   services.zfs.autoScrub.enable = true;
+  services.btrfs.autoScrub.enable = true;
+  services.btrfs.autoScrub.interval = "weekly";
 
   hardware.graphics = {
     enable = true;

@@ -27,7 +27,9 @@
       "nix-command"
       "flakes"
     ];
-    auto-optimise-store = true;
+    #auto-optimise-store = true; #Slows down rebuilds
+    nix.optimise.automatic = true;
+    nix.optimise.dates = [ "03:45" ];
   };
 
   nix.gc = {
