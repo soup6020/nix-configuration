@@ -48,6 +48,7 @@
   fileSystems."/mnt/ssd" = {
     device = "/dev/disk/by-uuid/e174a240-d4cc-4389-9c7a-a6460518a68e";
     fsType = "btrfs";
+    options = [ "compress=zstd" ];
   };
 
   swapDevices = [ ];
