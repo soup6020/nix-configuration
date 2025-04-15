@@ -22,12 +22,10 @@
     alacritty
     kitty
     wezterm
-    #ghostty
     inputs.ghostty.packages.${pkgs.system}.ghostty #builds from git
     nicotine-plus
     xournalpp
     pavucontrol
-    #vesktop
     (vesktop.override {electron = pkgs.electron_35;})
     (discord-canary.override {
       withOpenASAR = true;
