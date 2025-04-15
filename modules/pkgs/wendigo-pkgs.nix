@@ -50,7 +50,7 @@
     unzrip
     yara-x
     lynis
-    lf
+    yazi
     _7zz-rar
     debootstrap
     arch-install-scripts

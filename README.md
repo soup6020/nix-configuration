@@ -1,16 +1,15 @@
-Welcome to my (shitty) Nix configuration!
+Welcome to my Nix configuration!
 
 Here's a handy guide:
 
-common: stuff that's shared by multiple machines
-
-pkgs: package collections, currently a mess
+modules/common: stuff that's shared by multiple machines
 
 hosts: configurations for individual machines
 
-modules: individual services, sets of packages, fonts, just about anything that may be reused
+modules/etc: individual services, sets of packages, fonts, just about anything that may be reused
 
-home: home manager configuration I may or may not use
+modules/pkgs: package collections, kind of a shitshow
+
 
 To deploy certain outputs:
 

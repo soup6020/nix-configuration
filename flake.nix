@@ -1,5 +1,5 @@
 {
-  description = "One configuration to rule them all!";
+  description = "Finding beauty in the dissonance";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
