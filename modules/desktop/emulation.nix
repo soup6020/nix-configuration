@@ -15,7 +15,7 @@ let
         melonds
         genesis-plus-gx
         flycast
-        #easyrpg #currently broken
+        easyrpg
         dolphin
         citra
         bsnes-hd
