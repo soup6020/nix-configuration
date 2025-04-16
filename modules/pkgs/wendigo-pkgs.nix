@@ -56,6 +56,7 @@
     lazygit
     gammastep
     imv
+    cava
     swayimg
     speedtest-rs
     speedtest-go
@@ -87,6 +88,7 @@
     modprobed-db
     yt-dlp
     ffmpegthumbnailer
+    beets-unstable
     ctpv
     pngcrush
     gifsicle

@@ -40,5 +40,6 @@ in
     pkgs.flips
     pkgs.rpcs3
     pkgs.nanoboyadvance
+    pkgs._86Box-with-roms
   ];
 }
