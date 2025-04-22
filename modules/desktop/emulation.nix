@@ -38,7 +38,7 @@ in
     pkgs.bsnes-hd
     pkgs.easyrpg-player
     pkgs.flips
-    pkgs.rpcs3
+    #pkgs.rpcs3
     pkgs.nanoboyadvance
     pkgs._86Box-with-roms
   ];
