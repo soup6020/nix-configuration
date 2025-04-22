@@ -17,7 +17,10 @@
     ./desktop/gaming.nix
 
     ./pkgs/overlays.nix
-    ./pkgs/allpkgs.nix
     ./pkgs/custompkgs.nix
+    ./pkgs/wendigo-pkgs.nix
+    ./pkgs/themes.nix
+    ./pkgs/fonts.nix
+    ./pkgs/pkgs-essential.nix
   ];
 }
