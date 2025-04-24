@@ -30,7 +30,7 @@
       "flakes"
     ];
     #auto-optimise-store = true; #Slows down rebuildsas optimization happens every rebuild
-    };
+  };
 
   #Automatic optimization with systemd. If the machine is off, it will run on startup.
   nix.optimise.automatic = true;
