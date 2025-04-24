@@ -1,11 +1,6 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    mpv
-    gimp
-    tor-browser
-    gparted
-
     btrfs-progs
     dosfstools
     chntpw
@@ -17,7 +12,6 @@
     extundelete
     testdisk
     flashrom
-    gparted
     ddrescue
     iperf3
     jfsutils
@@ -60,11 +54,13 @@
 
     tor-browser
     alacritty
+    mpv
+    gimp
+    gparted
     kitty
     wl-clipboard
     slurp
     swaynotificationcenter
-    wofi
     swww
     grim
     grimblast
