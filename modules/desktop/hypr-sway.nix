@@ -69,7 +69,6 @@
     waybar
     slurp
     swaynotificationcenter
-    wofi
     fuzzel
     hyprshot
     glpaper
