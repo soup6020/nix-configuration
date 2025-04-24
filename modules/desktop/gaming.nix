@@ -9,5 +9,6 @@
     mangohud
     bottles
     ironwail
+    prismlauncher
   ];
 }
