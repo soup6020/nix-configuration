@@ -1,6 +1,11 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    mpv
+    gimp
+    tor-browser
+    gparted
+
     btrfs-progs
     dosfstools
     chntpw

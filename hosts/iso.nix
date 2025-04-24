@@ -39,7 +39,7 @@
   isoImage.squashfsCompression = "lz4"; # Optional: Adjust compression level
   isoImage.volumeID = "SoupNixOS"; # Set ISO name
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest; #Latest vanilla kernel
 
   networking.networkmanager.enable = true;
   services.openssh.enable = true;
@@ -58,7 +58,7 @@
       "networkmanager"
       "sudo"
     ];
-    password = "nixos"; # Change for security
+    password = "nixos"; #Hardcoded because this is for an iso, and there is nothing identifying on it
   };
 
   services.chrony = {
@@ -67,5 +67,5 @@
     servers = [ "time.cloudflare.com" ];
   };
 
-  system.stateVersion = "24.05"; # Adjust to match your system version
+  system.stateVersion = "24.05"; #Do not change
 }
