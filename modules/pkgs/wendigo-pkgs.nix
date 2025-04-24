@@ -71,7 +71,10 @@
     gef
     gdb
     lldb
-    ncmpcpp
+    (ncmpcpp.override {
+    visualizerSupport = true;
+    clockSupport = true;
+  })
     rmpc
     libimobiledevice
     idevicerestore
