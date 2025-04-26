@@ -42,6 +42,7 @@
     mkvtoolnix
     handbrake
 
+    helix
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
     lm_sensors
