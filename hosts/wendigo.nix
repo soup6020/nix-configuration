@@ -95,7 +95,7 @@
   programs.adb.enable = true;
 
   programs.nh.enable = true;
-  programs.nh.flake = "/home/ezra/nix/flake.nix";
+  programs.nh.flake = "/home/ezra/nix/";
 
   # services.libinput.enable = true;
 
