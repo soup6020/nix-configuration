@@ -63,6 +63,7 @@
             ./hosts/iso.nix # Define a separate configuration for the ISO
             nvf.nixosModules.default
             agenix.nixosModules.default
+            inputs.hjem.nixosModules.default
           ];
         };
       };
