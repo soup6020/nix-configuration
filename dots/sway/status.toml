@@ -1,0 +1,20 @@
+theme = "slick"
+icons = "awesome"
+ 
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+ 
+[[block]]
+block = "cpu"
+interval = 1
+ 
+[[block]]
+block = "sound"
+ 
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"
