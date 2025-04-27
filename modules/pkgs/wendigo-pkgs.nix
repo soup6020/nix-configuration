@@ -50,6 +50,7 @@
     yara-x
     lynis
     yazi
+    treefmt
     _7zz-rar
     debootstrap
     arch-install-scripts
@@ -73,9 +74,9 @@
     gdb
     lldb
     (ncmpcpp.override {
-    visualizerSupport = true;
-    clockSupport = true;
-  })
+      visualizerSupport = true;
+      clockSupport = true;
+    })
     rmpc
     libimobiledevice
     idevicerestore
