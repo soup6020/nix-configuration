@@ -168,4 +168,9 @@
     reaverwps-t6x
     multimon-ng
   ];
+
+  fonts.packages = [
+    pkgs.nerd-fonts.meslo-lg
+    pkgs.nerd-fonts.zed-mono
+];
 }

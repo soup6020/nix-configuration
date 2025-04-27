@@ -1,5 +1,5 @@
 {
-    "output": ["HDMI-A-1", "HDMI-A-2"],
+    // "output": ["HDMI-A-1", "HDMI-A-2"],
     "layer": "top",
     "position": "top",
     "mod": "dock",

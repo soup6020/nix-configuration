@@ -9,6 +9,7 @@
 {
   imports = [
     ../modules/desktop/hypr-sway.nix
+    ../modules/desktop/greetd.nix
     ../modules/nvf.nix
     ../modules/pkgs/pkgs-essential.nix
     ../modules/pkgs/liveiso.nix
