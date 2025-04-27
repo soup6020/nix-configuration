@@ -72,12 +72,12 @@
     directory = config.users.users.nixos.home;
     clobberFiles = lib.mkForce true;
     files = {
-      ".config/fuzzel/fuzzel.ini".source = ../dots/fuzzel/fuzzel.ini;
-      ".config/hypr/hyprland.conf".source = ../dots/hypr/hyprland.conf;
-      ".config/kitty/kitty.conf".source = ../dots/kitty/kitty.conf;
-      ".config/kitty/current-theme.conf".source = ../dots/kitty/current-theme.conf;
-      ".config/waybar/style.css".source = ../dots/waybar/style.css;
-      ".config/waybar/config.jsonc".source = ../dots/waybar/config.jsonc;
+      ".config/fuzzel/fuzzel.ini".source = ../dots/iso/fuzzel/fuzzel.ini;
+      ".config/hypr/hyprland.conf".source = ../dots/iso/hypr/hyprland.conf;
+      ".config/kitty/kitty.conf".source = ../dots/iso/kitty/kitty.conf;
+      ".config/kitty/current-theme.conf".source = ../dots/iso/kitty/current-theme.conf;
+      ".config/waybar/style.css".source = ../dots/iso/waybar/style.css;
+      ".config/waybar/config.jsonc".source = ../dots/iso/waybar/config.jsonc;
       "Pictures/wallpaper.jpg".source = ../dots/1657650318010.jpg;
     };
   };
