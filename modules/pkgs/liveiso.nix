@@ -66,6 +66,8 @@
     grimblast
     sway-contrib.grimshot
     papirus-icon-theme
+    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+    rose-pine-cursor
 
     aiodnsbrute
     amass
