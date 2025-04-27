@@ -317,6 +317,26 @@
         "type": "github"
       }
     },
+    "hjem": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1743956496,
+        "narHash": "sha256-LguszqsDBTtdBxblQTtN7vOAYmfoe43aHkB8aK1dChE=",
+        "owner": "feel-co",
+        "repo": "hjem",
+        "rev": "e3b63f300f23f2ffeb6efac046cf71b94352fed2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "repo": "hjem",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -1105,6 +1125,7 @@
         "capa": "capa",
         "firefox-nightly": "firefox-nightly",
         "ghostty": "ghostty",
+        "hjem": "hjem",
         "hyprland": "hyprland",
         "nix-darwin": "nix-darwin",
         "nixos-generators": "nixos-generators",

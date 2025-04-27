@@ -65,6 +65,7 @@
     grim
     grimblast
     sway-contrib.grimshot
+    papirus-icon-theme
 
     aiodnsbrute
     amass

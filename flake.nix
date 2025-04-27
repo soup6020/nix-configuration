@@ -23,6 +23,10 @@
       url = "github:soup6020/capa";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hjem = {
+      url = "github:feel-co/hjem";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

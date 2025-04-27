@@ -67,5 +67,20 @@
     servers = [ "time.cloudflare.com" ];
   };
 
+  hjem.users.nixos ={
+        enable = true;
+        directory = config.users.users.nixos.home;
+        clobberFiles = lib.mkForce true;
+        files = {
+        ".config/fuzzel/fuzzel.ini".source = ../dots/fuzzel/fuzzel.ini;
+        ".config/hypr/hyprland.conf".source = ../dots/hypr/hyprland.conf;
+        ".config/kitty/kitty.conf".source = ../dots/kitty/kitty.conf;
+        ".config/kitty/current-theme.conf".source = ../dots/kitty/current-theme.conf;
+        ".config/waybar/style.css".source = ../dots/waybar/style.css;
+        ".config/waybar/config.jsonc".source = ../dots/waybar/config.jsonc;
+        "Pictures/wallpaper.jpg".source = ../dots/1657650318010.jpg;
+        };
+        };
+
   system.stateVersion = "24.05"; # Do not change
 }
