@@ -26,4 +26,5 @@
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOaotCRBxQmuHg2kj/xnyb60iiKxwwNnWObMZt4jpZYG ezra@Ezras-MacBook-Pro.local"
     ];
   };
+  environment.variables.EDITOR = "nvim";
 }
