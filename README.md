@@ -18,6 +18,8 @@ Here's a handy guide:
 
 `secrets`: agenix related stuff.
 
+`users`: define user accounts, currently quite barebones.
+
 `treefmt.toml`: configuration for treefmt, which can be invoked by running `nix fmt`. This may move into a nix module at a later date.
 
 To deploy certain outputs:
