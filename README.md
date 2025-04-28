@@ -2,7 +2,7 @@ Welcome to my Nix configuration! It is probably pretty ugly, but it works.
 
 Here's a handy guide:
 
-`hosts`: configurations for individual machines. I try to avoid putting anything in here that is likely to be reused, unless it is quite trivial. These files are output-specific.
+`hosts/`: configurations for individual machines. I try to avoid putting anything in here that is likely to be reused, unless it is quite trivial. These files are output-specific.
 
 `modules/common`: stuff that's shared by multiple machines.
 
@@ -14,11 +14,11 @@ Here's a handy guide:
 
 `modules/pkgs`: package collections, kind of a shitshow.
 
-`dots`: non-nix dotfiles to configure programs, currently only used by the liveiso output.
+`dots/`: non-nix dotfiles to configure programs, currently only used by the liveiso output.
 
-`secrets`: agenix related stuff.
+`secrets/`: agenix related stuff.
 
-`users`: define user accounts, currently quite barebones.
+`users/`: define user accounts, currently quite barebones.
 
 `treefmt.toml`: configuration for treefmt, which can be invoked by running `nix fmt`. This may move into a nix module at a later date.
 
