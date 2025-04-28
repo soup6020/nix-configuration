@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   environment.systemPackages = with pkgs; [
     btrfs-progs
@@ -172,5 +177,5 @@
   fonts.packages = [
     pkgs.nerd-fonts.meslo-lg
     pkgs.nerd-fonts.zed-mono
-];
+  ];
 }

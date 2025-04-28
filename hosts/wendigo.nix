@@ -8,6 +8,7 @@
 {
   imports = [
     ./hw/hw-wendigo.nix
+    ../users/ezra.nix
     ../modules/all-wendigo.nix
   ];
 
@@ -98,21 +99,6 @@
   programs.nh.flake = "/home/ezra/nix/";
 
   # services.libinput.enable = true;
-
-  users.users.ezra = {
-    isNormalUser = true;
-    extraGroups = [
-      "wheel"
-      "video"
-      "input"
-      "docker"
-      "libvirt"
-      "adbusers"
-    ];
-    packages = with pkgs; [
-    ];
-    shell = pkgs.zsh;
-  };
 
   environment.variables.EDITOR = "nvim";
 
