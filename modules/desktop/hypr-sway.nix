@@ -60,18 +60,18 @@
   };
 
   environment.systemPackages = with pkgs; [
+    fuzzel
+    gammastep
+    glpaper
     grim
     grimblast
-    sway-contrib.grimshot
-    gammastep
-    swww
-    wl-clipboard
-    waybar
-    slurp
-    swaynotificationcenter
-    fuzzel
-    hyprshot
     hyprshade
-    glpaper
+    hyprshot
+    slurp
+    sway-contrib.grimshot
+    swaynotificationcenter
+    swww
+    waybar
+    wl-clipboard
   ];
 }

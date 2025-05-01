@@ -4,24 +4,24 @@ let
   retroarchWithCores = (
     pkgs.retroarch.withCores (
       cores: with cores; [
+        beetle-psx-hw
         bsnes
+        bsnes-hd
+        citra
+        dolphin
+        easyrpg
+        flycast
+        genesis-plus-gx
+        melonds
         mesen
         mesen-s
-        swanstation
-        sameboy
-        np2kai
-        mupen64plus
         mgba
-        melonds
-        genesis-plus-gx
-        flycast
-        easyrpg
-        dolphin
-        citra
-        bsnes-hd
-        beetle-psx-hw
-        tgbdual
+        mupen64plus
+        np2kai
         ppsspp
+        sameboy
+        swanstation
+        tgbdual
       ]
     )
   );
@@ -29,17 +29,17 @@ in
 {
   environment.systemPackages = [
     retroarchWithCores
-    pkgs.retroarch-assets
-    pkgs.retroarch-joypad-autoconfig
+    pkgs._86Box-with-roms
     pkgs.ares
-    pkgs.pcsx2
-    pkgs.melonDS
-    pkgs.mgba
     pkgs.bsnes-hd
     pkgs.easyrpg-player
     pkgs.flips
-    #pkgs.rpcs3
+    pkgs.melonDS
+    pkgs.mgba
     pkgs.nanoboyadvance
-    pkgs._86Box-with-roms
+    pkgs.pcsx2
+    pkgs.retroarch-assets
+    pkgs.retroarch-joypad-autoconfig
+    #pkgs.rpcs3
   ];
 }

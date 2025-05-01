@@ -5,10 +5,10 @@
   programs.gamemode.enable = true;
 
   environment.systemPackages = with pkgs; [
-    protonup-ng
-    mangohud
     bottles
     ironwail
+    mangohud
     prismlauncher
+    protonup-ng
   ];
 }
