@@ -47,9 +47,11 @@
   nixpkgs.hostPlatform = "x86_64-darwin";
 
   environment.systemPackages = with pkgs; [
+    pkgs.android-tools
     pkgs.bat
     pkgs.btop
     pkgs.bzip3
+    pkgs.cargo
     pkgs.cmake
     pkgs.coreutils
     pkgs.croc
@@ -57,6 +59,7 @@
     pkgs.gifsicle
     pkgs.gnused
     pkgs.htop
+    pkgs.idevicerestore
     pkgs.imagemagick
     pkgs.ipfs
     pkgs.kalker
@@ -71,20 +74,17 @@
     pkgs.sox
     pkgs.speedtest-cli
     pkgs.starship
+    pkgs.starship
     pkgs.tealdeer
     pkgs.testdisk
     pkgs.tmux
     pkgs.torsocks
     pkgs.unar
     pkgs.upx
-    pkgs.cargo
     pkgs.vulkan-headers
     pkgs.wavpack
     pkgs.weechat
     pkgs.yara
     pkgs.yt-dlp
-    pkgs.idevicerestore
-    pkgs.android-tools
-    pkgs.starship
   ];
 }
