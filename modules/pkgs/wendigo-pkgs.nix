@@ -102,6 +102,7 @@
     socat
     speedtest-go
     speedtest-rs
+    sqlite #Necessary for nix shell carapace completions
     starship
     swayimg
     torsocks
