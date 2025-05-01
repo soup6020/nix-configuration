@@ -1,4 +1,4 @@
-Welcome to my Nix configuration! It is probably pretty ugly, but it works.
+Welcome to my Nix configuration! It is probably pretty ugly, but it works. I am specifically avoiding use of home-manager. 
 
 Here's a handy guide:
 
