@@ -6,73 +6,73 @@
 }:
 {
   environment.systemPackages = with pkgs; [
+    _7zz-rar
+    arch-install-scripts
     btrfs-progs
-    dosfstools
     chntpw
-    clamav
-    partclone
     cifs-utils
-    restic
+    clamav
     dcfldd
-    extundelete
-    testdisk
-    flashrom
     ddrescue
+    debootstrap
+    dosfstools
+    extundelete
+    eza
+    fastfetch
+    flashrom
+    gdu
+    git
+    hdparm
+    htop
+    htop
     iperf3
     jfsutils
-    xfsprogs
-    xfs-undelete
-    memtest86plus
-    memtester
-    memtest_vulkan
-    tmux
-    ripgrep
-    git
-    nmap
-    radare2
-    gdu
-    eza
-    htop
-    rsync
-    fastfetch
-    whois
     ldns
+    megatools
+    memtest86plus
+    memtest_vulkan
+    memtester
     mosh
-    parted
-    partimage
-    hdparm
-    sdparm
+    nmap
     nvme-cli
-    socat
-    squashfsTools
-    speedtest-go
-    speedtest-rs
-    veracrypt
-    raider
     ophcrack
     ophcrack-cli
-    htop
-    arch-install-scripts
-    debootstrap
-    _7zz-rar
-    megatools
+    partclone
+    parted
+    partimage
+    radare2
+    raider
+    restic
+    ripgrep
+    rsync
+    sdparm
+    socat
+    speedtest-go
+    speedtest-rs
+    squashfsTools
+    testdisk
+    tmux
+    veracrypt
+    whois
+    xfs-undelete
+    xfsprogs
 
-    tor-browser
     alacritty
-    mpv
     gimp
     gparted
-    kitty
-    wl-clipboard
-    slurp
-    swaynotificationcenter
-    swww
     grim
     grimblast
-    sway-contrib.grimshot
-    papirus-icon-theme
     inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+    kitty
+    mpv
+    papirus-icon-theme
     rose-pine-cursor
+    slurp
+    sway-contrib.grimshot
+    swaynotificationcenter
+    swww
+    tor-browser
+    wl-clipboard
 
     aiodnsbrute
     amass
@@ -80,11 +80,11 @@
     dnsenum
     dnsmon-go
     dnsmonster
+    dnspeep
     dnsrecon
     dnstake
     dnstracer
     dnstwist
-    dnspeep
     dnsx
     fierce
     findomain
@@ -95,83 +95,83 @@
     subzerod
     wtfis
 
-    exploitdb
-    go-exploitdb
-    keedump
-    sploitscan
+    aircrack-ng
+    airgeddon
+    arp-scan
+    arping
+    arpoison
+    atftp
+    bloodhound-py
+    bruteforce-luks
+    capstone
+    crowbar
+    das
     ddrescueview
     dislocker
     dismember
-    python3Packages.distorm3
+    exiflooter
     exiv2
+    exploitdb
     ext4magic
     foremost
-    scalpel
     gef
+    go-exploitdb
     gzrt
+    hashcat
+    hashcat-utils
+    hcxtools
     hivex
     hstsparser
+    ipcalc
+    iperf2
+    ipscan
+    iputils
+    keedump
+    kismet
+    lftp
+    masscan
+    metasploit
+    mtr
+    multimon-ng
+    naabu
+    ncftp
+    netcat-gnu
+    netsniff-ng
     noseyparker
     ntfs3g
     ntfsprogs
     nwipe
-    recoverjpeg
-    safecopy
-    sleuthkit
-    srm
-    stegseek
-    wipe
-    xorex
-    capstone
     pdf-parser
-    exiflooter
-    socialscan
-    arping
-    atftp
-    arpoison
-    ipcalc
-    iperf2
-    iputils
-    lftp
-    mtr
-    ncftp
-    netcat-gnu
-    sshping
-    sslh
-    wbox
-    whois
-    yersinia
-    bruteforce-luks
-    hashcat
-    hashcat-utils
-    thc-hydra
-    crowbar
-    hcxtools
-    arp-scan
-    das
-    ipscan
-    masscan
-    naabu
-    udpx
-    rustscan
-    sx-go
-    zmap
-    metasploit
-    netsniff-ng
-    wireshark
-    wireshark-cli
-    bloodhound-py
+    pixiewps
+    python3Packages.distorm3
     python3Packages.lsassy
     python3Packages.pypykatz
-    smbmap
-    smbscan
-    aircrack-ng
-    airgeddon
-    kismet
-    pixiewps
     reaverwps
     reaverwps-t6x
-    multimon-ng
+    recoverjpeg
+    rustscan
+    safecopy
+    scalpel
+    sleuthkit
+    smbmap
+    smbscan
+    socialscan
+    sploitscan
+    srm
+    sshping
+    sslh
+    stegseek
+    sx-go
+    thc-hydra
+    udpx
+    wbox
+    whois
+    wipe
+    wireshark
+    wireshark-cli
+    xorex
+    yersinia
+    zmap
   ];
 
   fonts.packages = [

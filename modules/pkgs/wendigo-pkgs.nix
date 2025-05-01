@@ -7,31 +7,27 @@
 }:
 {
   environment.systemPackages = with pkgs; [
-    mpv
-    easyeffects
-    calibre
-    audacity
-    ghidra-bin
-    gimp
-    iaito
-    tor-browser
-    brave
-    inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
-    inputs.walker.packages.${pkgs.system}.default
-    kodi-wayland
     alacritty
-    kitty
-    wezterm
-    inputs.ghostty.packages.${pkgs.system}.ghostty # builds from git
-    nicotine-plus
-    xournalpp
-    pavucontrol
-    (vesktop.override { electron = pkgs.electron_35; })
+    audacity
+    brave
+    calibre
     (discord-canary.override {
       withOpenASAR = true;
       withVencord = true;
     })
-    transmission-remote-gtk
+    easyeffects
+    ghidra-bin
+    gimp
+    handbrake
+    iaito
+    inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
+    inputs.ghostty.packages.${pkgs.system}.ghostty # builds from git
+    inputs.walker.packages.${pkgs.system}.default
+    kitty
+    kodi-wayland
+    mkvtoolnix
+    mpv
+    nicotine-plus
     (pkgs.wrapOBS {
       plugins = with pkgs.obs-studio-plugins; [
         wlrobs
@@ -39,81 +35,85 @@
         obs-pipewire-audio-capture
       ];
     })
-    mkvtoolnix
-    handbrake
+    pavucontrol
+    tor-browser
+    transmission-remote-gtk
+    (vesktop.override { electron = pkgs.electron_35; })
+    wezterm
+    xournalpp
 
-    starship
-    nushell
+    _7zz-rar
+    arch-install-scripts
+    beets-unstable
+    binwalk
+    bomber-go
+    bottom
+    btop
     carapace
-    zellij
+    cava
     croc
+    ctpv
+    debootstrap
+    dosfstools
+    exfatprogs
+    exiftool
+    ffmpegthumbnailer
+    gammastep
+    gdb
+    gef
+    gifsicle
+    hashcat
+    hashcat-utils
     helix
+    hledger
+    hledger-iadd
+    hledger-ui
+    hledger-utils
+    idevicerestore
+    imv
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
-    lm_sensors
-    unzrip
-    yara-x
-    lynis
-    yazi
-    treefmt
-    _7zz-rar
-    debootstrap
-    arch-install-scripts
-    shellcheck
+    jfsutils
     lazygit
-    gammastep
-    imv
-    cava
-    swayimg
-    speedtest-rs
-    speedtest-go
-    weechat
-    megatools
-    socat
-    netcat-openbsd
-    nvme-cli
-    pciutils
-    usbutils
-    mktorrent
-    gef
-    gdb
+    libimobiledevice
     lldb
+    lm_sensors
+    lsiutil
+    lynis
+    mediainfo
+    megatools
+    mktorrent
+    modprobed-db
     (ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;
     })
-    rmpc
-    libimobiledevice
-    idevicerestore
-    ugrep
-    lsiutil
-    btop
-    torsocks
-    bottom
-    dosfstools
+    netcat-openbsd
     ntfsprogs
-    exfatprogs
-    xfsprogs
-    jfsutils
-    modprobed-db
-    yt-dlp
-    ffmpegthumbnailer
-    beets-unstable
-    ctpv
-    pngcrush
-    gifsicle
-    exiftool
-    binwalk
-    bomber-go
-    sbomnix
-    rustscan
-    hashcat
-    hashcat-utils
-    mediainfo
-    hledger
-    hledger-ui
-    hledger-utils
-    hledger-iadd
+    nushell
+    nvme-cli
+    pciutils
     plan9port
+    pngcrush
+    rmpc
+    rustscan
+    sbomnix
+    shellcheck
+    socat
+    speedtest-go
+    speedtest-rs
+    starship
+    swayimg
+    torsocks
+    treefmt
+    ugrep
+    unzrip
+    usbutils
+    weechat
+    xfsprogs
+    yara-x
+    yazi
+    yt-dlp
+    zellij
   ];
 }
