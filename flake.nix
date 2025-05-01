@@ -11,7 +11,10 @@
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
+    firefox-nightly = {
+      url = "github:nix-community/flake-firefox-nightly";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     walker.url = "github:abenz1267/walker";
     pwndbg.url = "github:pwndbg/pwndbg";
     ghostty.url = "github:ghostty-org/ghostty";
