@@ -43,7 +43,8 @@
     handbrake
 
     starship
-    nushellFull
+    nushell
+    carapace
     zellij
     croc
     helix
