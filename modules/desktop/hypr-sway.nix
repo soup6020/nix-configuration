@@ -71,6 +71,7 @@
     swaynotificationcenter
     fuzzel
     hyprshot
+    hyprshade
     glpaper
   ];
 }
