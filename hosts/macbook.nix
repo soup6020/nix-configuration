@@ -63,8 +63,10 @@
     pkgs.imagemagick
     pkgs.ipfs
     pkgs.kalker
+    pkgs.libimobiledevice
     pkgs.megatools
     pkgs.meson
+    pkgs.nushell
     pkgs.openssh
     pkgs.pandoc
     pkgs.pngcrush
