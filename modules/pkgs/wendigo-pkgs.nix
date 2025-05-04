@@ -7,6 +7,7 @@
 }:
 {
   environment.systemPackages = with pkgs; [
+    #GUI programs
     alacritty
     audacity
     brave
@@ -22,7 +23,7 @@
     iaito
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
     inputs.ghostty.packages.${pkgs.system}.ghostty # builds from git
-    inputs.walker.packages.${pkgs.system}.default
+    #inputs.walker.packages.${pkgs.system}.default
     kitty
     kodi-wayland
     mkvtoolnix
@@ -42,6 +43,7 @@
     wezterm
     xournalpp
 
+    #CLI Programs
     _7zz-rar
     arch-install-scripts
     beets-unstable
@@ -51,6 +53,7 @@
     btop
     carapace
     cava
+    checksec
     croc
     ctpv
     debootstrap
@@ -62,6 +65,7 @@
     gdb
     gef
     gifsicle
+    gifski
     hashcat
     hashcat-utils
     helix
@@ -74,6 +78,7 @@
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
     jfsutils
+    kalker
     lazygit
     libimobiledevice
     lldb
@@ -90,6 +95,7 @@
     })
     netcat-openbsd
     ntfsprogs
+    openocd
     nushell
     nvme-cli
     pciutils
