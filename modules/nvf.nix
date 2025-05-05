@@ -239,7 +239,6 @@
         ];
       };
       vim.languages = {
-        enableLSP = true;
         enableTreesitter = true;
         assembly.enable = true;
         bash.enable = true;
