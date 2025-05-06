@@ -17,10 +17,12 @@
       withVencord = true;
     })
     easyeffects
-    (ghidra.withExtensions (p: with p; [
+    (ghidra.withExtensions (
+      p: with p; [
         ret-sync
         findcrypt
-      ]))
+      ]
+    ))
     gimp
     handbrake
     iaito
@@ -77,6 +79,8 @@
     hledger-ui
     hledger-utils
     idevicerestore
+    avalonia-ilspy
+    ilspycmd
     imv
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
@@ -111,11 +115,12 @@
     socat
     speedtest-go
     speedtest-rs
-    sqlite #Necessary for nix shell carapace completions
+    sqlite # Necessary for nix shell carapace completions
     starship
     swayimg
     torsocks
     treefmt
+    uefitool
     ugrep
     unzrip
     usbutils

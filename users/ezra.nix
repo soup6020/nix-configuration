@@ -16,6 +16,7 @@
       "docker"
       "libvirt"
       "adbusers"
+      "wireshark"
     ];
 
     packages = with pkgs; [

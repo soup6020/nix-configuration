@@ -98,6 +98,12 @@
   programs.nh.enable = true;
   programs.nh.flake = "/home/ezra/nix/";
 
+  programs.wireshark = {
+    enable = true;
+    usbmon.enable = true;
+    dumpcap.enable = true;
+  };
+
   # services.libinput.enable = true;
 
   environment.variables.EDITOR = "nvim";
