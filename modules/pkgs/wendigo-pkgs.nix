@@ -28,7 +28,6 @@
     iaito
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
     inputs.ghostty.packages.${pkgs.system}.ghostty # builds from git
-    #inputs.walker.packages.${pkgs.system}.default
     kitty
     kodi-wayland
     mkvtoolnix

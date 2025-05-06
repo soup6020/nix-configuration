@@ -14,7 +14,6 @@
       url = "github:nix-community/flake-firefox-nightly";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    walker.url = "github:abenz1267/walker";
     pwndbg.url = "github:pwndbg/pwndbg";
     ghostty.url = "github:ghostty-org/ghostty";
     nixos-generators = {
