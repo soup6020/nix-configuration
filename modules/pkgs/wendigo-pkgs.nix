@@ -17,7 +17,10 @@
       withVencord = true;
     })
     easyeffects
-    ghidra-bin
+    (ghidra.withExtensions (p: with p; [
+        ret-sync
+        findcrypt
+      ]))
     gimp
     handbrake
     iaito
