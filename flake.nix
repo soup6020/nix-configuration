@@ -5,7 +5,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     agenix.url = "github:ryantm/agenix";
     hyprland.url = "github:hyprwm/Hyprland";
-    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
     nvf.url = "github:notashelf/nvf";
     nix-darwin = {
       url = "github:LnL7/nix-darwin";

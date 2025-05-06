@@ -95,8 +95,10 @@
 
   programs.adb.enable = true;
 
-  programs.nh.enable = true;
-  programs.nh.flake = "/home/ezra/nix/";
+  programs.nh = {
+    enable = true;
+    flake = "/home/ezra/nix/";
+  };
 
   programs.wireshark = {
     enable = true;

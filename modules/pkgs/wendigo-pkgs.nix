@@ -52,6 +52,7 @@
     _7zz-rar
     arch-install-scripts
     beets-unstable
+    bingrep
     binwalk
     bomber-go
     bottom
@@ -123,6 +124,7 @@
     uefitool
     ugrep
     unzrip
+    upx
     usbutils
     weechat
     xfsprogs
