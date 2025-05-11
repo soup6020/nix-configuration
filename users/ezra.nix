@@ -7,8 +7,8 @@
 {
   users.users.ezra = {
     isNormalUser = true;
-    #shell = pkgs.zsh;
-    shell = pkgs.nushell;
+    shell = pkgs.zsh;
+    #shell = pkgs.nushell;
     extraGroups = [
       "wheel"
       "video"

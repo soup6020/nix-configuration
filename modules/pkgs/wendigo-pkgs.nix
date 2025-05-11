@@ -73,7 +73,6 @@
     gifski
     hashcat
     hashcat-utils
-    helix
     hledger
     hledger-iadd
     hledger-ui
@@ -112,6 +111,7 @@
     rustscan
     sbomnix
     shellcheck
+    smartmontools
     socat
     speedtest-go
     speedtest-rs
