@@ -2,30 +2,38 @@
   description = "Finding beauty in the dissonance";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    agenix.url = "github:ryantm/agenix";
-    hyprland.url = "github:hyprwm/Hyprland";
-    nvf.url = "github:notashelf/nvf";
+    #System
+    nixos-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-master.url = "github:NixOS/nixpkgs/master";
+    nixpkgs.follows = "nixos-unstable";
+    
+    nixos-generators = {
+      url = "github:nix-community/nixos-generators";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    #Utility modules
+    agenix.url = "github:ryantm/agenix";
+    hjem = {
+      url = "github:feel-co/hjem";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nvf.url = "github:notashelf/nvf";
+
+    #User-facing/applications
+    hyprland.url = "github:hyprwm/Hyprland";
     firefox-nightly = {
       url = "github:nix-community/flake-firefox-nightly";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     pwndbg.url = "github:pwndbg/pwndbg";
     ghostty.url = "github:ghostty-org/ghostty";
-    nixos-generators = {
-      url = "github:nix-community/nixos-generators";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     capa = {
       url = "github:soup6020/capa";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    hjem = {
-      url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
