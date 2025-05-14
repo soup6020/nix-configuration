@@ -8,7 +8,14 @@
     bottles
     ironwail
     mangohud
-    prismlauncher
+    (prismlauncher.override {
+    additionalPrograms = [ ffmpeg ];
+    jdks = [
+      graalvm-ce
+      zulu8
+      zulu
+      ];
+      })
     protonup-ng
   ];
 }
