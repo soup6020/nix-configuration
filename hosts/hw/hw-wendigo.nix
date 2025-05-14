@@ -28,8 +28,12 @@
     "kvm-amd"
     "nct6775"
   ];
+
   boot.extraModulePackages = with config.boot.kernelPackages; [ zenpower ];
   boot.blacklistedKernelModules = [ "k10temp" ];
+  boot.kernelParams = [
+    "amd_iommu=on"
+  ];
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/3fd8f070-8a7b-40b6-b221-e126093e7f4a";

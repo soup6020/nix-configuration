@@ -115,9 +115,10 @@
     socat
     speedtest-go
     speedtest-rs
-    sqlite # Necessary for nix shell carapace completions
+    sqlite
     starship
     swayimg
+    systemctl-tui
     torsocks
     treefmt
     uefitool
