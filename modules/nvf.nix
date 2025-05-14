@@ -14,7 +14,10 @@
       vim.vimAlias = true;
       vim.lineNumberMode = "number";
       vim.enableLuaLoader = true;
-      vim.useSystemClipboard = true;
+      vim.clipboard = {
+      enable = true;
+      providers.wl-copy.enable = true;
+      };
       vim.syntaxHighlighting = true;
       vim.filetree.neo-tree = {
         enable = true;
