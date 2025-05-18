@@ -42,6 +42,7 @@
       ];
     })
     pavucontrol
+    remmina
     tor-browser
     transmission-remote-gtk
     (vesktop.override { electron = pkgs.electron_35; })

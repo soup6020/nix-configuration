@@ -1,22 +1,27 @@
-{ config, lib, pkgs, ...}:
 {
-#TODO: programs.zsh.plugins appears to be a home-manager option, so this file doess not currently work.
-programs.zsh = {
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+{
+  #TODO: programs.zsh.plugins appears to be a home-manager option, so this file doess not currently work.
+  programs.zsh = {
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
     histSize = 5000;
-   
+
     setOptions = [
-     "APPEND_HISTORY"
-     "EXTENDED_HISTORY"
-     "HIST_IGNORE_DUPS"
-     "HIST_IGNORE_SPACE"
-     "INC_APPEND_HISTORY"
+      "APPEND_HISTORY"
+      "EXTENDED_HISTORY"
+      "HIST_IGNORE_DUPS"
+      "HIST_IGNORE_SPACE"
+      "INC_APPEND_HISTORY"
     ];
 
     plugins = [
-    {
+      {
         # Must be before plugins that wrap widgets, such as zsh-autosuggestions or fast-syntax-highlighting
         name = "fzf-tab";
         src = "${pkgs.zsh-fzf-tab}/share/fzf-tab";
@@ -45,7 +50,7 @@ programs.zsh = {
         src = pkgs.zsh-history-substring-search;
         file = "${pkgs.zsh-history-substring-search}/share/zsh-history-substring-search/zsh-history-substring-search.zsh";
       }
-      ];
+    ];
 
   };
 }

@@ -6,16 +6,21 @@
 
   environment.systemPackages = with pkgs; [
     bottles
+    (heroic.override {
+      extraPkgs = pkgs: [
+        pkgs.gamescope
+      ];
+    })
     ironwail
     mangohud
     (prismlauncher.override {
-    additionalPrograms = [ ffmpeg ];
-    jdks = [
-      graalvm-ce
-      zulu8
-      zulu
+      additionalPrograms = [ ffmpeg ];
+      jdks = [
+        graalvm-ce
+        zulu8
+        zulu
       ];
-      })
+    })
     protonup-ng
   ];
 }

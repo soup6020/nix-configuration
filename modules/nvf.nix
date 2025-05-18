@@ -15,9 +15,9 @@
       vim.lineNumberMode = "number";
       vim.enableLuaLoader = true;
       vim.clipboard = {
-      enable = true;
-      providers.wl-copy.enable = true;
-      registers = "unnamedplus";
+        enable = true;
+        providers.wl-copy.enable = true;
+        registers = "unnamedplus";
       };
       vim.syntaxHighlighting = true;
       vim.filetree.neo-tree = {

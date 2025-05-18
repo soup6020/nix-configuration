@@ -12,6 +12,7 @@ let
         easyrpg
         flycast
         genesis-plus-gx
+        mednafen
         melonds
         mesen
         mesen-s
