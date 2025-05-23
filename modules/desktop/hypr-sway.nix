@@ -72,6 +72,7 @@
     swaynotificationcenter
     swww
     waybar
+    wpaperd
     wl-clipboard
   ];
 }

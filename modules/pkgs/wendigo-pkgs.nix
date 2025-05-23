@@ -61,6 +61,7 @@
     carapace
     cava
     checksec
+    comma
     croc
     ctpv
     debootstrap
@@ -79,6 +80,7 @@
     hledger-iadd
     hledger-ui
     hledger-utils
+    imagemagick
     idevicerestore
     avalonia-ilspy
     ilspycmd

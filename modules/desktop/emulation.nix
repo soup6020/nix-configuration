@@ -12,7 +12,6 @@ let
         easyrpg
         flycast
         genesis-plus-gx
-        mednafen
         melonds
         mesen
         mesen-s
@@ -35,6 +34,7 @@ in
     pkgs.bsnes-hd
     pkgs.easyrpg-player
     pkgs.flips
+    pkgs.mednafen
     pkgs.melonDS
     pkgs.mgba
     pkgs.nanoboyadvance
