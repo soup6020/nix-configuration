@@ -45,13 +45,15 @@
     remmina
     tor-browser
     transmission-remote-gtk
-    (vesktop.override { electron = pkgs.electron_35; })
+    #(vesktop.override { electron = pkgs.electron_35; })
+    vesktop
     wezterm
     xournalpp
 
     #CLI Programs
     _7zz-rar
     arch-install-scripts
+    bat
     beets-unstable
     bingrep
     binwalk
@@ -99,6 +101,7 @@
     megatools
     mktorrent
     modprobed-db
+    mpc
     (ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;

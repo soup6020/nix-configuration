@@ -15,8 +15,8 @@
     ./svc/printing.nix
     ./desktop/emulation.nix
     ./desktop/gaming.nix
+    ./desktop/theming.nix
 
-    ./pkgs/overlays.nix
     ./pkgs/custompkgs.nix
     ./pkgs/wendigo-pkgs.nix
     ./pkgs/themes.nix
