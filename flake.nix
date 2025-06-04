@@ -37,6 +37,10 @@
       url = "github:soup6020/capa";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rom64 = {
+      url = "github:soup6020/rom64";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
