@@ -9,7 +9,7 @@
   imports = [
     ./hw/hw-wendigo.nix
     ../users/ezra.nix
-    ../modules/all-wendigo.nix
+    ../modules/include/all-wendigo.nix
   ];
 
   boot.loader.systemd-boot.enable = true;

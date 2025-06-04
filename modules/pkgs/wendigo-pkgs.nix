@@ -67,6 +67,8 @@
     croc
     ctpv
     debootstrap
+    distrobox
+    distrobox-tui
     dosfstools
     exfatprogs
     exiftool
