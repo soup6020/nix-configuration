@@ -101,10 +101,15 @@
         go.enable = true;
         java.enable = true;
         lua.enable = true;
-        markdown.enable = true;
-        nix.enable = true;
-        nix.format.enable = true;
-        nix.format.type = "nixfmt";
+        markdown = {
+          enable = true;
+          extensions.render-markdown-nvim.enable = true;
+        };
+        nix = {
+          enable = true;
+          format.enable = true;
+          format.type = "nixfmt";
+        };
         nu.enable = true;
         python.enable = true;
         rust.enable = true;
