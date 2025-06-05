@@ -37,7 +37,7 @@
     mosh
     ncftp
     neovim
-    nh
+    inputs.nh.packages.${pkgs.system}.nh
     niv
     nix-index
     nix-search-cli

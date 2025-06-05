@@ -10,6 +10,7 @@
     # your settings need to go into the settings attribute set
     # most settings are documented in the appendix
     settings = {
+      vim.spellcheck.enable = true;
       vim.viAlias = false;
       vim.vimAlias = true;
       vim.lineNumberMode = "number";
@@ -24,9 +25,19 @@
         enable = true;
         setupOpts.git_status_async = true;
       };
-      vim.visuals.indent-blankline.enable = true;
+      vim.mini.icons.enable = true;
+      vim.visuals = {
+        indent-blankline.enable = true;
+        nvim-scrollbar.enable = true;
+        nvim-web-devicons.enable = true;
+        cinnamon-nvim.enable = true;
+        fidget-nvim.enable = true;
+      };
       vim.lsp = {
         enable = true;
+        formatOnSave = true;
+        lightbulb.enable = false;
+        trouble.enable = true;
       };
       vim.theme = {
         enable = true;
@@ -130,7 +141,7 @@
                 end
 
                 -- Get the name of the LSP server active in the current buffer
-                local clients = vim.lsp.get_active_clients()
+                local clients = vim.lsp.get_clients()
                 local msg = 'No Lsp'
 
                 -- if no lsp client is attached then return the msg
@@ -234,6 +245,7 @@
       };
       vim.treesitter = {
         enable = true;
+        context.enable = false;
         highlight.enable = true;
         indent.enable = false; # this shit sucks, prefer default autoindent
         grammars = with pkgs; [
@@ -256,7 +268,7 @@
         nix.format.enable = true;
         nix.format.type = "nixfmt";
         nu.enable = true;
-        python.enable = false; # temporary, basedpyright broken
+        python.enable = true; # temporary, basedpyright broken
         rust.enable = true;
         sql.enable = true;
       };
