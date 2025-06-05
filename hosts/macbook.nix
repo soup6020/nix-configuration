@@ -13,6 +13,8 @@
     ../modules/pkgs/fonts.nix
   ];
 
+  system.primaryUser = "ezra";
+
   nix.gc = {
     automatic = true;
     interval = {
