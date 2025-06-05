@@ -49,7 +49,6 @@
       nix-darwin,
       nixpkgs,
       nvf,
-      firefox-nightly,
       nixos-generators,
       agenix,
       ...
