@@ -24,6 +24,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nvf.url = "github:notashelf/nvf";
+    nh.url = "github:nix-community/nh";
 
     #User-facing/applications
     hyprland.url = "github:hyprwm/Hyprland";

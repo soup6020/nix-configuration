@@ -100,6 +100,7 @@
   programs.nh = {
     enable = true;
     flake = "/home/ezra/nix/";
+    package = inputs.nh.packages.${pkgs.system}.nh;
   };
 
   programs.wireshark = {

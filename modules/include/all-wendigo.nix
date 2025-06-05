@@ -17,6 +17,7 @@
     ../desktop/gaming.nix
     ../desktop/theming.nix
     ../dev/fhs.nix
+    ../zsh.nix
 
     ../pkgs/custompkgs.nix
     ../pkgs/wendigo-pkgs.nix
