@@ -7,9 +7,9 @@
 {
   programs.nvf = {
     enable = true;
-    # your settings need to go into the settings attribute set
-    # most settings are documented in the appendix
+
     settings = {
+      #Basics
       vim.spellcheck.enable = true;
       vim.viAlias = false;
       vim.vimAlias = true;
@@ -21,11 +21,23 @@
         registers = "unnamedplus";
       };
       vim.syntaxHighlighting = true;
+      vim.binds = {
+        cheatsheet.enable = true;
+        whichKey.enable = true;
+      };
+
       vim.filetree.neo-tree = {
         enable = true;
         setupOpts.git_status_async = true;
       };
+
+      #Aesthetic enhancements
       vim.mini.icons.enable = true;
+      vim.theme = {
+        enable = true;
+        name = "oxocarbon";
+        style = "dark";
+      };
       vim.visuals = {
         indent-blankline.enable = true;
         nvim-scrollbar.enable = true;
@@ -33,19 +45,21 @@
         cinnamon-nvim.enable = true;
         fidget-nvim.enable = true;
       };
+      vim.ui.breadcrumbs.enable = true;
+      vim.ui.breadcrumbs.lualine.winbar.alwaysRender = false;
+      vim.tabline.nvimBufferline.enable = true;
+      vim.dashboard.dashboard-nvim = {
+        enable = false;
+      };
+
+      #Languages, completion, parsers...
       vim.lsp = {
         enable = true;
         formatOnSave = true;
         lightbulb.enable = false;
         trouble.enable = true;
       };
-      vim.theme = {
-        enable = true;
-        name = "oxocarbon";
-        style = "dark";
-      };
-      vim.ui.breadcrumbs.enable = true;
-      vim.ui.breadcrumbs.lualine.winbar.alwaysRender = false;
+
       vim.autocomplete = {
         blink-cmp = {
           enable = true;
@@ -56,6 +70,48 @@
         };
         enableSharedCmpSources = true;
       };
+
+      vim.lazy = {
+        enable = true;
+      };
+
+      vim.telescope = {
+        enable = true;
+      };
+
+      vim.treesitter = {
+        enable = true;
+        context.enable = false;
+        highlight.enable = true;
+        indent.enable = false; # this shit sucks, prefer default autoindent
+        grammars = with pkgs; [
+          #Manually install some grammars that do not have options available. vim.languages.* sets many of these automatically.
+          tree-sitter-grammars.tree-sitter-yaml
+          tree-sitter-grammars.tree-sitter-latex
+          tree-sitter-grammars.tree-sitter-dockerfile
+        ];
+      };
+
+      vim.languages = {
+        enableTreesitter = true;
+        assembly.enable = true;
+        bash.enable = true;
+        clang.enable = true;
+        css.enable = true;
+        go.enable = true;
+        java.enable = true;
+        lua.enable = true;
+        markdown.enable = true;
+        nix.enable = true;
+        nix.format.enable = true;
+        nix.format.type = "nixfmt";
+        nu.enable = true;
+        python.enable = true;
+        rust.enable = true;
+        sql.enable = true;
+      };
+
+      #Lualine (at the bottom because it is long)
       vim.statusline.lualine = {
         enable = true;
         theme = "horizon";
@@ -232,49 +288,6 @@
             }
           ''
         ];
-      };
-      vim.lazy = {
-        enable = true;
-      };
-      vim.binds = {
-        cheatsheet.enable = true;
-        whichKey.enable = true;
-      };
-      vim.telescope = {
-        enable = true;
-      };
-      vim.treesitter = {
-        enable = true;
-        context.enable = false;
-        highlight.enable = true;
-        indent.enable = false; # this shit sucks, prefer default autoindent
-        grammars = with pkgs; [
-          tree-sitter-grammars.tree-sitter-yaml
-          tree-sitter-grammars.tree-sitter-latex
-          tree-sitter-grammars.tree-sitter-dockerfile
-        ];
-      };
-      vim.languages = {
-        enableTreesitter = true;
-        assembly.enable = true;
-        bash.enable = true;
-        clang.enable = true;
-        css.enable = true;
-        go.enable = true;
-        java.enable = true;
-        lua.enable = true;
-        markdown.enable = true;
-        nix.enable = true;
-        nix.format.enable = true;
-        nix.format.type = "nixfmt";
-        nu.enable = true;
-        python.enable = true; # temporary, basedpyright broken
-        rust.enable = true;
-        sql.enable = true;
-      };
-      vim.tabline.nvimBufferline.enable = true;
-      vim.dashboard.dashboard-nvim = {
-        enable = false;
       };
     };
   };
