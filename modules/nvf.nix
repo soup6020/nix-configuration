@@ -10,7 +10,7 @@
 
     settings = {
       #Basics
-      vim.spellcheck.enable = true;
+      #vim.spellcheck.enable = true;
       vim.viAlias = false;
       vim.vimAlias = true;
       vim.lineNumberMode = "number";
@@ -29,6 +29,14 @@
       vim.filetree.neo-tree = {
         enable = true;
         setupOpts.git_status_async = true;
+      };
+
+      #Neorg
+      vim.notes.neorg = {
+        enable = true;
+        setupOpts.load."core.defaults".enable = true;
+        treesitter.enable = true;
+        treesitter.norgPackage = pkgs.tree-sitter-grammars.tree-sitter-norg;
       };
 
       #Aesthetic enhancements
