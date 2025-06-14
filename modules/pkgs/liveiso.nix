@@ -62,7 +62,7 @@
     gparted
     grim
     grimblast
-    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+    rose-pine-hyprcursor
     kitty
     mpv
     papirus-icon-theme
@@ -82,7 +82,6 @@
     dnsmonster
     dnspeep
     dnsrecon
-    dnstake
     dnstracer
     dnstwist
     dnsx

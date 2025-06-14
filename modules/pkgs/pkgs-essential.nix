@@ -21,7 +21,6 @@
     ffmpeg-full
     file
     fzf
-    gcc
     gdu
     git
     gnumake

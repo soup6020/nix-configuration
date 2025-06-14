@@ -14,8 +14,8 @@
     calibre
     (discord-canary.override {
       withOpenASAR = true;
-      #withVencord = true;
-      withMoonlight = true;
+      withVencord = true;
+      #withMoonlight = true;
     })
     easyeffects
     (ghidra.withExtensions (
