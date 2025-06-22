@@ -85,7 +85,7 @@
     hledger-ui
     hledger-utils
     imagemagick
-    idevicerestore
+    #idevicerestore
     avalonia-ilspy
     ilspycmd
     imv

@@ -11,6 +11,7 @@
     pkgs.nerd-fonts.mononoki
     pkgs.nerd-fonts.zed-mono
     pkgs.noto-fonts
+    pkgs.plemoljp-nf
     pkgs.twitter-color-emoji
   ];
 }

@@ -8,6 +8,10 @@
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     nixpkgs.follows = "nixos-unstable";
 
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixos-generators = {
       url = "github:nix-community/nixos-generators";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -41,7 +41,7 @@ in
     pkgs.pcsx2
     pkgs.retroarch-assets
     pkgs.retroarch-joypad-autoconfig
-    #pkgs.rpcs3
+    pkgs.rpcs3
     pkgs.xdelta
   ];
 }
