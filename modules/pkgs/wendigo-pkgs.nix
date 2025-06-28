@@ -64,6 +64,7 @@
     cava
     checksec
     comma
+    compose2nix
     croc
     ctpv
     debootstrap
@@ -143,7 +144,5 @@
     yazi
     yt-dlp
     zellij
-    #TODO: This should REALLY be in a zsh-specific module at some point, see https://discourse.nixos.org/t/zsh-users-how-do-you-manage-plugins/9199
-    zsh-fzf-tab
   ];
 }

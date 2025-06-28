@@ -43,6 +43,7 @@
       url = "github:soup6020/rom64";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ps3dec.url = "github:Redrrx/ps3dec";
   };
 
   outputs =

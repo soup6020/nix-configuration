@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 let
   retroarchWithCores = (
@@ -34,6 +34,7 @@ in
     pkgs.bsnes-hd
     pkgs.easyrpg-player
     pkgs.flips
+    inputs.ps3dec.packages.${pkgs.system}.default
     pkgs.mednafen
     pkgs.melonDS
     pkgs.mgba
