@@ -10,6 +10,7 @@
     #GUI programs
     alacritty
     audacity
+    avalonia-ilspy
     brave
     calibre
     (discord-canary.override {
@@ -74,6 +75,7 @@
     exfatprogs
     exiftool
     ffmpegthumbnailer
+    (fortune.override { withOffensive = true; })
     gammastep
     gdb
     gef
@@ -87,7 +89,6 @@
     hledger-utils
     imagemagick
     #idevicerestore
-    avalonia-ilspy
     ilspycmd
     imv
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg

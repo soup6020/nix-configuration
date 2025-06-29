@@ -164,6 +164,7 @@
   fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
   fonts.fontDir.enable = true;
 
+  security.sudo.package = pkgs.sudo.override { withInsults = true; };
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 
