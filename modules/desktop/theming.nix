@@ -5,6 +5,7 @@
   ...
 }:
 {
+  #Gnome/GTK applications
   programs.dconf.profiles.user.databases = [
     {
       settings."org/gnome/desktop/interface" = {
@@ -16,6 +17,7 @@
         color-scheme = "prefer-dark";
         cursor-theme = "BreezeX-RosePine-Linux";
       };
+      #Prevent modification outside of this file
       lockAll = true;
     }
   ];

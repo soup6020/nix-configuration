@@ -5,10 +5,12 @@
   inputs,
   ...
 }:
-#This list is supposed to be universal, only add packages that have cached binaries for Linux and Darwin
+#This list is supposed to be universal, only add command-line packages that have cached binaries for Linux and Darwin
 {
   environment.systemPackages = with pkgs; [
+    inputs.agenix.packages.${system}.default
     aria2
+    cachix
     clang
     curl
     dogdns
@@ -28,7 +30,6 @@
     gptfdisk
     hex
     htop
-    inputs.agenix.packages.${system}.default
     iperf
     ldns
     lftp
@@ -38,13 +39,12 @@
     neovim
     inputs.nh.packages.${pkgs.system}.nh
     niv
+    nixfmt-rfc-style
     nix-index
     nix-search-cli
     nix-tree
     nmap
     pass-nodmenu
-    pkgs.cachix
-    pkgs.nixfmt-rfc-style
     radare2
     rclone
     restic

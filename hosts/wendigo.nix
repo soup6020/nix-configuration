@@ -75,10 +75,6 @@
     enableCompletion = true;
   };
 
-  programs.fish = {
-    enable = false;
-  };
-
   programs.neovim = {
     enable = true;
     vimAlias = true;
@@ -175,6 +171,7 @@
   fonts.fontDir.enable = true;
 
   security.sudo.package = pkgs.sudo.override { withInsults = true; };
+
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 

@@ -6,7 +6,7 @@
     ../sys/metapod.nix
     ../common/agenix.nix
     ../svc/openssh.nix
-    ../nvf.nix
+    ../common/nvf.nix
     ../sys/sysctl.nix
     ../svc/mpd.nix
     ../desktop/greetd.nix
@@ -17,7 +17,7 @@
     ../desktop/gaming.nix
     ../desktop/theming.nix
     ../dev/fhs.nix
-    ../zsh.nix
+    ../common/zsh.nix
 
     ../pkgs/custompkgs.nix
     ../pkgs/wendigo-pkgs.nix

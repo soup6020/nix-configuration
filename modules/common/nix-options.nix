@@ -25,7 +25,7 @@
       "nix-command"
       "flakes"
     ];
-    #auto-optimise-store = true; #Slows down rebuildsas optimization happens every rebuild
+    #auto-optimise-store = true; #Slows down rebuilds as optimization happens every rebuild
   };
 
   #Automatic optimization with systemd. If the machine is off, it will run on startup.

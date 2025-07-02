@@ -5,6 +5,7 @@
   ...
 }:
 {
+  #Build a FHS environment with the specified packages, which can be used by running fhs with no arguments
   environment.systemPackages = with pkgs; [
     (pkgs.buildFHSEnv {
       name = "fhs";
