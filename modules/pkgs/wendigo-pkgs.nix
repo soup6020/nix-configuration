@@ -43,10 +43,10 @@
       ];
     })
     pavucontrol
+    picard
     remmina
     tor-browser
     transmission-remote-gtk
-    #(vesktop.override { electron = pkgs.electron_35; })
     vesktop
     wezterm
     xournalpp
@@ -118,6 +118,7 @@
     pciutils
     plan9port
     pngcrush
+    pngquant
     ripgrep-all
     rmpc
     rustscan
@@ -125,6 +126,7 @@
     shellcheck
     smartmontools
     socat
+    sox
     speedtest-go
     speedtest-rs
     sqlite

@@ -5,7 +5,6 @@
   programs.gamemode.enable = true;
 
   environment.systemPackages = with pkgs; [
-    bottles
     (heroic.override {
       extraPkgs = pkgs: [
         pkgs.gamescope
@@ -22,5 +21,6 @@
       ];
     })
     protonup-ng
+    protonup-qt
   ];
 }
