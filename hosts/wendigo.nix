@@ -101,6 +101,11 @@
     enable = true;
     flake = "/home/ezra/nix/";
     package = inputs.nh.packages.${pkgs.system}.nh;
+    clean = {
+      enable = true;
+      dates = "weekly";
+      extraArgs = [ "--keep 3" ];
+    };
   };
 
   programs.wireshark = {
