@@ -98,9 +98,10 @@
     flake = "/home/ezra/nix/";
     package = inputs.nh.packages.${pkgs.system}.nh;
     clean = {
-      enable = true;
+      #Disabled in favour of built-in store optimization at the moment
+      enable = false;
       dates = "weekly";
-      extraArgs = [ "--keep 3" ];
+      extraArgs = "--keep 3";
     };
   };
 
@@ -160,6 +161,11 @@
       "--interval=26000"
       "-s (S/../../7/02)"
     ];
+  };
+
+  services.fstrim = {
+    enable = true;
+    interval = "weekly";
   };
 
   environment.systemPackages = with pkgs; [ lact ];

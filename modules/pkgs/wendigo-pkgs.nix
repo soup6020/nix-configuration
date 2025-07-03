@@ -115,6 +115,7 @@
     openocd
     nushell
     nvme-cli
+    n-m3u8dl-re
     pciutils
     plan9port
     pngcrush
