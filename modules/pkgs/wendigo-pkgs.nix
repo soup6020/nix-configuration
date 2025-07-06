@@ -103,6 +103,7 @@
     lynis
     mediainfo
     megatools
+    microfetch
     mktorrent
     modprobed-db
     mpc

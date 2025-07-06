@@ -33,6 +33,13 @@
   services.btrfs.autoScrub.enable = true;
   services.btrfs.autoScrub.interval = "weekly";
 
+  #For some reason tmpfs defaults to being disk-backed
+  #This goes against systemd default behaviour
+  boot.tmp = {
+    useTmpfs = true;
+    tmpfsSize = "40%";
+  };
+
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -159,7 +166,6 @@
     extraOptions = [
       "-A /var/log/smartd/"
       "--interval=26000"
-      "-s (S/../../7/02)"
     ];
   };
 
