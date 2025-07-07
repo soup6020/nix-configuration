@@ -56,6 +56,19 @@
     options = [ "compress=zstd" ];
   };
 
+  fileSystems."/tmp" = {
+    fsType = "tmpfs";
+    device = "tmpfs";
+    options = [
+      "nosuid"
+      "nodev"
+      "noexec"
+      "relatime"
+      "mode=1700"
+      "size=20G"
+    ];
+  };
+
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

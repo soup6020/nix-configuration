@@ -35,10 +35,12 @@
 
   #For some reason tmpfs defaults to being disk-backed
   #This goes against systemd default behaviour
-  boot.tmp = {
-    useTmpfs = true;
-    tmpfsSize = "40%";
-  };
+  #NOTE: moved to hw/hw-wendigo.nix in favour of an fstab-based approach
+  #This option uses systemd mounts, and I do not need the additional features this provides
+  #boot.tmp = {
+  #  useTmpfs = true;
+  #  tmpfsSize = "40%";
+  #};
 
   hardware.graphics = {
     enable = true;
