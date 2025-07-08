@@ -158,6 +158,9 @@
               "filetype",
               colored = true,
               icon_only = true,
+              separator = {
+                right = ''
+              },
               icon = { align = 'left' }
             }
           ''
@@ -293,6 +296,7 @@
             {
               "fileformat",
               color = {fg='black'},
+              separator = {left = ''},
               symbols = {
                 unix = '', -- e712
                 dos = '',  -- e70f
