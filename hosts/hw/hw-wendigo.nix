@@ -56,6 +56,8 @@
     options = [ "compress=zstd" ];
   };
 
+  #NOTE: This can mostly also be done with boot.tmp, which uses systemd mounts as opposed to fstab mounts.
+  #Fstab ensures the device is available earlier, and this deployment does not need additional functionality from systemd.
   fileSystems."/tmp" = {
     fsType = "tmpfs";
     device = "tmpfs";

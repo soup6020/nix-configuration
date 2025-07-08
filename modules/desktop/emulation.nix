@@ -1,5 +1,6 @@
 { pkgs, inputs, ... }:
-
+#This file contains configuration for console games
+#It is inclusive of emulators, hacking tools, and homebrew utilities
 let
   retroarchWithCores = (
     pkgs.retroarch.withCores (
@@ -27,22 +28,22 @@ let
   );
 in
 {
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
     retroarchWithCores
-    pkgs._86Box-with-roms
-    pkgs.ares
-    pkgs.bsnes-hd
-    pkgs.easyrpg-player
-    pkgs.flips
+    _86Box-with-roms
+    ares
+    bsnes-hd
+    easyrpg-player
+    flips
     inputs.ps3dec.packages.${pkgs.system}.default
-    pkgs.mednafen
-    pkgs.melonDS
-    pkgs.mgba
-    pkgs.nanoboyadvance
-    pkgs.pcsx2
-    pkgs.retroarch-assets
-    pkgs.retroarch-joypad-autoconfig
-    pkgs.rpcs3
-    pkgs.xdelta
+    mednafen
+    melonDS
+    mgba
+    nanoboyadvance
+    pcsx2
+    retroarch-assets
+    retroarch-joypad-autoconfig
+    rpcs3
+    xdelta
   ];
 }
