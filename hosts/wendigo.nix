@@ -134,7 +134,7 @@
     enable = true;
     enableNTS = true;
     servers = [ "time.cloudflare.com" ];
-    extraflags = [
+    extraFlags = [
       "-F 1"
       "-r"
     ];
