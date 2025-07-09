@@ -22,7 +22,6 @@ Here's a handy guide:
 
 `dots/`: Non-nix dotfiles to configure programs, currently only used by the liveiso output.
 
-`secrets/`: Agenix related stuff.
 
 `users/`: Define user accounts, currently quite barebones.
 

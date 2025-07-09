@@ -4,7 +4,7 @@
     ../common/locale.nix
     ../common/nix-options.nix
     ../sys/metapod.nix
-    ../common/agenix.nix
+    ../common/agenix/agenix.nix
     ../svc/openssh.nix
     ../common/nvf.nix
     ../sys/sysctl.nix
