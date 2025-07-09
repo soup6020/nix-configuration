@@ -1,6 +1,6 @@
 Welcome to my Nix configuration! It is in some ways pretty ugly, but it works. I am specifically avoiding use of home-manager. 
 
-I use hjem to install dotfiles on my live-iso output, and I use nvf to manage my NeoVim configuration. Big thanks to NotAShelf for maintaining both of these projects. 
+I use hjem to install dotfiles on my live-iso output (this may expand to real systems someday), and I use nvf to manage my NeoVim configuration. Big thanks to NotAShelf for maintaining both of these projects. 
 
 Here's a handy guide:
 

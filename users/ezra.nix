@@ -2,11 +2,13 @@
   pkgs,
   config,
   lib,
+  inputs,
   ...
 }:
 {
   users.users.ezra = {
     isNormalUser = true;
+    hashedPasswordFile = config.age.secrets.ezra.path;
     shell = pkgs.zsh;
     #shell = pkgs.nushell;
     extraGroups = [

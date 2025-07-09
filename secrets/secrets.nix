@@ -15,5 +15,9 @@ let
 in
 {
   #"mpdscribble.age".publicKeys = [ ezra wendigo ];
+  "ezra.age".publicKeys = [
+    ezra
+    wendigo
+  ];
   "mpdscribble.age".publicKeys = users ++ systems;
 }
