@@ -37,6 +37,8 @@
 
     #Kinda insecure but breaks OCI containers and bwrap if not enabled
     "kernel.unprivileged_userns_clone" = 1;
+
+    #Memory hardening
     #"vm.max_map_count" = 262144;
     "vm.max_map_count" = 1048576;
     "vm.mmap_rnd_bits" = 32;

@@ -134,6 +134,10 @@
     enable = true;
     enableNTS = true;
     servers = [ "time.cloudflare.com" ];
+    extraflags = [
+      "-F 1"
+      "-r"
+    ];
   };
 
   security.rtkit.enable = true;
