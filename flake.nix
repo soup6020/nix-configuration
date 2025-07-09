@@ -33,6 +33,7 @@
     #User-facing/applications
     hyprland.url = "github:hyprwm/Hyprland";
     firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
+    emacs-overlay.url = "github:nix-community/emacs-overlay";
     pwndbg.url = "github:pwndbg/pwndbg";
     ghostty.url = "github:ghostty-org/ghostty";
     capa = {

@@ -31,6 +31,10 @@
         setupOpts.git_status_async = true;
       };
 
+      vim.utility = {
+        snacks-nvim.enable = true;
+      };
+
       #Neorg
       vim.notes.neorg = {
         enable = true;
