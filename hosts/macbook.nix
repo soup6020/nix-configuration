@@ -7,10 +7,6 @@
 }:
 {
   imports = [
-    ../modules/common/nvf.nix
-    ../modules/pkgs/macbrew.nix
-    ../modules/pkgs/pkgs-essential.nix
-    ../modules/pkgs/fonts.nix
   ];
 
   system.primaryUser = "ezra";
@@ -22,7 +18,7 @@
       Hour = 0;
       Minute = 0;
     };
-    options = "--delete-older-than 14d";
+    options = "--delete-older-than 7d";
   };
 
   nix.settings = {
@@ -47,48 +43,4 @@
 
   # The platform the configuration will be used on.
   nixpkgs.hostPlatform = "x86_64-darwin";
-
-  environment.systemPackages = with pkgs; [
-    pkgs.android-tools
-    pkgs.bat
-    pkgs.btop
-    pkgs.bzip3
-    pkgs.cargo
-    pkgs.cmake
-    pkgs.coreutils
-    pkgs.croc
-    pkgs.fish
-    pkgs.gifsicle
-    pkgs.gnused
-    pkgs.htop
-    pkgs.idevicerestore
-    pkgs.imagemagick
-    pkgs.ipfs
-    pkgs.kalker
-    pkgs.libimobiledevice
-    pkgs.megatools
-    pkgs.meson
-    pkgs.nushell
-    pkgs.openssh
-    pkgs.pandoc
-    pkgs.pngcrush
-    pkgs.pngquant
-    pkgs.rizin
-    pkgs.scrcpy
-    pkgs.sox
-    pkgs.speedtest-cli
-    pkgs.starship
-    pkgs.starship
-    pkgs.tealdeer
-    pkgs.testdisk
-    pkgs.tmux
-    pkgs.torsocks
-    pkgs.unar
-    pkgs.upx
-    pkgs.vulkan-headers
-    pkgs.wavpack
-    pkgs.weechat
-    pkgs.yara
-    pkgs.yt-dlp
-  ];
 }

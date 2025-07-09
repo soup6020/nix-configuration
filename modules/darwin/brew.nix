@@ -1,12 +1,13 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
-
-  ];
   homebrew = {
     enable = true;
-    onActivation.cleanup = "uninstall";
+    onActivation = {
+      cleanup = "uninstall";
+      autoUpdate = true;
+      upgrade = true;
+    };
 
     taps = [
       "railwaycat/homebrew-emacsmacport"
