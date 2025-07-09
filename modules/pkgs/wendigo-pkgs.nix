@@ -113,10 +113,10 @@
     })
     netcat-openbsd
     ntfsprogs
-    openocd
     nushell
     nvme-cli
     n-m3u8dl-re
+    openocd
     pciutils
     plan9port
     pngcrush

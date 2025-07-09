@@ -18,7 +18,7 @@
     ../desktop/theming.nix
     ../dev/fhs.nix
     ../common/zsh.nix
-    ../emacs/emacs.nix
+    ../common/emacs/emacs.nix
 
     ../pkgs/custompkgs.nix
     ../pkgs/wendigo-pkgs.nix
