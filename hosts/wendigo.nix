@@ -173,9 +173,7 @@
       "-A /var/log/smartd/"
       "--interval=26000"
     ];
-    defaults.monitored = [
-      "-a -o on -s (S/../.././02|L/../../7/04)"
-    ];
+    defaults.monitored = "-a -o on -s (S/../.././02|L/../../7/04)";
   };
 
   services.fstrim = {
