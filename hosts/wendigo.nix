@@ -173,6 +173,9 @@
       "-A /var/log/smartd/"
       "--interval=26000"
     ];
+    defaults.monitored = [
+      "-a -o on -s (S/../.././02|L/../../7/04)"
+    ];
   };
 
   services.fstrim = {
@@ -183,10 +186,6 @@
   environment.systemPackages = with pkgs; [ lact ];
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = [ "multi-user.target" ];
-
-  fonts.fontconfig.useEmbeddedBitmaps = true;
-  fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
-  fonts.fontDir.enable = true;
 
   security.sudo.package = pkgs.sudo.override { withInsults = true; };
 
