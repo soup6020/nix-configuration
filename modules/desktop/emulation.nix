@@ -13,6 +13,7 @@ let
         easyrpg
         flycast
         genesis-plus-gx
+        mame
         melonds
         mesen
         mesen-s
@@ -33,9 +34,11 @@ in
     _86Box-with-roms
     ares
     bsnes-hd
+    dosbox-x
     easyrpg-player
     flips
     inputs.ps3dec.packages.${pkgs.system}.default
+    mame
     mednafen
     melonDS
     mgba

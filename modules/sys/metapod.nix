@@ -31,6 +31,7 @@
     ];
 
   };
+
   services.sshguard = {
     enable = true;
     services = [
@@ -42,6 +43,7 @@
     ];
     attack_threshold = 30;
   };
+
   services.jitterentropy-rngd.enable = true;
   boot.kernelModules = [ "jitterentropy_rng" ];
 
