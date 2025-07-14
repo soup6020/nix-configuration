@@ -1,5 +1,9 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
+  fonts.fontconfig.useEmbeddedBitmaps = true;
+  fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
+  fonts.fontDir.enable = true;
+
   fonts.packages = [
     pkgs.ibm-plex
     pkgs.nerd-fonts.blex-mono

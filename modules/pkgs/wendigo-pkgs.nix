@@ -47,8 +47,8 @@
     remmina
     tor-browser
     transmission-remote-gtk
+    udiskie
     vesktop
-    wezterm
     xournalpp
 
     #CLI Programs

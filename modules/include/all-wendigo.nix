@@ -16,6 +16,7 @@
     ../desktop/emulation.nix
     ../desktop/gaming.nix
     ../desktop/theming.nix
+    ../desktop/fonts.nix
     ../dev/fhs.nix
     ../common/zsh.nix
     ../common/emacs/emacs.nix
@@ -23,7 +24,6 @@
     ../pkgs/custompkgs.nix
     ../pkgs/wendigo-pkgs.nix
     ../pkgs/themes.nix
-    ../pkgs/fonts.nix
     ../pkgs/pkgs-essential.nix
   ];
 }
