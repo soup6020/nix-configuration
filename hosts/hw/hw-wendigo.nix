@@ -61,9 +61,11 @@
     options = [
       "nosuid"
       "nodev"
-      "noexec"
+      #Breaks several builds
+      #"noexec"
       "relatime"
-      "mode=1700"
+      #Lix default
+      "mode=0755"
       "size=20G"
     ];
   };
