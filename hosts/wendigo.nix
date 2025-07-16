@@ -187,8 +187,6 @@
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = [ "multi-user.target" ];
 
-  security.sudo.package = pkgs.sudo.override { withInsults = true; };
-
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 

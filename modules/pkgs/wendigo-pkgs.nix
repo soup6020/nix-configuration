@@ -75,6 +75,7 @@
     exfatprogs
     exiftool
     ffmpegthumbnailer
+    #Nixpkgs disables a lot of the offensive fortunes even with the following override
     (fortune.override { withOffensive = true; })
     gammastep
     gdb
