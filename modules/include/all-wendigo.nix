@@ -10,7 +10,7 @@
     ../sys/sysctl.nix
     ../svc/mpd.nix
     ../desktop/greetd.nix
-    ../desktop/hypr-sway.nix
+    ../desktop/wayland/hypr.nix
     ../sys/vm-oci.nix
     ../svc/printing.nix
     ../desktop/emulation.nix

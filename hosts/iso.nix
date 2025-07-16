@@ -8,7 +8,7 @@
 
 {
   imports = [
-    ../modules/desktop/hypr-sway.nix
+    ../modules/desktop/wayland/hypr.nix
     ../modules/desktop/greetd.nix
     ../modules/common/nvf.nix
     ../modules/pkgs/pkgs-essential.nix

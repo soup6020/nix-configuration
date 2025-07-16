@@ -55,17 +55,15 @@
 
   #NOTE: This can mostly also be done with boot.tmp, which uses systemd mounts as opposed to fstab mounts.
   #Fstab ensures the device is available earlier, and this deployment does not need additional functionality from systemd.
+  #It does not appear possible to set mount options with boot.tmp however.
   fileSystems."/tmp" = {
     fsType = "tmpfs";
     device = "tmpfs";
     options = [
       "nosuid"
       "nodev"
-      #Breaks several builds
-      #"noexec"
       "relatime"
-      #Lix default
-      "mode=0755"
+      "mode=0755" # Lix default permissions mode, tightening this up further causes issues with nix builds
       "size=20G"
     ];
   };
