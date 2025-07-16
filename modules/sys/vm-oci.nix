@@ -9,6 +9,11 @@
   users.groups.libvirtd.members = [ "ezra" ];
   programs.virt-manager.enable = true;
 
+  environment.systemPackages = with pkgs; [
+    libguestfs
+    guestfs-tools
+  ];
+
   virtualisation.libvirtd = {
     enable = true;
     qemu = {
