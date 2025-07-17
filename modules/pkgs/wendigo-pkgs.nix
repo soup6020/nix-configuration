@@ -25,7 +25,7 @@
         findcrypt
       ]
     ))
-    gimp
+    inputs.nixos-unstable-small.legacyPackages.${pkgs.system}.gimp
     handbrake
     iaito
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin

@@ -16,6 +16,7 @@
     grimblast
     hyprshade
     hyprshot
+    mpvpaper
     slurp
     sway-contrib.grimshot
     swaynotificationcenter

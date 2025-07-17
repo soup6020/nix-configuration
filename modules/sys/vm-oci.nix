@@ -9,11 +9,6 @@
   users.groups.libvirtd.members = [ "ezra" ];
   programs.virt-manager.enable = true;
 
-  environment.systemPackages = with pkgs; [
-    libguestfs
-    guestfs-tools
-  ];
-
   virtualisation.libvirtd = {
     enable = true;
     qemu = {
@@ -51,5 +46,14 @@
     };
     storageDriver = "btrfs";
     liveRestore = lib.mkForce false; # work around a strange issue where shutdowns hang, not ideal
+  };
+
+  virtualisation.podman = {
+    enable = true;
+    dockerCompat = false; # TODO: Remove this when transition is complete
+    autoPrune = {
+      enable = true;
+      dates = "weekly";
+    };
   };
 }
