@@ -16,6 +16,7 @@
       "video"
       "input"
       "docker"
+      "podman"
       "libvirt"
       "adbusers"
       "wireshark"

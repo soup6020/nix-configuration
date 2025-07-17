@@ -50,6 +50,7 @@
 
   virtualisation.podman = {
     enable = true;
+    extraPackages = [ pkgs.podman-compose ];
     dockerCompat = false; # TODO: Remove this when transition is complete
     autoPrune = {
       enable = true;
