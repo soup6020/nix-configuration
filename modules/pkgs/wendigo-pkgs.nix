@@ -25,11 +25,11 @@
         findcrypt
       ]
     ))
-    inputs.nixos-unstable-small.legacyPackages.${pkgs.system}.gimp
+    gimp
     handbrake
     iaito
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
-    inputs.ghostty.packages.${pkgs.system}.ghostty # builds from git
+    inputs.ghostty.packages.${pkgs.system}.ghostty
     kitty
     kodi-wayland
     mkvtoolnix
@@ -55,7 +55,7 @@
     _7zz-rar
     arch-install-scripts
     bat
-    beets-unstable
+    #beets-unstable
     bingrep
     binwalk
     bomber-go
