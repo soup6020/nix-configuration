@@ -62,6 +62,7 @@
       nixos-generators,
       agenix,
       disko,
+      jovian,
       ...
     }@inputs:
     {
@@ -86,6 +87,7 @@
           ./hosts/hw/hw-steamdeck.nix
           ./hosts/steamdeck.nix
           agenix.nixosModules.default
+          jovian.nixosModules.default
         ];
       };
 

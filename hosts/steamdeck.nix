@@ -7,9 +7,8 @@
 }:
 {
   imports = [
-    ../../modules/desktop/jovian.nix
-    ../../modules/pkgs/pkgs-essential.nix
-    ../../users/ezra.nix
+    ../../users/ezra/nix
+    ../../modules/include/steamdeck.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
