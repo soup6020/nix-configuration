@@ -2,12 +2,16 @@
   description = "Finding beauty in the dissonance";
 
   inputs = {
-    #System
-    flake-parts.url = "github:hercules-ci/flake-parts";
+    #Nixpkgs
     nixos-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-unstable-small.url = "github:NixOS/nixpkgs/nixos-unstable-small";
     nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     nixpkgs.follows = "nixos-unstable";
+
+    #System
+    disko.url = "github:nix-community/disko";
+    disko.inputs.nixpkgs.follows = "nixpkgs";
+    flake-parts.url = "github:hercules-ci/flake-parts";
 
     nur = {
       url = "github:nix-community/NUR";
@@ -35,6 +39,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
     firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
     emacs-overlay.url = "github:nix-community/emacs-overlay";
+    jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     pwndbg.url = "github:pwndbg/pwndbg";
     ghostty.url = "github:ghostty-org/ghostty";
     capa = {
@@ -56,10 +61,12 @@
       nvf,
       nixos-generators,
       agenix,
+      disko,
       ...
     }@inputs:
     {
       nixosConfigurations = {
+
         wendigo = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           specialArgs = { inherit inputs; };
@@ -67,9 +74,19 @@
             ./hosts/wendigo.nix
             nvf.nixosModules.default
             agenix.nixosModules.default
-
           ];
         };
+      };
+
+      steamdeck = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          disko.nixosModules.disko
+          ./hosts/hw/hw-steamdeck.nix
+          ./hosts/steamdeck.nix
+          agenix.nixosModules.default
+        ];
       };
 
       packages.x86_64-linux = {
