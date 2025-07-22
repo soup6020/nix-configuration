@@ -74,20 +74,8 @@
     tor-browser
     wl-clipboard
 
-    aiodnsbrute
-    amass
     bind
-    dnsenum
-    dnsmon-go
-    dnsmonster
-    dnspeep
-    dnsrecon
-    dnstracer
-    dnstwist
-    dnsx
-    fierce
     findomain
-    knockpy
     massdns
     subfinder
     subprober
@@ -99,9 +87,7 @@
     arp-scan
     arping
     arpoison
-    atftp
     bloodhound-py
-    bruteforce-luks
     capstone
     crowbar
     das
@@ -122,7 +108,7 @@
     hivex
     hstsparser
     ipcalc
-    iperf2
+    iperf
     ipscan
     iputils
     keedump
@@ -132,17 +118,13 @@
     metasploit
     mtr
     multimon-ng
-    naabu
     ncftp
-    netcat-gnu
     netsniff-ng
-    noseyparker
     ntfs3g
     ntfsprogs
     nwipe
     pdf-parser
     pixiewps
-    python3Packages.distorm3
     python3Packages.lsassy
     python3Packages.pypykatz
     reaverwps
@@ -152,20 +134,9 @@
     safecopy
     scalpel
     sleuthkit
-    smbmap
-    smbscan
-    socialscan
-    sploitscan
-    srm
-    sshping
     sslh
-    stegseek
     sx-go
-    thc-hydra
-    udpx
-    wbox
     whois
-    wipe
     wireshark
     wireshark-cli
     xorex

@@ -16,7 +16,7 @@
       #Set this to true after configuration is actually made
       defaultInitFile = false;
 
-      package = pkgs.emacs-unstable-pgtk; # replace with pkgs.emacsPgtk, or another version if desired.
+      package = pkgs.emacs-unstable-pgtk;
 
       extraEmacsPackages = epkgs: [
         epkgs.use-package

@@ -39,7 +39,7 @@
     neovim
     inputs.nh.packages.${pkgs.system}.nh
     niv
-    nixfmt-rfc-style
+    nixfmt
     nix-index
     nix-search-cli
     nix-tree

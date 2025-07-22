@@ -77,18 +77,19 @@
             agenix.nixosModules.default
           ];
         };
-      };
 
-      steamdeck = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [
-          disko.nixosModules.disko
-          ./hosts/hw/hw-steamdeck.nix
-          ./hosts/steamdeck.nix
-          agenix.nixosModules.default
-          jovian.nixosModules.default
-        ];
+        steamdeck = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
+          modules = [
+            disko.nixosModules.disko
+            ./hosts/hw/hw-steamdeck.nix
+            ./hosts/steamdeck.nix
+            agenix.nixosModules.default
+            jovian.nixosModules.default
+          ];
+        };
+
       };
 
       packages.x86_64-linux = {
