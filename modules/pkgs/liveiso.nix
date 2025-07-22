@@ -75,7 +75,6 @@
     wl-clipboard
 
     bind
-    findomain
     massdns
     subfinder
     subprober
