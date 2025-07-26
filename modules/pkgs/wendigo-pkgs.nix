@@ -45,6 +45,7 @@
     pavucontrol
     picard
     remmina
+    rymdport
     tor-browser
     transmission-remote-gtk
     udiskie
@@ -145,6 +146,7 @@
     upx
     usbutils
     weechat
+    wormhole-william
     xfsprogs
     yara-x
     yazi
