@@ -187,6 +187,8 @@
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = [ "multi-user.target" ];
 
+  services.ratbagd.enable = true;
+
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 

@@ -11,7 +11,6 @@
     #System
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
-    flake-parts.url = "github:hercules-ci/flake-parts";
 
     nur = {
       url = "github:nix-community/NUR";
@@ -42,14 +41,6 @@
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     pwndbg.url = "github:pwndbg/pwndbg";
     ghostty.url = "github:ghostty-org/ghostty";
-    capa = {
-      url = "github:soup6020/capa";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    rom64 = {
-      url = "github:soup6020/rom64";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     ps3dec.url = "github:Redrrx/ps3dec";
   };
 

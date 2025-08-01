@@ -57,7 +57,6 @@
     unzipNLS
     uv
     wget
-    wget2
     whois
   ];
 }

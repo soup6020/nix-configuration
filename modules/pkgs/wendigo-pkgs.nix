@@ -9,7 +9,7 @@
   environment.systemPackages = with pkgs; [
     #GUI programs
     alacritty
-    audacity
+    #audacity
     avalonia-ilspy
     brave
     calibre
@@ -77,7 +77,7 @@
     exiftool
     ffmpegthumbnailer
     #Nixpkgs disables a lot of the offensive fortunes even with the following override
-    (fortune.override { withOffensive = true; })
+    #(fortune.override { withOffensive = true; })
     gammastep
     gdb
     gef
@@ -109,7 +109,7 @@
     mktorrent
     modprobed-db
     mpc
-    (ncmpcpp.override {
+    (inputs.nixos-unstable-small.legacyPackages.${pkgs.system}.ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;
     })
@@ -120,6 +120,7 @@
     n-m3u8dl-re
     openocd
     pciutils
+    piper
     plan9port
     pngcrush
     pngquant
