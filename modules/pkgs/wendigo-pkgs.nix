@@ -9,7 +9,7 @@
   environment.systemPackages = with pkgs; [
     #GUI programs
     alacritty
-    #audacity
+    audacity
     avalonia-ilspy
     brave
     calibre
@@ -44,6 +44,7 @@
     })
     pavucontrol
     picard
+    qgis
     remmina
     rymdport
     tor-browser
