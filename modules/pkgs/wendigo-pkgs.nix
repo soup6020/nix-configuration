@@ -13,6 +13,7 @@
     avalonia-ilspy
     brave
     calibre
+    darktable
     (discord-canary.override {
       withOpenASAR = true;
       withVencord = true;
@@ -90,6 +91,7 @@
     hledger-iadd
     hledger-ui
     hledger-utils
+    inetutils
     imagemagick
     #idevicerestore
     ilspycmd

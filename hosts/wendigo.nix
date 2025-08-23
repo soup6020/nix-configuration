@@ -161,9 +161,9 @@
   services.smartd = {
     enable = true;
     devices = [
-      # { device = "/dev/disk/by-id/ata-HGST_HUH721212ALE600_8CGJ70YE"; }
       { device = "/dev/disk/by-id/ata-ST4000DM005-2DP166_ZDH1DYMA"; }
       { device = "/dev/disk/by-id/ata-ST8000VN004-2M2101_WKD023SS"; }
+      { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZRT0SVR9"; }
       { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ69XZN"; }
       { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ4273E"; }
       { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZR800P6Y"; }
@@ -182,6 +182,8 @@
   };
 
   services.udisks2.enable = true;
+
+  virtualisation.waydroid.enable = true;
 
   environment.systemPackages = with pkgs; [ lact ];
   systemd.packages = with pkgs; [ lact ];
