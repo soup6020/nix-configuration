@@ -123,7 +123,6 @@
     n-m3u8dl-re
     openocd
     pciutils
-    piper
     plan9port
     pngcrush
     pngquant
