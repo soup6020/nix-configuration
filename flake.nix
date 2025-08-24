@@ -5,7 +5,7 @@
     #Nixpkgs
     nixos-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-unstable-small.url = "github:NixOS/nixpkgs/nixos-unstable-small";
-    nixpkgs-master.url = "github:NixOS/nixpkgs/master";
+    #nixpkgs-master.url = "github:NixOS/nixpkgs/master";
     nixpkgs.follows = "nixos-unstable";
 
     #System
