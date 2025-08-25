@@ -28,7 +28,20 @@ let
     )
   );
 in
+
 {
+  #  nixpkgs.overlays = [
+  #    (final: prev: {
+  #      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
+  #        src = prev.fetchFromGitHub {
+  #          owner = "libretro";
+  #          repo = "RetroArch";
+  #          rev = "d3c81605be00df9c0eafc8f23da406a3ee197e86";
+  #          hash = "sha256-fG4Bs18vlC6QfZPT3OJllKaHmjrg7SIzOwqDR0ZJvBk=";
+  #        };
+  #      });
+  #    })
+  #  ];
   environment.systemPackages = with pkgs; [
     retroarchWithCores
     _86Box-with-roms

@@ -118,6 +118,7 @@
     })
     netcat-openbsd
     ntfsprogs
+    nurl
     nushell
     nvme-cli
     n-m3u8dl-re
