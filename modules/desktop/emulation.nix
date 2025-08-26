@@ -44,14 +44,14 @@ in
           NIX_CFLAGS_COMPILE = ("") + " -O3 -march=native -Wno-error=implicit-function-declaration";
         });
       };
-      #    retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
-      #      src = prev.fetchFromGitHub {
-      #        owner = "libretro";
-      #        repo = "RetroArch";
-      #        rev = "e6328b57074b9eb088aca26dc4d1672596b172ce";
-      #        hash = "sha256-nW9D5/X9eU6OQQNkoPO5TsoNH1qMnjizxfGnyCcXjy4=";
-      #      };
-      #    });
+      #retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
+      #  src = prev.fetchFromGitHub {
+      #    owner = "libretro";
+      #    repo = "RetroArch";
+      #    rev = "d3c81605be00df9c0eafc8f23da406a3ee197e86";
+      #    hash = "sha256-fG4Bs18vlC6QfZPT3OJllKaHmjrg7SIzOwqDR0ZJvBk=";
+      #  };
+      #});
     })
   ];
   environment.systemPackages = with pkgs; [
