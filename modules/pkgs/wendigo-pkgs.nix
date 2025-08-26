@@ -13,7 +13,7 @@
     avalonia-ilspy
     brave
     calibre
-    darktable
+    #darktable
     (discord-canary.override {
       withOpenASAR = true;
       withVencord = true;

@@ -20,6 +20,7 @@ let
         mgba
         mupen64plus
         np2kai
+        parallel-n64
         ppsspp
         sameboy
         swanstation
@@ -30,18 +31,29 @@ let
 in
 
 {
-  #  nixpkgs.overlays = [
-  #    (final: prev: {
-  #      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
-  #        src = prev.fetchFromGitHub {
-  #          owner = "libretro";
-  #          repo = "RetroArch";
-  #          rev = "d3c81605be00df9c0eafc8f23da406a3ee197e86";
-  #          hash = "sha256-fG4Bs18vlC6QfZPT3OJllKaHmjrg7SIzOwqDR0ZJvBk=";
-  #        };
-  #      });
-  #    })
-  #  ];
+  nixpkgs.overlays = [
+    (final: prev: {
+      libretro = prev.libretro // {
+        parallel-n64 = prev.libretro.parallel-n64.overrideAttrs (old: {
+          src = prev.fetchFromGitLab {
+            owner = "parallel-launcher";
+            repo = "parallel-n64";
+            rev = "3b0c31d74f0d2bafcc559fd0a5f2462d2cbcc0c8";
+            hash = "sha256-y2GsUC/djCc4iA96N2jmuyKIHSMEVCXKDuMGzJ+qdg4=";
+          };
+          NIX_CFLAGS_COMPILE = ("") + " -O3 -march=native -Wno-error=implicit-function-declaration";
+        });
+      };
+      #    retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
+      #      src = prev.fetchFromGitHub {
+      #        owner = "libretro";
+      #        repo = "RetroArch";
+      #        rev = "e6328b57074b9eb088aca26dc4d1672596b172ce";
+      #        hash = "sha256-nW9D5/X9eU6OQQNkoPO5TsoNH1qMnjizxfGnyCcXjy4=";
+      #      };
+      #    });
+    })
+  ];
   environment.systemPackages = with pkgs; [
     retroarchWithCores
     _86Box-with-roms
