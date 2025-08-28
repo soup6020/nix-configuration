@@ -8,12 +8,10 @@ let
         beetle-psx-hw
         bsnes
         bsnes-hd
-        citra
         dolphin
         easyrpg
         flycast
         genesis-plus-gx
-        mame
         melonds
         mesen
         mesen-s
@@ -44,20 +42,21 @@ in
           NIX_CFLAGS_COMPILE = ("") + " -O3 -march=native -Wno-error=implicit-function-declaration";
         });
       };
-      #retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
-      #  src = prev.fetchFromGitHub {
-      #    owner = "libretro";
-      #    repo = "RetroArch";
-      #    rev = "d3c81605be00df9c0eafc8f23da406a3ee197e86";
-      #    hash = "sha256-fG4Bs18vlC6QfZPT3OJllKaHmjrg7SIzOwqDR0ZJvBk=";
-      #  };
-      #});
+      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
+        patches = (old.patches or [ ]) ++ [
+          (final.fetchpatch {
+            url = "https://github.com/libretro/RetroArch/commit/2bc0a25e6f5cf2b67b183792886e24c2ec5d448e.patch";
+            sha256 = "sha256-gkpBql5w/xUpddv/6sePb5kZ5gy9huStDthmvoz6Qbk=";
+          })
+        ];
+      });
     })
   ];
   environment.systemPackages = with pkgs; [
     retroarchWithCores
     _86Box-with-roms
     ares
+    #azahar
     bsnes-hd
     dosbox-x
     easyrpg-player
