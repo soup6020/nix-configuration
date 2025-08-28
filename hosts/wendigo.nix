@@ -33,6 +33,29 @@
   services.btrfs.autoScrub.enable = true;
   services.btrfs.autoScrub.interval = "weekly";
 
+  services.fstrim = {
+    enable = true;
+    interval = "weekly";
+  };
+
+  services.smartd = {
+    enable = true;
+    devices = [
+      { device = "/dev/disk/by-id/ata-ST4000DM005-2DP166_ZDH1DYMA"; }
+      { device = "/dev/disk/by-id/ata-ST8000VN004-2M2101_WKD023SS"; }
+      { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZRT0SVR9"; }
+      { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ69XZN"; }
+      { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ4273E"; }
+      { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZR800P6Y"; }
+      { device = "/dev/disk/by-id/ata-WDC_WD40EZRZ-00GXCB0_WD-WCC7K5ZLRDJJ"; }
+    ];
+    extraOptions = [
+      "-A /var/log/smartd/"
+      "--interval=26000"
+    ];
+    defaults.monitored = "-a -o on -s (S/../.././02|L/../../7/04)";
+  };
+
   #For some reason tmpfs defaults to being disk-backed
   #This goes against systemd default behaviour
   #NOTE: moved to hw/hw-wendigo.nix in favour of an fstab-based approach
@@ -170,29 +193,6 @@
       enable = true;
       package = pkgs.wireplumber;
     };
-  };
-
-  services.smartd = {
-    enable = true;
-    devices = [
-      { device = "/dev/disk/by-id/ata-ST4000DM005-2DP166_ZDH1DYMA"; }
-      { device = "/dev/disk/by-id/ata-ST8000VN004-2M2101_WKD023SS"; }
-      { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZRT0SVR9"; }
-      { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ69XZN"; }
-      { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ4273E"; }
-      { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZR800P6Y"; }
-      { device = "/dev/disk/by-id/ata-WDC_WD40EZRZ-00GXCB0_WD-WCC7K5ZLRDJJ"; }
-    ];
-    extraOptions = [
-      "-A /var/log/smartd/"
-      "--interval=26000"
-    ];
-    defaults.monitored = "-a -o on -s (S/../.././02|L/../../7/04)";
-  };
-
-  services.fstrim = {
-    enable = true;
-    interval = "weekly";
   };
 
   services.udisks2.enable = true;

@@ -19,7 +19,6 @@
     ../desktop/fonts.nix
     ../dev/fhs.nix
     ../common/zsh.nix
-    ../common/emacs/emacs.nix
     ../desktop/polkit.nix
 
     ../pkgs/custompkgs.nix

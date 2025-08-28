@@ -66,12 +66,14 @@ in
     mame
     mednafen
     melonDS
+    mesen
     mgba
     nanoboyadvance
     pcsx2
     retroarch-assets
     retroarch-joypad-autoconfig
     rpcs3
+    sameboy
     xdelta
   ];
 }

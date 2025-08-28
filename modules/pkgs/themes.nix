@@ -7,5 +7,6 @@
     rose-pine-gtk-theme
     rose-pine-icon-theme
     tokyonight-gtk-theme
+    catppuccin-gtk
   ];
 }

@@ -29,6 +29,7 @@
     gimp
     handbrake
     iaito
+    imhex
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
     inputs.ghostty.packages.${pkgs.system}.ghostty
     kitty
@@ -131,6 +132,7 @@
     rmpc
     rustscan
     sbomnix
+    scanmem
     shellcheck
     smartmontools
     socat
@@ -141,6 +143,7 @@
     starship
     swayimg
     systemctl-tui
+    tinyxxd
     torsocks
     treefmt
     uefitool
