@@ -13,6 +13,13 @@
     avalonia-ilspy
     brave
     calibre
+    (cutter.withPlugins (
+      ps: with ps; [
+        jsdec
+        rz-ghidra
+        sigdb
+      ]
+    ))
     #darktable
     (discord-canary.override {
       withOpenASAR = true;
@@ -129,6 +136,7 @@
     pngcrush
     pngquant
     ripgrep-all
+    rizin
     rmpc
     rustscan
     sbomnix
