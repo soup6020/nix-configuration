@@ -27,6 +27,7 @@
       #withMoonlight = true;
     })
     easyeffects
+    equibop
     (ghidra.withExtensions (
       p: with p; [
         ret-sync
@@ -60,7 +61,6 @@
     tor-browser
     transmission-remote-gtk
     udiskie
-    vesktop
     xournalpp
 
     #CLI Programs
