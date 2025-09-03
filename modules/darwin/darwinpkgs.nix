@@ -30,7 +30,6 @@
     pkgs.sox
     pkgs.speedtest-cli
     pkgs.starship
-    pkgs.starship
     pkgs.tealdeer
     pkgs.testdisk
     pkgs.tmux

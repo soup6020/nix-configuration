@@ -7,6 +7,7 @@
 }:
 {
   imports = [
+	../modules/include/mbp.nix
   ];
 
   system.primaryUser = "ezra";
