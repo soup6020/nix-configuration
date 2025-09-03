@@ -7,6 +7,7 @@
     ../common/agenix/agenix.nix
     ../svc/openssh.nix
     ../common/nvf.nix
+    ../common/emacs/emacs.nix
     ../sys/sysctl.nix
     ../svc/mpd.nix
     ../desktop/greetd.nix
