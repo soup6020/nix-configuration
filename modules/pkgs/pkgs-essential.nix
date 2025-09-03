@@ -37,11 +37,9 @@
     mosh
     ncftp
     neovim
-    inputs.nh.packages.${pkgs.system}.nh
     niv
     nixfmt
     nix-index
-    nix-search-cli
     nix-tree
     nmap
     pass-nodmenu
@@ -49,6 +47,7 @@
     rclone
     restic
     ripgrep
+    rizin
     rsync
     samurai
     skim

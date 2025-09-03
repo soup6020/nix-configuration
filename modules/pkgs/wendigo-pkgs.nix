@@ -35,6 +35,7 @@
     ))
     gimp
     handbrake
+    hobbits
     iaito
     imhex
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
