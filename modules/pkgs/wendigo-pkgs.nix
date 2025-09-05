@@ -76,6 +76,7 @@
     carapace
     cava
     checksec
+    clang
     comma
     compose2nix
     croc
@@ -94,6 +95,7 @@
     gef
     gifsicle
     gifski
+    gping
     hashcat
     hashcat-utils
     hledger
@@ -102,7 +104,7 @@
     hledger-utils
     inetutils
     imagemagick
-    #idevicerestore
+    idevicerestore
     ilspycmd
     imv
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
@@ -126,6 +128,7 @@
       clockSupport = true;
     })
     netcat-openbsd
+    niv
     ntfsprogs
     nurl
     nushell
@@ -140,6 +143,7 @@
     rizin
     rmpc
     rustscan
+    samurai
     sbomnix
     scanmem
     shellcheck

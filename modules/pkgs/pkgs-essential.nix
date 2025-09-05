@@ -11,7 +11,7 @@
     inputs.agenix.packages.${system}.default
     aria2
     cachix
-    clang
+    croc
     curl
     dogdns
     dosfstools
@@ -26,7 +26,6 @@
     gdu
     git
     gnumake
-    gping
     gptfdisk
     hex
     htop
@@ -37,7 +36,6 @@
     mosh
     ncftp
     neovim
-    niv
     nixfmt
     nix-index
     nix-tree
@@ -49,7 +47,6 @@
     ripgrep
     rizin
     rsync
-    samurai
     skim
     testdisk
     tmux
