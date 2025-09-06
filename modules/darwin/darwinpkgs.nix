@@ -1,6 +1,9 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    #GUI
+
+    #CLI
     pkgs.android-tools
     pkgs.bat
     pkgs.btop
@@ -28,7 +31,6 @@
     pkgs.pngcrush
     pkgs.pngquant
     pkgs.rizin
-    pkgs.scrcpy
     pkgs.sox
     pkgs.speedtest-cli
     pkgs.starship
@@ -37,7 +39,6 @@
     pkgs.tmux
     pkgs.torsocks
     pkgs.unar
-    pkgs.upx
     pkgs.vulkan-headers
     pkgs.wavpack
     pkgs.weechat

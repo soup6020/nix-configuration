@@ -101,7 +101,6 @@
         specialArgs = { inherit inputs; };
         modules = [
           ./hosts/macbook.nix
-          nvf.nixosModules.default
           agenix.darwinModules.default
         ];
       };
