@@ -6,6 +6,7 @@
     pkgs.btop
     pkgs.bzip3
     pkgs.cargo
+    pkgs.carapace
     pkgs.cmake
     pkgs.coreutils
     pkgs.croc
@@ -20,6 +21,7 @@
     pkgs.libimobiledevice
     pkgs.megatools
     pkgs.meson
+    pkgs.nh
     pkgs.nushell
     pkgs.openssh
     pkgs.pandoc
