@@ -56,7 +56,7 @@ in
     retroarchWithCores
     _86Box-with-roms
     ares
-    #azahar
+    azahar
     bsnes-hd
     dosbox-x
     easyrpg-player
