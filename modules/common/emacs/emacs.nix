@@ -21,7 +21,22 @@
       extraEmacsPackages = epkgs: [
         epkgs.use-package
         epkgs.cask
+        epkgs.vterm
+        epkgs.eglot-booster
         pkgs.shellcheck
+        pkgs.clang-tools
+        pkgs.nixd
+        pkgs.basedpyright
+        pkgs.sbcl
+        pkgs.yaml-language-server
+        pkgs.marksman
+        pkgs.rust-analyzer
+        pkgs.docker-language-server
+        pkgs.tree-sitter-grammars.tree-sitter-elisp
+        pkgs.tree-sitter-grammars.tree-sitter-nix
+        pkgs.tree-sitter-grammars.tree-sitter-dockerfile
+        pkgs.tree-sitter-grammars.tree-sitter-nu
+        pkgs.tree-sitter-grammars.tree-sitter-llvm
       ];
 
     })
