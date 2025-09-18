@@ -37,8 +37,14 @@
         pkgs.tree-sitter-grammars.tree-sitter-dockerfile
         pkgs.tree-sitter-grammars.tree-sitter-nu
         pkgs.tree-sitter-grammars.tree-sitter-llvm
+        pkgs.tree-sitter-grammars.tree-sitter-elisp
       ];
 
     })
   ];
+  services.emacs = {
+    #Make the service available, but do not enable it by default
+    install = true;
+    package = pkgs.emacs-unstable-pgtk;
+  };
 }
