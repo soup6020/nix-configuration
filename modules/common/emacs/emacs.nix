@@ -31,7 +31,9 @@
     pkgs.libvterm
     pkgs.shellcheck
     pkgs.clang-tools
+    pkgs.ispell
     pkgs.nixd
+    pkgs.go-grip
     pkgs.basedpyright
     pkgs.sbcl
     pkgs.yaml-language-server
