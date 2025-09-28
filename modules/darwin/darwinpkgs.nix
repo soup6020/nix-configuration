@@ -44,6 +44,27 @@
     pkgs.weechat
     pkgs.yara
     pkgs.yt-dlp
+
+    #Emacs
+    pkgs.nixd
+    pkgs.libvterm
+    pkgs.shellcheck
+    pkgs.clang-tools
+    pkgs.ispell
+    pkgs.nixd
+    pkgs.go-grip
+    pkgs.basedpyright
+    pkgs.sbcl
+    pkgs.yaml-language-server
+    pkgs.marksman
+    pkgs.rust-analyzer
+    pkgs.docker-language-server
+    pkgs.tree-sitter-grammars.tree-sitter-elisp
+    pkgs.tree-sitter-grammars.tree-sitter-nix
+    pkgs.tree-sitter-grammars.tree-sitter-dockerfile
+    pkgs.tree-sitter-grammars.tree-sitter-nu
+    pkgs.tree-sitter-grammars.tree-sitter-llvm
+    pkgs.tree-sitter-grammars.tree-sitter-elisp
   ];
 
   fonts.packages = [
