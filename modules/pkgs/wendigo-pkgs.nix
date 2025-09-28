@@ -81,7 +81,9 @@
     compose2nix
     croc
     ctpv
+    curlie
     debootstrap
+    delta
     distrobox
     distrobox-tui
     dosfstools
