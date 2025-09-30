@@ -37,6 +37,7 @@
   };
   systemd.tmpfiles.rules = [
     "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu_kvm}/share/qemu/firmware"
+    "L+ /usr/share/qemu/firmware - - - - ${pkgs.qemu_kvm}/share/qemu/firmware"
   ];
 
   virtualisation.docker = {
