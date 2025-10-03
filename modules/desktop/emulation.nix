@@ -61,7 +61,7 @@ in
     dosbox-x
     easyrpg-player
     flips
-    inputs.ps3dec.packages.${pkgs.system}.default
+    #inputs.ps3dec.packages.${pkgs.system}.default
     mame
     mednafen
     melonDS

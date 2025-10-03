@@ -44,6 +44,8 @@
     pkgs.tree-sitter-grammars.tree-sitter-nix
     pkgs.tree-sitter-grammars.tree-sitter-dockerfile
     pkgs.tree-sitter-grammars.tree-sitter-nu
+    pkgs.tree-sitter-grammars.tree-sitter-markdown
+    pkgs.tree-sitter-grammars.tree-sitter-markdown-inline
     pkgs.tree-sitter-grammars.tree-sitter-llvm
     pkgs.tree-sitter-grammars.tree-sitter-elisp
   ];
