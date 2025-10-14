@@ -56,7 +56,7 @@ in
     retroarchWithCores
     _86Box-with-roms
     ares
-    azahar
+    azahar # Possibly override this with AzaharPlus in the future? Supports encrypted content still like classic Citra.
     bsnes-hd
     dosbox-x
     easyrpg-player

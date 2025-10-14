@@ -9,7 +9,7 @@
   nixpkgs.overlays = [ (import inputs.emacs-overlay) ];
   environment.systemPackages = [
     (pkgs.emacsWithPackagesFromUsePackage {
-      # NB: Config files cannot contain unicode characters, since
+      # NB: Config files cannot contain extended unicode characters, since
       #     they're being parsed in nix, which lacks unicode
       #     support.
       config = ./emacs.el;
