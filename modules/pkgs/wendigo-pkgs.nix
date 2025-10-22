@@ -20,7 +20,7 @@
         sigdb
       ]
     ))
-    #darktable
+    darktable
     (discord-canary.override {
       withOpenASAR = true;
       withVencord = true;
@@ -137,6 +137,7 @@
     nvme-cli
     n-m3u8dl-re
     openocd
+    pandoc
     pciutils
     plan9port
     pngcrush

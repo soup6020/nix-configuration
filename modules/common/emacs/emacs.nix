@@ -52,6 +52,7 @@
   services.emacs = {
     #Make the service available, but do not enable it by default
     install = true;
+    enable = true;
     package = pkgs.emacs-unstable-pgtk;
   };
 }

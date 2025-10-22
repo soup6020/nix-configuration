@@ -3,7 +3,7 @@
 #It is inclusive of emulators, hacking tools, and homebrew utilities
 let
   retroarchWithCores = (
-    pkgs.retroarch.withCores (
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.retroarch.withCores (
       cores: with cores; [
         beetle-psx-hw
         bsnes
@@ -11,7 +11,6 @@ let
         dolphin
         easyrpg
         flycast
-        genesis-plus-gx
         melonds
         mesen
         mesen-s
