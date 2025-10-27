@@ -17,7 +17,20 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "wendigo";
-  networking.networkmanager.enable = true;
+  # This option is considered experimental, and uses networkd instead of scripted networking
+  # May not be necessary for this configuration
+  networking.useNetworkd = true;
+
+  systemd.network = {
+    enable = true;
+    wait-online.anyInterface = true;
+    networks."home-lan" = {
+      matchConfig.Name = "enp6s0";
+      networkConfig.DHCP = "yes";
+      linkConfig.RequiredForOnline = "yes";
+    };
+  };
+  networking.networkmanager.enable = false;
 
   boot.kernelPackages = pkgs.linuxPackages_hardened;
 

@@ -130,6 +130,7 @@
     })
     netcat-openbsd
     niv
+    nix-forecast
     ntfsprogs
     nurl
     nushell
