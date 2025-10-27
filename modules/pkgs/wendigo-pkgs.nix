@@ -1,7 +1,5 @@
 {
-  config,
   pkgs,
-  lib,
   inputs,
   ...
 }:
@@ -112,6 +110,7 @@
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
     jfsutils
+    just
     kalker
     lazygit
     libimobiledevice

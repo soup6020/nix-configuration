@@ -55,7 +55,7 @@ in
     retroarchWithCores
     _86Box-with-roms
     ares
-    azahar # Possibly override this with AzaharPlus in the future? Supports encrypted content still like classic Citra.
+    #azahar # Possibly override this with AzaharPlus in the future? Supports encrypted content still like classic Citra.
     bsnes-hd
     dosbox-x
     easyrpg-player
@@ -70,7 +70,7 @@ in
     pcsx2
     retroarch-assets
     retroarch-joypad-autoconfig
-    rpcs3
+    #rpcs3
     sameboy
     xdelta
   ];
