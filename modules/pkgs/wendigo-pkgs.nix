@@ -38,7 +38,7 @@
     iaito
     imhex
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
-    inputs.ghostty.packages.${pkgs.system}.ghostty
+    ghostty
     kitty
     kodi-wayland
     mkvtoolnix

@@ -41,7 +41,6 @@
     emacs-overlay.url = "github:nix-community/emacs-overlay";
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     pwndbg.url = "github:pwndbg/pwndbg";
-    ghostty.url = "github:ghostty-org/ghostty";
     ps3dec.url = "github:Redrrx/ps3dec";
   };
 
