@@ -32,7 +32,7 @@
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nvf.url = "github:notashelf/nvf";
+    nvf.url = "github:notashelf/nvf/main";
     nh.url = "github:nix-community/nh";
 
     #User-facing/applications

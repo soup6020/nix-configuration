@@ -70,7 +70,7 @@ in
     pcsx2
     retroarch-assets
     retroarch-joypad-autoconfig
-    #rpcs3
+    rpcs3
     sameboy
     xdelta
   ];

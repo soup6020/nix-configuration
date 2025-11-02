@@ -7,7 +7,7 @@ rebuild:
 	nh os switch --ask
 
 update-rebuild:
-	nix flake update && nh os switch --ask
+	nix flake update ; nh os switch --ask
 
 forecast-wendigo:
 	nix-forecast -c ".#nixosConfigurations.wendigo"

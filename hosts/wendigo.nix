@@ -106,7 +106,7 @@
   programs.firefox = {
     enable = true;
     #TODO: change this to nightly
-    package = pkgs.librewolf-wayland;
+    package = pkgs.librewolf;
     policies = {
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
