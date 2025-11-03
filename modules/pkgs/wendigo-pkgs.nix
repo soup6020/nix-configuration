@@ -159,6 +159,7 @@
     starship
     swayimg
     systemctl-tui
+    tcpdump
     tinyxxd
     torsocks
     treefmt

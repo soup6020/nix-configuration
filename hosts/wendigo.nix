@@ -30,6 +30,8 @@
       linkConfig.RequiredForOnline = "yes";
     };
   };
+
+  # Will cause issues if enabled, useless on this machine because the connection is wired
   networking.networkmanager.enable = false;
 
   networking.nameservers = [
@@ -40,7 +42,7 @@
   services.resolved = {
     enable = true;
     dnssec = "true";
-    domains = [ "~." ];
+    domains = [ "dns.quad9.net" ];
     fallbackDns = [
       "9.9.9.9"
       "149.112.112.112"
