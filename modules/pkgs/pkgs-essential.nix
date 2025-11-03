@@ -14,6 +14,7 @@
     croc
     curl
     dogdns
+    doggo
     dosfstools
     duf
     dust

@@ -32,6 +32,22 @@
   };
   networking.networkmanager.enable = false;
 
+  networking.nameservers = [
+    "9.9.9.9"
+    "149.112.112.112"
+  ];
+
+  services.resolved = {
+    enable = true;
+    dnssec = "true";
+    domains = [ "~." ];
+    fallbackDns = [
+      "9.9.9.9"
+      "149.112.112.112"
+    ];
+    dnsovertls = "true";
+  };
+
   boot.kernelPackages = pkgs.linuxPackages_hardened;
 
   boot.supportedFilesystems = [ "zfs" ];
