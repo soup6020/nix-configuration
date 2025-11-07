@@ -29,7 +29,7 @@
     #More pkgs. Must be defined here for emacsclient to find them
     pkgs.basedpyright
     pkgs.clang-tools
-    pkgs.docker-language-server
+    #pkgs.docker-language-server
     pkgs.go-grip
     pkgs.ispell
     pkgs.libvterm
@@ -40,7 +40,6 @@
     pkgs.sbcl
     pkgs.shellcheck
     pkgs.tree-sitter-grammars.tree-sitter-dockerfile
-    pkgs.tree-sitter-grammars.tree-sitter-elisp
     pkgs.tree-sitter-grammars.tree-sitter-elisp
     pkgs.tree-sitter-grammars.tree-sitter-llvm
     pkgs.tree-sitter-grammars.tree-sitter-markdown

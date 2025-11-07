@@ -218,6 +218,7 @@
       "context.properties" = {
         "default.clock.rate" = 192000;
         "default.allowed-rates" = [ 192000 ];
+        "default.clock.quantum-limit" = 8192;
       };
     };
     wireplumber = {

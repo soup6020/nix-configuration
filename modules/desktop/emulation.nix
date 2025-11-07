@@ -62,6 +62,7 @@ in
     flips
     #inputs.ps3dec.packages.${pkgs.system}.default
     mame
+    mame-tools
     mednafen
     melonDS
     mesen
