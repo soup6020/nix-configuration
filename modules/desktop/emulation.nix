@@ -58,6 +58,7 @@ in
     #azahar # Possibly override this with AzaharPlus in the future? Supports encrypted content still like classic Citra.
     bsnes-hd
     dosbox-x
+    duckstation
     easyrpg-player
     flips
     #inputs.ps3dec.packages.${pkgs.system}.default

@@ -36,6 +36,7 @@
     pkgs.marksman
     pkgs.nixd
     pkgs.nixd
+    pkgs.python3Minimal
     pkgs.rust-analyzer
     pkgs.sbcl
     pkgs.shellcheck
