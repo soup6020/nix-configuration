@@ -12,7 +12,7 @@
   virtualisation.lxc = {
     enable = true;
     lxcfs.enable = true;
-    };
+  };
 
   virtualisation.libvirtd = {
     enable = true;
