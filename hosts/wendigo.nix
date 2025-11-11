@@ -15,6 +15,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.initrd.systemd.enable = true;
 
   networking.hostName = "wendigo";
   # This option is considered experimental, and uses networkd instead of scripted networking
@@ -228,8 +229,6 @@
   };
 
   services.udisks2.enable = true;
-
-  virtualisation.waydroid.enable = true;
 
   environment.systemPackages = with pkgs; [ lact ];
   systemd.packages = with pkgs; [ lact ];

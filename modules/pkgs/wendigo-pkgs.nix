@@ -24,6 +24,7 @@
       withVencord = true;
       #withMoonlight = true;
     })
+    e2fsprogs
     easyeffects
     equibop
     (ghidra.withExtensions (
