@@ -1,0 +1,33 @@
+* Basics
+This is my NixOS/nix-darwin configuration. It is not the prettiest you'll ever see, but it works for me. I am specifically avoiding home-manager for the sake of eval times.
+
+One of my flake outputs builds a live iso, this uses hjem to copy some dotfiles into place. My neovim configuration is generated using NVF. Big thanks to NotAShelf for maintaining both of these projects.
+
+* Directories explained
+~hosts/~: Configurations for individual machines. Most of the things in here are either deployment specific, or trivial enough I don't feel like splitting it into a module.
+
+~hosts/hw~: Hardware configuration, largely automatically generated.
+
+~modules/common~: Modules shared by multiple machines, sometimes on multiple platforms.
+
+~modules/darwin~: Darwin-specific modules. Pretty barebones because I strongly prefer Linux.
+
+~modules/svc~: Modules that define and configure services. Trivial service definitions are generally left inside host configurations.
+
+~modules/sys~: Modules that demand system level functionality changes. Invasive or resource-intensive services may be found here, as well as lower level configuration changes.
+
+~modules/desktop~: Graphical, desktop-oriented functionality.
+
+~modules/pkgs~: Loosely-organized sets of programs to install from nixpkgs.
+
+~dots/~: Non-nix dotfiles to copy into an iso file.
+
+~users/~: Defines user accounts
+
+* Building or Deploying
+Main workstation:
+~nixos-rebuild switch --flake .#wendigo~
+Live ISO:
+~nix build .#live-iso~
+Macbook:
+~darwin-rebuild switch .#Ezras-MacBook-Pro~
