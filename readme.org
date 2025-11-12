@@ -26,8 +26,13 @@ One of my flake outputs builds a live iso, this uses hjem to copy some dotfiles 
 
 * Building or Deploying
 Main workstation:
+
 ~nixos-rebuild switch --flake .#wendigo~
+
 Live ISO:
+
 ~nix build .#live-iso~
+
 Macbook:
+
 ~darwin-rebuild switch .#Ezras-MacBook-Pro~
