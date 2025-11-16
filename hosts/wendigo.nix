@@ -148,11 +148,6 @@
     };
   };
 
-  programs.zsh = {
-    enable = true;
-    enableCompletion = true;
-  };
-
   programs.neovim = {
     enable = true;
     vimAlias = true;

@@ -37,7 +37,7 @@
     handbrake
     hobbits
     iaito
-    imhex
+    #imhex
     inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
     ghostty
     kitty
@@ -57,6 +57,7 @@
     qgis
     remmina
     rymdport
+    spotify
     tor-browser
     transmission-remote-gtk
     udiskie

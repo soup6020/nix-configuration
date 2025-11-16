@@ -8,7 +8,8 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    syntaxHighlighting.enable = true;
+    #This syntax highlighting is extremely slow, keep it off
+    syntaxHighlighting.enable = false;
     histSize = 15000;
 
     setOptions = [

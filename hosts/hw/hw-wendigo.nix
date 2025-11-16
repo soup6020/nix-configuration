@@ -30,7 +30,7 @@
   boot.blacklistedKernelModules = [ "k10temp" ];
   boot.kernelParams = [
     "amd_iommu=on"
-    "amdgpu.ppfeaturemask=0xffffffff"
+    "amdgpu.ppfeaturemask=0xffff7fff"
   ];
 
   fileSystems."/" = {

@@ -5,7 +5,7 @@
   inputs,
   ...
 }:
-
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 {
   imports = [
     ../modules/desktop/wayland/hypr.nix

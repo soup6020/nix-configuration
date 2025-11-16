@@ -61,7 +61,6 @@
       nixosConfigurations = {
 
         wendigo = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
             ./hosts/wendigo.nix
@@ -71,7 +70,6 @@
         };
 
         steamdeck = nixpkgs.lib.nixosSystem {
-          system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
             disko.nixosModules.disko
@@ -86,7 +84,6 @@
 
       packages.x86_64-linux = {
         live-iso = nixos-generators.nixosGenerate {
-          system = "x86_64-linux";
           format = "iso";
           specialArgs = { inherit inputs; };
           modules = [
