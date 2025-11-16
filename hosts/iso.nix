@@ -5,7 +5,6 @@
   inputs,
   ...
 }:
-  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 {
   imports = [
     ../modules/desktop/wayland/hypr.nix
@@ -15,6 +14,8 @@
     ../modules/pkgs/liveiso.nix
     ../modules/svc/openssh.nix
   ];
+
+  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
 
   nix.settings = {
     substituters = [
@@ -44,7 +45,7 @@
   services.openssh.enable = true;
 
   environment.systemPackages = with pkgs; [
-    inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
+    inputs.firefox-nightly.packages.${pkgs.stdenv.hostPlatform.system}.firefox-nightly-bin
     nixos-anywhere
     nixos-install
     nixos-install-tools

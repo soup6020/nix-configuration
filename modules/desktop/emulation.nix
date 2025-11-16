@@ -3,7 +3,7 @@
 #It is inclusive of emulators, hacking tools, and homebrew utilities
 let
   retroarchWithCores = (
-    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.retroarch.withCores (
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.retroarch.withCores (
       cores: with cores; [
         beetle-psx-hw
         bsnes
@@ -61,7 +61,7 @@ in
     duckstation
     easyrpg-player
     flips
-    #inputs.ps3dec.packages.${pkgs.system}.default
+    #inputs.ps3dec.packages.${pkgs.stdenv.hostPlatform.system}.default
     mame
     mame-tools
     mednafen

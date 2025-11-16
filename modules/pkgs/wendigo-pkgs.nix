@@ -38,7 +38,7 @@
     hobbits
     iaito
     #imhex
-    inputs.firefox-nightly.packages.${pkgs.system}.firefox-nightly-bin
+    inputs.firefox-nightly.packages.${pkgs.stdenv.hostPlatform.system}.firefox-nightly-bin
     ghostty
     kitty
     kodi-wayland
@@ -126,7 +126,7 @@
     mktorrent
     modprobed-db
     mpc
-    (inputs.nixos-unstable-small.legacyPackages.${pkgs.system}.ncmpcpp.override {
+    (inputs.nixos-unstable-small.legacyPackages.${pkgs.stdenv.hostPlatform.system}.ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;
     })
