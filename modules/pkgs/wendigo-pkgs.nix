@@ -67,7 +67,7 @@
     _7zz-rar
     arch-install-scripts
     bat
-    #beets-unstable
+    beets
     bingrep
     binwalk
     bomber-go

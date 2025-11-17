@@ -6,6 +6,7 @@
   ...
 }:
 {
+  nix.package = pkgs.lixPackageSets.stable.lix;
   nix.settings = {
     substituters = [
       "https://hyprland.cachix.org"
