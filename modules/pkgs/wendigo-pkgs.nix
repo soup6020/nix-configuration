@@ -11,6 +11,7 @@
     avalonia-ilspy
     brave
     calibre
+    cool-retro-term
     (cutter.withPlugins (
       ps: with ps; [
         jsdec
@@ -126,7 +127,8 @@
     mktorrent
     modprobed-db
     mpc
-    (inputs.nixos-unstable-small.legacyPackages.${pkgs.stdenv.hostPlatform.system}.ncmpcpp.override {
+    #(inputs.nixos-unstable-small.legacyPackages.${pkgs.stdenv.hostPlatform.system}.ncmpcpp.override {
+    (inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;
     })
