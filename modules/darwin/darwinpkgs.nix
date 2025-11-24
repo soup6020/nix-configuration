@@ -19,9 +19,9 @@
     pkgs.htop
     pkgs.idevicerestore
     pkgs.imagemagick
-    pkgs.ipfs
     pkgs.just
     pkgs.kalker
+    pkgs.kubo
     pkgs.libimobiledevice
     pkgs.megatools
     pkgs.meson
@@ -48,14 +48,12 @@
 
     #Emacs
     pkgs.nixd
-    pkgs.libvterm
     pkgs.shellcheck
     pkgs.clang-tools
     pkgs.ispell
     pkgs.nixd
     pkgs.go-grip
     pkgs.basedpyright
-    pkgs.sbcl
     pkgs.yaml-language-server
     pkgs.marksman
     pkgs.rust-analyzer
