@@ -6,6 +6,9 @@ default:
 rebuild:
 	nh os switch --ask
 
+darwin-rebuild:
+  nh darwin switch . --ask
+
 update-rebuild:
 	nix flake update ; nh os switch --ask
 

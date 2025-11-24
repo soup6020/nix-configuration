@@ -20,6 +20,7 @@
     pkgs.idevicerestore
     pkgs.imagemagick
     pkgs.ipfs
+    pkgs.just
     pkgs.kalker
     pkgs.libimobiledevice
     pkgs.megatools
