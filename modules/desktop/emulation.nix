@@ -41,14 +41,14 @@ in
           NIX_CFLAGS_COMPILE = ("") + " -O3 -march=native -Wno-error=implicit-function-declaration";
         });
       };
-      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
-        patches = (old.patches or [ ]) ++ [
-          (final.fetchpatch {
-            url = "https://github.com/libretro/RetroArch/commit/2bc0a25e6f5cf2b67b183792886e24c2ec5d448e.patch";
-            sha256 = "sha256-gkpBql5w/xUpddv/6sePb5kZ5gy9huStDthmvoz6Qbk=";
-          })
-        ];
-      });
+#      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
+#        patches = (old.patches or [ ]) ++ [
+#          (final.fetchpatch {
+#            url = "https://github.com/libretro/RetroArch/commit/2bc0a25e6f5cf2b67b183792886e24c2ec5d448e.patch";
+#            sha256 = "sha256-gkpBql5w/xUpddv/6sePb5kZ5gy9huStDthmvoz6Qbk=";
+#          })
+#        ];
+#      });
     })
   ];
   environment.systemPackages = with pkgs; [
@@ -72,7 +72,7 @@ in
     pcsx2
     retroarch-assets
     retroarch-joypad-autoconfig
-    #rpcs3
+    rpcs3
     sameboy
     xdelta
   ];

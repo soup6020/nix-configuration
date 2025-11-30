@@ -125,7 +125,7 @@
   programs.firefox = {
     enable = true;
     #TODO: change this to nightly
-    package = pkgs.librewolf;
+    package = pkgs.librewolf-bin;
     policies = {
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
@@ -169,7 +169,6 @@
   programs.nh = {
     enable = true;
     flake = "/home/ezra/nix/";
-    package = inputs.nh.packages.${pkgs.stdenv.hostPlatform.system}.nh;
     clean = {
       #Disabled in favour of built-in store optimization at the moment
       enable = false;

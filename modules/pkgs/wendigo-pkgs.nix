@@ -6,6 +6,7 @@
 {
   environment.systemPackages = with pkgs; [
     #GUI programs
+    aegisub
     alacritty
     audacity
     avalonia-ilspy
@@ -82,6 +83,7 @@
     compose2nix
     croc
     ctpv
+    ctop
     curlie
     debootstrap
     delta
@@ -98,6 +100,7 @@
     gef
     gifsicle
     gifski
+    git-annex
     gping
     hashcat
     hashcat-utils
@@ -133,7 +136,6 @@
       clockSupport = true;
     })
     netcat-openbsd
-    niv
     nix-forecast
     ntfsprogs
     nurl
@@ -155,6 +157,8 @@
     scanmem
     shellcheck
     smartmontools
+    sn0int
+    sniffglue
     socat
     sox
     speedtest-go
@@ -165,6 +169,7 @@
     systemctl-tui
     tcpdump
     tinyxxd
+    tlrc
     torsocks
     treefmt
     uefitool

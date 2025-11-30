@@ -42,6 +42,7 @@
     pkgs.shellcheck
     pkgs.tree-sitter-grammars.tree-sitter-dockerfile
     pkgs.tree-sitter-grammars.tree-sitter-elisp
+    pkgs.tree-sitter-grammars.tree-sitter-hyprlang
     pkgs.tree-sitter-grammars.tree-sitter-llvm
     pkgs.tree-sitter-grammars.tree-sitter-markdown
     pkgs.tree-sitter-grammars.tree-sitter-markdown-inline
