@@ -26,5 +26,6 @@
     })
     protonup-ng
     protonup-qt
+    vkquake
   ];
 }

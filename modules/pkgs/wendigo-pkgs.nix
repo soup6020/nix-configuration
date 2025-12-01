@@ -141,6 +141,7 @@
     nurl
     nushell
     nvme-cli
+    nvtopPackages.amd
     n-m3u8dl-re
     openocd
     pandoc
