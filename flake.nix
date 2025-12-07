@@ -34,7 +34,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nvf.url = "github:notashelf/nvf/main";
-    #nh.url = "github:nix-community/nh";
+    nh.url = "github:nix-community/nh";
 
     #User-facing/applications
     hyprland.url = "github:hyprwm/Hyprland";
@@ -42,7 +42,6 @@
     emacs-overlay.url = "github:nix-community/emacs-overlay";
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     pwndbg.url = "github:pwndbg/pwndbg";
-    ps3dec.url = "github:Redrrx/ps3dec";
   };
 
   outputs =

@@ -22,7 +22,7 @@
     ))
     darktable
     (discord-canary.override {
-      withOpenASAR = true;
+      #withOpenASAR = true;
       withVencord = true;
       #withMoonlight = true;
     })

@@ -14,6 +14,8 @@
     glpaper
     grim
     grimblast
+    hypridle
+    hyprlock
     hyprshade
     hyprshot
     mpvpaper

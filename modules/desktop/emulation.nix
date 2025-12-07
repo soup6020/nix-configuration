@@ -6,6 +6,7 @@ let
     inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.retroarch.withCores (
       cores: with cores; [
         beetle-psx-hw
+        beetle-saturn
         bsnes
         bsnes-hd
         dolphin
@@ -61,7 +62,6 @@ in
     duckstation
     easyrpg-player
     flips
-    #inputs.ps3dec.packages.${pkgs.stdenv.hostPlatform.system}.default
     mame
     mame-tools
     mednafen

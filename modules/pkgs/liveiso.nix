@@ -45,6 +45,8 @@
     restic
     ripgrep
     rsync
+    safecopy
+    scrounge-ntfs
     sdparm
     socat
     speedtest-go

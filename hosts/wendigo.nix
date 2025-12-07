@@ -168,6 +168,8 @@
 
   programs.nh = {
     enable = true;
+    #package = inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nh;
+    package = inputs.nh.packages.${pkgs.stdenv.hostPlatform.system}.nh;
     flake = "/home/ezra/nix/";
     clean = {
       #Disabled in favour of built-in store optimization at the moment
