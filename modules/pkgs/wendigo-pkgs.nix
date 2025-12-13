@@ -26,7 +26,6 @@
       withVencord = true;
       #withMoonlight = true;
     })
-    e2fsprogs
     easyeffects
     equibop
     (ghidra.withExtensions (
@@ -85,6 +84,7 @@
     ctpv
     ctop
     curlie
+    cyanrip
     debootstrap
     delta
     distrobox
@@ -92,6 +92,7 @@
     dosfstools
     exfatprogs
     exiftool
+    e2fsprogs
     ffmpegthumbnailer
     #Nixpkgs disables a lot of the offensive fortunes even with the following override
     #(fortune.override { withOffensive = true; })

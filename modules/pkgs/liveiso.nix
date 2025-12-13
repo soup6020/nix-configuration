@@ -85,6 +85,7 @@
 
     aircrack-ng
     airgeddon
+    amass
     arp-scan
     arping
     arpoison
@@ -142,6 +143,7 @@
     wireshark-cli
     xorex
     yersinia
+    zap
     zmap
   ];
 

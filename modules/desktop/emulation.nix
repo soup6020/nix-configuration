@@ -36,20 +36,20 @@ in
           src = prev.fetchFromGitLab {
             owner = "parallel-launcher";
             repo = "parallel-n64";
-            rev = "3b0c31d74f0d2bafcc559fd0a5f2462d2cbcc0c8";
-            hash = "sha256-y2GsUC/djCc4iA96N2jmuyKIHSMEVCXKDuMGzJ+qdg4=";
+            rev = "e7b29d493b4c00a480c53435882e8bb77b97b473";
+            hash = "sha256-tOlSp7HtNctAD12wD9WEyfaWvysGijAEbEKJ5ssqzQQ=";
           };
           NIX_CFLAGS_COMPILE = ("") + " -O3 -march=native -Wno-error=implicit-function-declaration";
         });
       };
-#      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
-#        patches = (old.patches or [ ]) ++ [
-#          (final.fetchpatch {
-#            url = "https://github.com/libretro/RetroArch/commit/2bc0a25e6f5cf2b67b183792886e24c2ec5d448e.patch";
-#            sha256 = "sha256-gkpBql5w/xUpddv/6sePb5kZ5gy9huStDthmvoz6Qbk=";
-#          })
-#        ];
-#      });
+      #      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
+      #        patches = (old.patches or [ ]) ++ [
+      #          (final.fetchpatch {
+      #            url = "https://github.com/libretro/RetroArch/commit/2bc0a25e6f5cf2b67b183792886e24c2ec5d448e.patch";
+      #            sha256 = "sha256-gkpBql5w/xUpddv/6sePb5kZ5gy9huStDthmvoz6Qbk=";
+      #          })
+      #        ];
+      #      });
     })
   ];
   environment.systemPackages = with pkgs; [
