@@ -155,8 +155,10 @@
   };
 
   services.flatpak.enable = true;
-  programs.appimage.enable = true;
-  programs.appimage.binfmt = true;
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
+  };
 
   programs.mtr.enable = true;
   programs.gnupg.agent = {

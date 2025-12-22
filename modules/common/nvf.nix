@@ -120,7 +120,7 @@
         nix = {
           enable = true;
           format.enable = true;
-          format.type = "nixfmt";
+          format.type = ["nixfmt"];
         };
         nu.enable = true;
         python.enable = true;

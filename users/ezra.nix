@@ -20,6 +20,7 @@
       "libvirt"
       "adbusers"
       "wireshark"
+      "dialout"
     ];
 
     packages = with pkgs; [
