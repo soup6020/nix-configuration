@@ -1,47 +1,50 @@
 { pkgs, inputs, ... }:
 #This file contains configuration for console games
 #It is inclusive of emulators, hacking tools, and homebrew utilities
-let
-  retroarchWithCores = (
-    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.retroarch.withCores (
-      cores: with cores; [
-        beetle-psx-hw
-        beetle-saturn
-        bsnes
-        bsnes-hd
-        dolphin
-        easyrpg
-        flycast
-        melonds
-        mesen
-        mesen-s
-        mgba
-        mupen64plus
-        np2kai
-        parallel-n64
-        ppsspp
-        sameboy
-        swanstation
-        tgbdual
-      ]
-    )
-  );
-in
+#Retroarch is commented out because the nixpkgs version kinda sucks, it breaks a lot
+#Flatpak user package is in use instead
+
+#let
+#  retroarchWithCores = (
+#    inputs.nixpkgs-unstable.legacyPackages.${pkgs.stdenv.hostPlatform.system}.retroarch.withCores (
+#      cores: with cores; [
+#        beetle-psx-hw
+#        beetle-saturn
+#        bsnes
+#        bsnes-hd
+#        dolphin
+#        easyrpg
+#        flycast
+#        melonds
+#        mesen
+#        mesen-s
+#        mgba
+#        mupen64plus
+#        np2kai
+#        parallel-n64
+#        ppsspp
+#        sameboy
+#        swanstation
+#        tgbdual
+#      ]
+#    )
+#  );
+#in
 
 {
-  nixpkgs.overlays = [
-    (final: prev: {
-      libretro = prev.libretro // {
-        parallel-n64 = prev.libretro.parallel-n64.overrideAttrs (old: {
-          src = prev.fetchFromGitLab {
-            owner = "parallel-launcher";
-            repo = "parallel-n64";
-            rev = "e7b29d493b4c00a480c53435882e8bb77b97b473";
-            hash = "sha256-tOlSp7HtNctAD12wD9WEyfaWvysGijAEbEKJ5ssqzQQ=";
-          };
-          NIX_CFLAGS_COMPILE = ("") + " -O3 -march=native -Wno-error=implicit-function-declaration";
-        });
-      };
+#  nixpkgs.overlays = [
+#    (final: prev: {
+#      libretro = prev.libretro // {
+#        parallel-n64 = prev.libretro.parallel-n64.overrideAttrs (old: {
+#          src = prev.fetchFromGitLab {
+#            owner = "parallel-launcher";
+#            repo = "parallel-n64";
+#            rev = "e7b29d493b4c00a480c53435882e8bb77b97b473";
+#            hash = "sha256-tOlSp7HtNctAD12wD9WEyfaWvysGijAEbEKJ5ssqzQQ=";
+#          };
+#          NIX_CFLAGS_COMPILE = ("") + " -O3 -march=native -Wno-error=implicit-function-declaration";
+#        });
+#      };
       #      retroarch-bare = prev.retroarch-bare.overrideAttrs (old: {
       #        patches = (old.patches or [ ]) ++ [
       #          (final.fetchpatch {
@@ -50,10 +53,10 @@ in
       #          })
       #        ];
       #      });
-    })
-  ];
+#    })
+#  ];
   environment.systemPackages = with pkgs; [
-    retroarchWithCores
+#    retroarchWithCores
     _86Box-with-roms
     ares
     azahar
@@ -70,8 +73,8 @@ in
     mgba
     nanoboyadvance
     pcsx2
-    retroarch-assets
-    retroarch-joypad-autoconfig
+#    retroarch-assets
+#    retroarch-joypad-autoconfig
     rpcs3
     sameboy
     xdelta

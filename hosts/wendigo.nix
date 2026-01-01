@@ -125,7 +125,7 @@
   programs.firefox = {
     enable = true;
     #TODO: change this to nightly
-    package = pkgs.librewolf-bin;
+    #package = pkgs.librewolf-bin;
     policies = {
       DisableTelemetry = true;
       DisableFirefoxStudies = true;
@@ -191,6 +191,8 @@
 
   environment.variables.EDITOR = "nvim";
 
+  #services.kmscon.enable = true;
+
   # Open ports in the firewall.
   #networking.firewall.allowedTCPPorts = [ 22 80 443 ];
   #networking.firewall.allowedUDPPorts = [ ... ];
@@ -233,6 +235,11 @@
   systemd.services.lactd.wantedBy = [ "multi-user.target" ];
 
   documentation.man.generateCaches = true;
+
+  services.tailscale = {
+    enable = true;
+    package = pkgs.tailscale;
+    };
 
   # Does not work with flakes
   #system.copySystemConfiguration = true;
