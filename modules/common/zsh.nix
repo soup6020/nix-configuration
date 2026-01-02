@@ -34,6 +34,7 @@
       source ${pkgs.zsh-history-search-multi-word}/share/zsh/zsh-history-search-multi-word/history-search-multi-word.plugin.zsh
 
       #Regular shell configuration
+      bindkey -e
       bindkey '^A' beginning-of-line
       bindkey '^E' end-of-line
       bindkey "^[[1;5C" forward-word
