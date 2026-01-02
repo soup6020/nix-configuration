@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     nwg-look
-    qt6ct
+    qt6Packages.qt6ct
     papirus-icon-theme
     rose-pine-cursor
     rose-pine-hyprcursor
