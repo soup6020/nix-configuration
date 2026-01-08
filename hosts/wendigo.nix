@@ -77,7 +77,7 @@
       { device = "/dev/disk/by-id/ata-ST8000VN004-2M2101_WKD023SS"; }
       { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZRT0SVR9"; }
       { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ69XZN"; }
-      { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ4273E"; }
+      { device = "/dev/disk/by-id/ata-WDC_WD122KRYZ-01CDAB0_B010A3PD"; }
       { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZR800P6Y"; }
       { device = "/dev/disk/by-id/ata-WDC_WD40EZRZ-00GXCB0_WD-WCC7K5ZLRDJJ"; }
     ];
@@ -165,8 +165,6 @@
     enable = true;
     enableSSHSupport = true;
   };
-
-  programs.adb.enable = true;
 
   programs.nh = {
     enable = true;

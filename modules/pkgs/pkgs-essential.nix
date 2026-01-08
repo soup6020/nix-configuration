@@ -13,7 +13,6 @@
     cachix
     croc
     curl
-    dogdns
     doggo
     dosfstools
     duf

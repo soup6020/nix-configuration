@@ -39,6 +39,11 @@
       bindkey '^E' end-of-line
       bindkey "^[[1;5C" forward-word
       bindkey "^[[1;5D" backward-word
+      # zsh-history-substring-search configuration
+      bindkey '^[[A' history-substring-search-up # or '\eOA'
+      bindkey '^[[B' history-substring-search-down # or '\eOB'
+      bindkey '^R' history-incremental-pattern-search-backward
+
     '';
 
     promptInit = ''

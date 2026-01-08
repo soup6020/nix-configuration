@@ -66,6 +66,7 @@
 
     #CLI Programs
     _7zz-rar
+    android-tools
     arch-install-scripts
     bat
     beets

@@ -11,7 +11,7 @@
     foot
     fuzzel
     gammastep
-    glpaper
+    #glpaper
     grim
     grimblast
     hypridle
