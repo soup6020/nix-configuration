@@ -151,6 +151,7 @@
     plan9port
     pngcrush
     pngquant
+    rdap
     ripgrep-all
     rizin
     rmpc

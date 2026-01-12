@@ -62,7 +62,7 @@
     azahar
     bsnes-hd
     dosbox-x
-    duckstation
+    #duckstation
     easyrpg-player
     flips
     mame
