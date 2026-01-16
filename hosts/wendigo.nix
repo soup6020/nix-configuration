@@ -12,11 +12,6 @@
     ../modules/include/all-wendigo.nix
   ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.systemd-boot.configurationLimit = 10;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.systemd.enable = true;
-
   networking.hostName = "wendigo";
   # This option is considered experimental, and uses networkd instead of scripted networking
   # May not be necessary for this configuration
@@ -32,13 +27,8 @@
     };
   };
 
-  # Will cause issues if enabled, useless on this machine because the connection is wired
+  # Will cause issues if enabled (conflict with networkd), useless on this machine because the connection is wired
   networking.networkmanager.enable = false;
-
-  networking.nameservers = [
-    "9.9.9.9"
-    "149.112.112.112"
-  ];
 
   services.resolved = {
     enable = true;
@@ -49,25 +39,6 @@
       "149.112.112.112"
     ];
     dnsovertls = "true";
-  };
-
-  boot.kernelPackages = pkgs.linuxPackages_hardened;
-
-  boot.supportedFilesystems = [ "zfs" ];
-  boot.zfs.forceImportRoot = false;
-  networking.hostId = "ba24c0d6";
-  boot.zfs.extraPools = [
-    "coldstorage"
-    "storage"
-    "data"
-  ];
-  services.zfs.autoScrub.enable = true;
-  services.btrfs.autoScrub.enable = true;
-  services.btrfs.autoScrub.interval = "weekly";
-
-  services.fstrim = {
-    enable = true;
-    interval = "weekly";
   };
 
   services.smartd = {
@@ -87,40 +58,6 @@
     ];
     defaults.monitored = "-a -o on -s (S/../.././02|L/../../7/04)";
   };
-
-  #For some reason tmpfs defaults to being disk-backed
-  #This goes against systemd default behaviour
-  #NOTE: moved to hw/hw-wendigo.nix in favour of an fstab-based approach
-  #This option uses systemd mounts, and I do not need the additional features this provides
-  #boot.tmp = {
-  #  useTmpfs = true;
-  #  tmpfsSize = "40%";
-  #};
-
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-    extraPackages = with pkgs; [
-      rocmPackages.clr.icd
-    ];
-  };
-
-  systemd.tmpfiles.rules =
-    let
-      rocmEnv = pkgs.symlinkJoin {
-        name = "rocm-combined";
-        paths = with pkgs.rocmPackages; [
-          rocblas
-          hipblas
-          clr
-        ];
-      };
-    in
-    [
-      "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
-      "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
-
-    ];
 
   programs.firefox = {
     enable = true;

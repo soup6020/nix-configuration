@@ -9,7 +9,7 @@
     aegisub
     alacritty
     audacity
-    avalonia-ilspy
+    avalonia-ilspy #Graphical .NET disassembler
     brave
     calibre
     cool-retro-term
@@ -36,8 +36,8 @@
     ))
     gimp
     handbrake
-    hobbits
-    iaito
+    hobbits #Various bit-processing/analysis tools
+    iaito #Radare2 GUI
     #imhex
     inputs.firefox-nightly.packages.${pkgs.stdenv.hostPlatform.system}.firefox-nightly-bin
     ghostty
@@ -55,9 +55,9 @@
     })
     pavucontrol
     picard
-    qgis
+    qgis #FOSS GIS software
     remmina
-    rymdport
+    rymdport #magic-wormhole GUI
     spotify
     tor-browser
     transmission-remote-gtk
@@ -72,7 +72,7 @@
     beets
     bingrep
     binwalk
-    bomber-go
+    bomber-go #Scan SBOMs for vulnerabilities
     bottom
     btop
     carapace
@@ -96,7 +96,7 @@
     e2fsprogs
     ffmpegthumbnailer
     #Nixpkgs disables a lot of the offensive fortunes even with the following override
-    #(fortune.override { withOffensive = true; })
+    (fortune.override { withOffensive = true; })
     gammastep
     gdb
     gef
@@ -132,7 +132,6 @@
     mktorrent
     modprobed-db
     mpc
-    #(inputs.nixos-unstable-small.legacyPackages.${pkgs.stdenv.hostPlatform.system}.ncmpcpp.override {
     (inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;
@@ -182,6 +181,7 @@
     unzrip
     upx
     usbutils
+    uv
     weechat
     wormhole-william
     xfsprogs

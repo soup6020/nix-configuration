@@ -5,6 +5,18 @@
   ...
 }:
 {
+  environment.systemPackages = with pkgs; [
+    nwg-look
+    qt6Packages.qt6ct
+    papirus-icon-theme
+    rose-pine-cursor
+    rose-pine-hyprcursor
+    rose-pine-gtk-theme
+    rose-pine-icon-theme
+    tokyonight-gtk-theme
+    catppuccin-gtk
+  ];
+
   #Gnome/GTK applications
   programs.dconf.profiles.user.databases = [
     {

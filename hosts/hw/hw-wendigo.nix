@@ -11,6 +11,13 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 10;
+  boot.loader.efi.canTouchEfiVariables = true;
+
+  boot.kernelPackages = pkgs.linuxPackages_hardened;
+  
+  boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [
     "nvme"
     "mpt3sas"
@@ -20,6 +27,7 @@
     "usbhid"
     "sd_mod"
   ];
+
   boot.initrd.kernelModules = [ "amdgpu" ];
   boot.kernelModules = [
     "kvm-amd"
@@ -32,6 +40,23 @@
     "amd_iommu=on"
     "amdgpu.ppfeaturemask=0xffff7fff"
   ];
+
+  boot.supportedFilesystems = [ "zfs" ];
+  boot.zfs.forceImportRoot = false;
+  networking.hostId = "ba24c0d6";
+  boot.zfs.extraPools = [
+    "coldstorage"
+    "storage"
+    "data"
+  ];
+  services.zfs.autoScrub.enable = true;
+  services.btrfs.autoScrub.enable = true;
+  services.btrfs.autoScrub.interval = "weekly";
+
+  services.fstrim = {
+    enable = true;
+    interval = "weekly";
+  };
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/3fd8f070-8a7b-40b6-b221-e126093e7f4a";
@@ -57,6 +82,7 @@
   #NOTE: This can mostly also be done with boot.tmp, which uses systemd mounts as opposed to fstab mounts.
   #Fstab ensures the device is available earlier, and this deployment does not need additional functionality from systemd.
   #It does not appear possible to set mount options with boot.tmp however.
+  #For whatever reason the default behaviour is to use a disk-backed /tmp, so this must be done.
   fileSystems."/tmp" = {
     fsType = "tmpfs";
     device = "tmpfs";
@@ -68,6 +94,37 @@
       "size=20G"
     ];
   };
+
+  #This option uses systemd mounts, and I do not need the additional features this provides
+  #boot.tmp = {
+  #  useTmpfs = true;
+  #  tmpfsSize = "40%";
+  #};
+
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+    extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+    ];
+  };
+
+  systemd.tmpfiles.rules =
+    let
+      rocmEnv = pkgs.symlinkJoin {
+        name = "rocm-combined";
+        paths = with pkgs.rocmPackages; [
+          rocblas
+          hipblas
+          clr
+        ];
+      };
+    in
+    [
+      "L+    /opt/rocm   -    -    -     -    ${rocmEnv}"
+      "L+    /opt/rocm/hip   -    -    -     -    ${pkgs.rocmPackages.clr}"
+
+    ];
 
   swapDevices = [ ];
 

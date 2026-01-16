@@ -51,7 +51,6 @@
     testdisk
     tmux
     unzipNLS
-    uv
     wget
     whois
   ];

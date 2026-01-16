@@ -6,7 +6,7 @@
     ../svc/openssh.nix
     ../desktop/emulation.nix
     ../desktop/gaming.nix
-    ../pkgs/themes.nix
+    ../desktop/theming.nix
     ../pkgs/pkgs-essential.nix
     ../common/nvf.nix
     ../common/zsh.nix

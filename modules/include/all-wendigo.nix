@@ -24,7 +24,6 @@
 
     ../pkgs/custompkgs.nix
     ../pkgs/wendigo-pkgs.nix
-    ../pkgs/themes.nix
     ../pkgs/pkgs-essential.nix
   ];
 }
