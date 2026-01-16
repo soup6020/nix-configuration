@@ -20,4 +20,9 @@ in
     wendigo
   ];
   "mpdscribble.age".publicKeys = users ++ systems;
+  "awg-privatekey.age".publicKeys = [
+    ezra
+    wendigo
+  ];
+  "awg-psk.age".publicKeys = users ++ systems;
 }
