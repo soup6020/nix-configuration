@@ -4,8 +4,10 @@
     ../common/locale.nix
     ../common/nix-options.nix
     ../sys/metapod.nix
+    ../sys/firewall.nix
     ../common/agenix/agenix.nix
     ../svc/openssh.nix
+    ../svc/mail.nix
     ../common/nvf.nix
     ../common/emacs/emacs.nix
     ../sys/sysctl.nix
