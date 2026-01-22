@@ -32,13 +32,15 @@
 
   services.resolved = {
     enable = true;
-    dnssec = "true";
-    domains = [ "dns.quad9.net" ];
-    fallbackDns = [
-      "9.9.9.9"
-      "149.112.112.112"
-    ];
-    dnsovertls = "true";
+    settings.Resolve = {
+      DNSSEC = "true";
+      Domains = [ "dns.quad9.net" ];
+      FallbackDNS = [
+        "9.9.9.9"
+        "149.112.112.112"
+      ];
+      DNSOverTLS = "true";
+    };
   };
 
   services.smartd = {
@@ -174,7 +176,7 @@
   services.tailscale = {
     enable = true;
     package = pkgs.tailscale;
-    };
+  };
 
   # Does not work with flakes
   #system.copySystemConfiguration = true;
