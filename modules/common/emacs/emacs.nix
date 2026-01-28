@@ -1,6 +1,4 @@
 {
-  config,
-  lib,
   pkgs,
   inputs,
   ...
@@ -13,7 +11,7 @@
       #     they're being parsed in nix, which lacks unicode
       #     support.
       config = ./emacs.el;
-      #Set this to true after configuration is actually made
+      #Links config file to emacs' default.el if true
       defaultInitFile = false;
 
       package = pkgs.emacs-unstable-pgtk;
@@ -31,10 +29,10 @@
     pkgs.clang-tools
     #pkgs.docker-language-server
     pkgs.go-grip
+    pkgs.graphviz-nox
     pkgs.ispell
     pkgs.libvterm
     pkgs.marksman
-    pkgs.nixd
     pkgs.nixd
     pkgs.python3Minimal
     pkgs.rust-analyzer

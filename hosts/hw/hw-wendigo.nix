@@ -12,6 +12,8 @@
   ];
 
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.netbootxyz.enable = true;
+  boot.loader.systemd-boot.edk2-uefi-shell.enable = true;
   boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -43,7 +45,7 @@
 
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
-  networking.hostId = "ba24c0d6";
+  networking.hostId = "ba24c0d6"; #ZFS uses this to prevent a pool from being imported on two systems at once
   boot.zfs.extraPools = [
     "coldstorage"
     "storage"
@@ -108,6 +110,11 @@
       rocmPackages.clr.icd
     ];
   };
+
+  hardware.amdgpu = {
+    opencl.enable = true;
+    initrd.enable = true;
+    };
 
   systemd.tmpfiles.rules =
     let
