@@ -15,6 +15,7 @@
       "wheel"
       "video"
       "input"
+      "plugdev"
       "docker"
       "podman"
       "libvirt"

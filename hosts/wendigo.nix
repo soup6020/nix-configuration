@@ -124,6 +124,8 @@
     dumpcap.enable = true;
   };
 
+  hardware.rtl-sdr.enable = true;
+  
   # services.libinput.enable = true;
 
   environment.variables.EDITOR = "nvim";

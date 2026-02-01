@@ -35,7 +35,7 @@
       ]
     ))
     gimp
-    handbrake
+    #handbrake
     hobbits #Various bit-processing/analysis tools
     iaito #Radare2 GUI
     #imhex
@@ -56,8 +56,11 @@
     pavucontrol
     picard
     qgis #FOSS GIS software
+    rawtherapee
     remmina
     rymdport #magic-wormhole GUI
+    sdrangel
+    sdrpp
     spotify
     tor-browser
     transmission-remote-gtk
@@ -143,14 +146,14 @@
     nushell
     nvme-cli
     nvtopPackages.amd
-    n-m3u8dl-re
-    openocd
+    n-m3u8dl-re #weird stream ripping program
+    openocd #open on-chip debugger
     pandoc
     pciutils
     plan9port
     pngcrush
     pngquant
-    rdap
+    rdap #whois successor apparently
     ripgrep-all
     rizin
     rmpc

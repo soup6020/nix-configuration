@@ -57,7 +57,7 @@
 #  ];
   environment.systemPackages = with pkgs; [
 #    retroarchWithCores
-    _86Box-with-roms #Vintage x86 emulator
+    #_86Box-with-roms #Vintage x86 emulator
     ares #Multi-system emulator originally by Near
     azahar #3DS emulator
     bsnes-hd #bsnes fork with upscaling features
