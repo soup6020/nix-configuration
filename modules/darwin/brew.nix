@@ -23,7 +23,6 @@
       "emacs-mac"
       "ghostty"
       "iina"
-      "imhex"
       "keka"
       "kextviewr"
       "plexamp"
