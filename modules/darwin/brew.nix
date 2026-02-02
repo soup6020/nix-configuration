@@ -26,18 +26,16 @@
       "imhex"
       "keka"
       "kextviewr"
-      "openemu"
       "plexamp"
       "reikey"
       "retroarch"
+      "sameboy"
       "tor-browser"
       "transmission-remote-gui"
       "uninstallpkg"
-      "veracrypt"
       "whatsyoursign"
       "wireshark"
       "xld"
-      "xournal++"
     ];
   };
 }
