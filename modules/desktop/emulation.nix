@@ -57,12 +57,11 @@
 #  ];
   environment.systemPackages = with pkgs; [
 #    retroarchWithCores
-    #_86Box-with-roms #Vintage x86 emulator
+    _86Box-with-roms #Vintage x86 emulator
     ares #Multi-system emulator originally by Near
     azahar #3DS emulator
     bsnes-hd #bsnes fork with upscaling features
     dosbox-x #DOSbox fork with advanced functionality and PC-98 emulation
-    #duckstation #PS1 emulator with an annoying license
     easyrpg-player #RPGmaker 2000/2003 reimplementation
     flips #ROM patcher
     mame #Needs no introduction

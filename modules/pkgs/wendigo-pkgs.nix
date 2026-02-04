@@ -35,7 +35,7 @@
       ]
     ))
     gimp
-    #handbrake
+    handbrake
     hobbits #Various bit-processing/analysis tools
     iaito #Radare2 GUI
     #imhex
