@@ -23,6 +23,7 @@
     ../dev/fhs.nix
     ../common/zsh.nix
     ../desktop/polkit.nix
+    ../svc/nfs-roms.nix
 
     ../pkgs/custompkgs.nix
     ../pkgs/wendigo-pkgs.nix

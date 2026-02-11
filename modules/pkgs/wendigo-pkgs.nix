@@ -61,6 +61,7 @@
     rymdport #magic-wormhole GUI
     sdrangel
     sdrpp
+    signal-desktop-bin
     spotify
     tor-browser
     transmission-remote-gtk
