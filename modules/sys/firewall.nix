@@ -29,7 +29,12 @@
       65142 # amnezia
     ];
     allowedUDPPorts = [
+      111 # rpcbind (NFS)
+      2049 # NFS
       3074 # bo3
+      4001 # lockd (NFS)
+      4002 # mountd (NFS)
+      4000 #statd (NFS)
       7777 # terraria
       19132 # bedrock
       27015 # srcds
@@ -41,11 +46,6 @@
         from = 60000; # mosh
         to = 61000;
       }
-      111 # rpcbind (NFS)
-      2049 # NFS
-      4001 # lockd (NFS)
-      4002 # mountd (NFS)
-      4000 #statd (NFS)
     ];
   };
 }
