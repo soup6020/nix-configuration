@@ -7,6 +7,7 @@
   };
 
   #NFS server
+  #Shares are also read-only, in addition to the bind mount being RO
   services.nfs.server = {
     enable = true;
     lockdPort = 4001;
