@@ -35,6 +35,7 @@
     };
     nvf.url = "github:notashelf/nvf/main";
     nh.url = "github:nix-community/nh";
+    colmena.url = "github:zhaofengli/colmena";
 
     #User-facing/applications
     hyprland.url = "github:hyprwm/Hyprland";

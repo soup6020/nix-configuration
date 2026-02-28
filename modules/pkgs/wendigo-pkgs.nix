@@ -27,6 +27,7 @@
       #withMoonlight = true;
     })
     easyeffects
+    element-desktop
     equibop
     (ghidra.withExtensions (
       p: with p; [
@@ -56,6 +57,7 @@
     pavucontrol
     picard
     qgis #FOSS GIS software
+    qucs-s
     rawtherapee
     remmina
     rymdport #magic-wormhole GUI
@@ -114,11 +116,13 @@
     hledger-iadd
     hledger-ui
     hledger-utils
+    igir
     inetutils
     imagemagick
     idevicerestore
     ilspycmd
     imv
+    inputs.colmena.packages.${pkgs.stdenv.hostPlatform.system}.colmena
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
     jfsutils

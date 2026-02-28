@@ -34,7 +34,7 @@
       3074 # bo3
       4001 # lockd (NFS)
       4002 # mountd (NFS)
-      4000 #statd (NFS)
+      4000 # statd (NFS)
       7777 # terraria
       19132 # bedrock
       27015 # srcds

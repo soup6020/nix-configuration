@@ -165,7 +165,7 @@
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = [ "multi-user.target" ];
 
-  documentation.man.generateCaches = true;
+  documentation.man.cache.enable = true;
 
   services.tailscale = {
     enable = true;

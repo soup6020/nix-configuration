@@ -11,6 +11,8 @@
     pkgs.xdg-desktop-portal-gtk
     inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland
   ];
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.login.enableGnomeKeyring = true;
 
   programs.hyprland = {
     enable = true;

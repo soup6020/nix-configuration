@@ -57,7 +57,7 @@
 #  ];
   environment.systemPackages = with pkgs; [
 #    retroarchWithCores
-    _86Box-with-roms #Vintage x86 emulator
+    _86box-with-roms #Vintage x86 emulator
     ares #Multi-system emulator originally by Near
     azahar #3DS emulator
     bsnes-hd #bsnes fork with upscaling features
@@ -67,7 +67,7 @@
     mame #Needs no introduction
     mame-tools #Useful MAME programs
     mednafen #Headless multi-system emulator
-    melonDS #NDS emulator
+    melonds #NDS emulator
     mesen #NES/SNES emulator with full debugger and cycle accuracy
     mgba #GBA emulator
     nanoboyadvance #Cycle-accurate GBA emulator

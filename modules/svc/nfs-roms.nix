@@ -15,7 +15,7 @@
     statdPort = 4000;
     exports = ''
     /srv/nfs/shares              192.168.1.0/24(ro,fsid=0)
-    /srv/nfs/shares/roms         192.168.1.0/24(ro,fsid=0)
+    /srv/nfs/shares/roms         192.168.1.0/24(ro)
     '';
     };
 }
