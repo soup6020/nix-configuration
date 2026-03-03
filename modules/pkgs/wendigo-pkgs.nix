@@ -11,7 +11,7 @@
     audacity
     avalonia-ilspy #Graphical .NET disassembler
     brave
-    calibre
+    #calibre
     cool-retro-term
     (cutter.withPlugins (
       ps: with ps; [
@@ -75,7 +75,7 @@
     android-tools
     arch-install-scripts
     bat
-    beets
+    #beets
     bingrep
     binwalk
     bomber-go #Scan SBOMs for vulnerabilities
@@ -116,6 +116,7 @@
     hledger-iadd
     hledger-ui
     hledger-utils
+    iamb
     igir
     inetutils
     imagemagick

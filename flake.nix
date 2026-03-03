@@ -18,10 +18,6 @@
     #  inputs.nixpkgs.follows = "nixpkgs";
     #};
 
-    nixos-generators = {
-      url = "github:nix-community/nixos-generators";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs-unstable";
@@ -51,7 +47,6 @@
       nix-darwin,
       nixpkgs,
       nvf,
-      nixos-generators,
       agenix,
       disko,
       jovian,
@@ -80,11 +75,7 @@
           ];
         };
 
-      };
-
-      packages.x86_64-linux = {
-        live-iso = nixos-generators.nixosGenerate {
-          format = "iso";
+        live-iso = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
             ./hosts/iso.nix # Define a separate configuration for the ISO

@@ -36,9 +36,6 @@
   };
   nixpkgs.config.allowUnfree = true;
 
-  isoImage.squashfsCompression = "lz4"; # Optional: Adjust compression level
-  isoImage.volumeID = "SoupNixOS"; # Set ISO name
-
   boot.kernelPackages = pkgs.linuxPackages_latest; # Latest vanilla kernel
 
   networking.networkmanager.enable = true;

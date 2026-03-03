@@ -16,7 +16,7 @@ forecast-wendigo:
 	nix-forecast -c ".#nixosConfigurations.wendigo"
 
 build-iso:
-	nix build .#live-iso
+	nixos-rebuild build-image --flake .#live-iso --image-variant iso-installer
 
 format:
 	nix fmt

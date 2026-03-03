@@ -31,7 +31,7 @@ Main workstation:
 
 Live ISO:
 
-~nix build .#live-iso~
+~nixos-rebuild build-image --flake .#live-iso --image-variant iso-installer~
 
 Macbook:
 
