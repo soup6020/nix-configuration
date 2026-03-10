@@ -63,7 +63,7 @@
     rymdport #magic-wormhole GUI
     sdrangel
     sdrpp
-    signal-desktop-bin
+    signal-desktop
     spotify
     tor-browser
     transmission-remote-gtk
@@ -165,7 +165,7 @@
     rmpc
     rustscan
     samurai
-    sbomnix
+    #sbomnix #broken dependency
     scanmem
     shellcheck
     smartmontools
