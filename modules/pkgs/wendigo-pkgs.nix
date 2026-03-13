@@ -81,10 +81,13 @@
     bomber-go #Scan SBOMs for vulnerabilities
     bottom
     btop
+    bubblewrap
     carapace
     cava
     checksec
     clang
+    claude-code
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.claudebox
     comma
     compose2nix
     croc
@@ -154,6 +157,7 @@
     nvtopPackages.amd
     n-m3u8dl-re #weird stream ripping program
     openocd #open on-chip debugger
+    opencode
     pandoc
     pciutils
     plan9port

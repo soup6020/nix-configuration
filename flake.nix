@@ -38,7 +38,9 @@
     firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
     emacs-overlay.url = "github:nix-community/emacs-overlay";
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
+    llm-agents.url = "github:numtide/llm-agents.nix";
     pwndbg.url = "github:pwndbg/pwndbg";
+    romcat.url = "github:soup6020/romcat";
   };
 
   outputs =
