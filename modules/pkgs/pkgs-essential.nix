@@ -8,7 +8,7 @@
 #This list is supposed to be universal, only add command-line packages that have cached binaries for Linux and Darwin
 {
   environment.systemPackages = with pkgs; [
-    inputs.agenix.packages.${system}.default
+    inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
     aria2
     cachix
     croc
