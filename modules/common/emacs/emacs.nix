@@ -9,7 +9,7 @@ let
     #     they're being parsed in nix, which lacks unicode
     #     support.
     config = ./emacs.el;
-    #Links config file to emacs' default.el if true
+    #Links config file to emacs' default.el if true. For some reason evaluation fails if config does not point to a valid file.
     defaultInitFile = false;
 
     package = pkgs.emacs-unstable-pgtk;
@@ -39,6 +39,7 @@ in
     pkgs.basedpyright
     pkgs.cmake
     pkgs.libvterm
+    pkgs.pkg-config
     pkgs.clang-tools
     #pkgs.docker-language-server
     pkgs.go-grip
