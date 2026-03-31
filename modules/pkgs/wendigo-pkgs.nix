@@ -119,7 +119,6 @@
     hledger-iadd
     hledger-ui
     hledger-utils
-    iamb
     igir
     inetutils
     imagemagick

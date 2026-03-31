@@ -36,7 +36,7 @@
     "ovmf/edk2-i386-vars.fd" = {
       source = config.virtualisation.libvirtd.qemu.package + "/share/qemu/edk2-i386-vars.fd";
     };
-    "docker-runtimes/runsc".source = "${pkgs.gvisor}/bin/runsc";
+    #"docker-runtimes/runsc".source = "${pkgs.gvisor}/bin/runsc";
   };
   systemd.tmpfiles.rules = [
     "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu_kvm}/share/qemu/firmware"
@@ -45,7 +45,7 @@
 
   virtualisation.docker = {
     enable = true;
-    extraPackages = [ pkgs.gvisor ];
+    #extraPackages = [ pkgs.gvisor ];
     enableOnBoot = true;
     autoPrune = {
       enable = true;

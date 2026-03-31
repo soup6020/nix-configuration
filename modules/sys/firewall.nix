@@ -3,7 +3,10 @@
   networking.firewall = {
     enable = true;
     trustedInterfaces = [ "lo" ];
+    logRefusedConnections = true; #spams the hell out of dmesg if true
+    logRefusedUnicastsOnly = true; #spams less
     checkReversePath = false; #workaround for Docker
+    logReversePathDrops = false; #also spams dmesg
     allowedTCPPorts = [
       22 # ssh
       53 # dns
