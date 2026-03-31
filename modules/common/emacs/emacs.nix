@@ -52,6 +52,9 @@ in
     pkgs.sbcl
     pkgs.shellcheck
     pkgs.yaml-language-server
+    #LaTeX — org-mode previews + pandoc conversions
+    pkgs.texliveSmall
+    pkgs.pandoc
   ];
   services.emacs = {
     install = true;
