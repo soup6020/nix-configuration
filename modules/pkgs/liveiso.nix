@@ -72,7 +72,7 @@
     slurp
     sway-contrib.grimshot
     swaynotificationcenter
-    swww
+    awww
     tor-browser
     wl-clipboard
 

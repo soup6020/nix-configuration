@@ -86,7 +86,6 @@
     cava
     checksec
     clang
-    claude-code
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.claudebox
     comma
     compose2nix

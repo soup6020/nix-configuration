@@ -53,7 +53,11 @@ in
     pkgs.shellcheck
     pkgs.yaml-language-server
     #LaTeX — org-mode previews + pandoc conversions
-    pkgs.texliveSmall
+    (pkgs.texliveSmall.withPackages (ps: [
+      ps.dvipng
+      ps.dvisvgm
+      ps.preview
+    ]))
     pkgs.pandoc
   ];
   services.emacs = {

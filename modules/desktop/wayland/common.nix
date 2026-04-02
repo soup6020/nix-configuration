@@ -22,7 +22,7 @@
     slurp
     sway-contrib.grimshot
     swaynotificationcenter
-    swww
+    awww
     waybar
     wl-clipboard
   ];

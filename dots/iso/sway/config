@@ -17,7 +17,7 @@ set $term kitty
 #exec /usr/libexec/flatpak-portal -r
 #exec "sh -c 'sleep 5;exec /usr/libexec/xdg-desktop-portal -r'"
 exec swaync
-exec swww-daemon
+exec awww-daemon
 output HDMI-A-1 resolution 1920x1080 position 0,0
 output HDMI-A-2 resolution 1920x1080 position 1920,0
 ### Idle configuration
