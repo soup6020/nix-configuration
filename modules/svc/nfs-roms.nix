@@ -2,6 +2,7 @@
 {
   #First set up a read-only bind mount for the ROM directory
   fileSystems."/srv/nfs/shares/roms" = {
+    fsType = "btrfs";
     device = "/mnt/ssd/Games/roms";
     options = [ "bind" "ro"];
   };

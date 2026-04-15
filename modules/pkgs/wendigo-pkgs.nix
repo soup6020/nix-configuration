@@ -87,6 +87,7 @@
     checksec
     clang
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.claudebox
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.claude-code
     comma
     compose2nix
     croc
@@ -132,6 +133,7 @@
     kalker
     lazygit
     libimobiledevice
+    litecli
     lldb
     lm_sensors
     lsiutil
@@ -155,7 +157,7 @@
     nvtopPackages.amd
     n-m3u8dl-re #weird stream ripping program
     openocd #open on-chip debugger
-    opencode
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
     pandoc
     pciutils
     plan9port

@@ -4,7 +4,7 @@
     enable = true;
     trustedInterfaces = [ "lo" ];
     logRefusedConnections = true; #spams the hell out of dmesg if true
-    logRefusedUnicastsOnly = true; #spams less
+    logRefusedUnicastsOnly = true; #spams less if enabled with above
     checkReversePath = false; #workaround for Docker
     logReversePathDrops = false; #also spams dmesg
     allowedTCPPorts = [

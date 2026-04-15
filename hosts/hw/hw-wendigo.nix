@@ -17,7 +17,7 @@
   boot.loader.systemd-boot.configurationLimit = 10;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  boot.kernelPackages = pkgs.linuxPackages_hardened;
+  #boot.kernelPackages = pkgs.linuxPackages_hardened;
   
   boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [
