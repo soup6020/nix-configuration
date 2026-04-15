@@ -39,6 +39,7 @@ in
     pkgs.basedpyright
     pkgs.cmake
     pkgs.libvterm
+    pkgs.emacs-lsp-booster
     pkgs.pkg-config
     pkgs.clang-tools
     #pkgs.docker-language-server
