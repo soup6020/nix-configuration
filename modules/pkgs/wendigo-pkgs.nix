@@ -11,7 +11,7 @@
     audacity
     avalonia-ilspy #Graphical .NET disassembler
     brave
-    #calibre
+    calibre
     cool-retro-term
     (cutter.withPlugins (
       ps: with ps; [
@@ -54,6 +54,7 @@
         obs-pipewire-audio-capture
       ];
     })
+    obsidian
     pavucontrol
     picard
     qgis #FOSS GIS software
@@ -109,6 +110,7 @@
     gammastep
     gdb
     gef
+    gh
     gifsicle
     gifski
     git-annex
