@@ -9,23 +9,18 @@
     aegisub
     alacritty
     audacity
-    avalonia-ilspy #Graphical .NET disassembler
+    avalonia-ilspy # Graphical .NET disassembler
     brave
     calibre
     cool-retro-term
-    (cutter.withPlugins (
-      ps: with ps; [
-        jsdec
-        rz-ghidra
-        sigdb
-      ]
-    ))
+    #(cutter.withPlugins (
+    #  ps: with ps; [
+    #    jsdec
+    #    rz-ghidra
+    #    sigdb
+    #  ]
+    #))
     darktable
-    (discord-canary.override {
-      #withOpenASAR = true;
-      withVencord = true;
-      #withMoonlight = true;
-    })
     easyeffects
     element-desktop
     equibop
@@ -37,8 +32,8 @@
     ))
     gimp
     handbrake
-    hobbits #Various bit-processing/analysis tools
-    iaito #Radare2 GUI
+    hobbits # Various bit-processing/analysis tools
+    iaito # Radare2 GUI
     #imhex
     inputs.firefox-nightly.packages.${pkgs.stdenv.hostPlatform.system}.firefox-nightly-bin
     ghostty
@@ -57,11 +52,11 @@
     obsidian
     pavucontrol
     picard
-    qgis #FOSS GIS software
+    qgis # FOSS GIS software
     qucs-s
     rawtherapee
     remmina
-    rymdport #magic-wormhole GUI
+    rymdport # magic-wormhole GUI
     sdrangel
     sdrpp
     signal-desktop
@@ -79,7 +74,7 @@
     #beets
     bingrep
     binwalk
-    bomber-go #Scan SBOMs for vulnerabilities
+    bomber-go # Scan SBOMs for vulnerabilities
     bottom
     btop
     bubblewrap
@@ -135,7 +130,7 @@
     kalker
     lazygit
     libimobiledevice
-    litecli
+    #litecli #better sqlite command line
     lldb
     lm_sensors
     lsiutil
@@ -152,20 +147,21 @@
     })
     netcat-openbsd
     nix-forecast
+    nono
     ntfsprogs
     nurl
     nushell
     nvme-cli
     nvtopPackages.amd
-    n-m3u8dl-re #weird stream ripping program
-    openocd #open on-chip debugger
+    n-m3u8dl-re # weird stream ripping program
+    openocd # open on-chip debugger
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
     pandoc
     pciutils
     plan9port
     pngcrush
     pngquant
-    rdap #whois successor apparently
+    rdap # whois successor apparently
     ripgrep-all
     rizin
     rmpc

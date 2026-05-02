@@ -1,4 +1,4 @@
-{ pkgs, ...}:
+{ pkgs, ... }:
 {
 
   time.timeZone = "America/Vancouver";

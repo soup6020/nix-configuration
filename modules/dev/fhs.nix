@@ -58,7 +58,7 @@
           zlib
           fontconfig.lib
         ];
-      profile = ''export FHS=1'';
+      profile = "export FHS=1";
       runScript = "nu";
     })
   ];

@@ -9,7 +9,6 @@
   hardware.pulseaudio.enable = lib.mkForce false;
 
   jovian = {
-
     devices.steamdeck = {
       autoUpdate = true;
       enable = true;
@@ -23,6 +22,5 @@
     };
 
     steamos.useSteamOSConfig = true;
-
   };
 }

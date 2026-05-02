@@ -18,7 +18,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   #boot.kernelPackages = pkgs.linuxPackages_hardened;
-  
+
   boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [
     "nvme"
@@ -45,7 +45,7 @@
 
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.forceImportRoot = false;
-  networking.hostId = "ba24c0d6"; #ZFS uses this to prevent a pool from being imported on two systems at once
+  networking.hostId = "ba24c0d6"; # ZFS uses this to prevent a pool from being imported on two systems at once
   boot.zfs.extraPools = [
     "coldstorage"
     "storage"
@@ -114,7 +114,7 @@
   hardware.amdgpu = {
     opencl.enable = true;
     initrd.enable = true;
-    };
+  };
 
   systemd.tmpfiles.rules =
     let

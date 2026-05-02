@@ -7,7 +7,7 @@
 {
   #This currently does not work at all, activation fails
   networking.wireguard = {
-    useNetworkd = false; #Not supported with Amnezia
+    useNetworkd = false; # Not supported with Amnezia
     enable = true;
     interfaces = {
 

@@ -4,7 +4,10 @@
   fileSystems."/srv/nfs/shares/roms" = {
     fsType = "btrfs";
     device = "/mnt/ssd/Games/roms";
-    options = [ "bind" "ro"];
+    options = [
+      "bind"
+      "ro"
+    ];
   };
 
   #NFS server
@@ -15,8 +18,8 @@
     mountdPort = 4002;
     statdPort = 4000;
     exports = ''
-    /srv/nfs/shares              192.168.1.0/24(ro,fsid=0)
-    /srv/nfs/shares/roms         192.168.1.0/24(ro)
+      /srv/nfs/shares              192.168.1.0/24(ro,fsid=0)
+      /srv/nfs/shares/roms         192.168.1.0/24(ro)
     '';
-    };
+  };
 }

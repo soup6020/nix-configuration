@@ -7,6 +7,7 @@
   ];
   security = {
     polkit.enable = true;
+    forcePageTableIsolation = true;
     apparmor = {
       enable = true;
       killUnconfinedConfinables = true;

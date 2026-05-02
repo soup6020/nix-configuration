@@ -3,10 +3,10 @@
   networking.firewall = {
     enable = true;
     trustedInterfaces = [ "lo" ];
-    logRefusedConnections = true; #spams the hell out of dmesg if true
-    logRefusedUnicastsOnly = true; #spams less if enabled with above
-    checkReversePath = false; #workaround for Docker
-    logReversePathDrops = false; #also spams dmesg
+    logRefusedConnections = true; # spams the hell out of dmesg if true
+    logRefusedUnicastsOnly = true; # spams less if enabled with above
+    checkReversePath = false; # workaround for Docker
+    logReversePathDrops = false; # also spams dmesg
     allowedTCPPorts = [
       22 # ssh
       53 # dns
@@ -19,7 +19,7 @@
       3074 # bo3
       4001 # lockd (NFS)
       4002 # mountd (NFS)
-      4000 #statd (NFS)
+      4000 # statd (NFS)
       6600 # mpd
       7777 # terraria
       19131 # bedrock
