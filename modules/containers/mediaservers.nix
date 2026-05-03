@@ -15,7 +15,7 @@
         "/mnt/cold/backups/old-hdd/Movies:/OldMovies"
         "/mnt/cold/backups/old-hdd/TV:/OldTV"
       ];
-      addDevices = [ "/dev/dri:/dev/dri" ];
+      devices = [ "/dev/dri:/dev/dri" ];
       environmentFiles = [ config.age.secrets."plex-env".path ];
     };
     serviceConfig.Restart = "always";
@@ -40,7 +40,7 @@
         "27"
         "303"
       ];
-      addDevices = [ "/dev/dri:/dev/dri" ];
+      devices = [ "/dev/dri:/dev/dri" ];
       environments = {
         JELLYFIN_PublishedServerUrl = "https://jellyfin.soup6020.dev";
       };

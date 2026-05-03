@@ -15,7 +15,7 @@
         DISPATCHARR_LOG_LEVEL = "info";
       };
       addCapabilities = [ "SYS_NICE" ];
-      addDevices = [ "/dev/dri:/dev/dri" ];
+      devices = [ "/dev/dri:/dev/dri" ];
     };
     serviceConfig.Restart = "always";
   };

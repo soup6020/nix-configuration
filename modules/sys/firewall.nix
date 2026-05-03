@@ -2,7 +2,7 @@
   networking.nftables.enable = true;
   networking.firewall = {
     enable = true;
-    trustedInterfaces = [ "lo" ];
+    trustedInterfaces = [ "lo" "podman0" ];
     logRefusedConnections = true; # spams the hell out of dmesg if true
     logRefusedUnicastsOnly = true; # spams less if enabled with above
     checkReversePath = false; # workaround for Docker

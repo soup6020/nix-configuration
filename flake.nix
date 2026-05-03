@@ -14,7 +14,6 @@
     disko.inputs.nixpkgs.follows = "nixpkgs";
     quadlet-nix = {
       url = "github:SEIAROTg/quadlet-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     #nur = {
@@ -63,6 +62,7 @@
       agenix,
       disko,
       jovian,
+      quadlet-nix,
       ...
     }@inputs:
     {
@@ -74,6 +74,7 @@
             ./hosts/wendigo.nix
             nvf.nixosModules.default
             agenix.nixosModules.default
+            quadlet-nix.nixosModules.quadlet
           ];
         };
 
