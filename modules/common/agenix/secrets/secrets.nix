@@ -25,4 +25,17 @@ in
     wendigo
   ];
   "awg-psk.age".publicKeys = users ++ systems;
+
+  "vaultwarden-env.age".publicKeys = [
+    ezra
+    wendigo
+  ];
+  "transmission-env.age".publicKeys = [
+    ezra
+    wendigo
+  ];
+  "plex-env.age".publicKeys = [
+    ezra
+    wendigo
+  ];
 }

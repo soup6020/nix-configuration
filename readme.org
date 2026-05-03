@@ -36,3 +36,6 @@ Live ISO:
 Macbook:
 
 ~darwin-rebuild switch .#Ezras-MacBook-Pro~
+
+* Backup considerations
++ Container data lives in ~/var/lib/containers/storage/volumes~ and needs to be backed up manually

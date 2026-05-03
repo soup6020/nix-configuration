@@ -12,6 +12,10 @@
     #System
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
+    quadlet-nix = {
+      url = "github:SEIAROTg/quadlet-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     #nur = {
     #  url = "github:nix-community/NUR";

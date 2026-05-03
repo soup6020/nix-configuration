@@ -24,6 +24,7 @@
     ../common/zsh.nix
     ../desktop/polkit.nix
     ../svc/nfs-roms.nix
+    ../containers/default.nix
 
     ../pkgs/custompkgs.nix
     ../pkgs/wendigo-pkgs.nix
