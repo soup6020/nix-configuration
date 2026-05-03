@@ -120,6 +120,7 @@
 
   programs.wireshark = {
     enable = true;
+    package = inputs.nixos-unstable-small.legacyPackages.${pkgs.stdenv.hostPlatform.system}.tshark;
     usbmon.enable = true;
     dumpcap.enable = true;
   };

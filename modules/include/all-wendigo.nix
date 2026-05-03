@@ -27,6 +27,7 @@
     ../containers/default.nix
 
     ../pkgs/custompkgs.nix
+    ../pkgs/pins.nix
     ../pkgs/wendigo-pkgs.nix
     ../pkgs/pkgs-essential.nix
   ];
