@@ -1,4 +1,8 @@
-{ inputs, pkgs, ... }:
+{
+  inputs,
+  pkgs,
+  ...
+}:
 let
   small = inputs.nixos-unstable-small.legacyPackages.${pkgs.stdenv.hostPlatform.system};
 in

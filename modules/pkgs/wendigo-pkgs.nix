@@ -188,6 +188,7 @@
     treefmt
     uefitool
     ugrep
+    unblob
     unrar
     unzrip
     upx
@@ -200,5 +201,6 @@
     yazi
     yt-dlp
     zellij
+    zig
   ];
 }
