@@ -7,141 +7,150 @@
 {
   environment.systemPackages = with pkgs; [
     _7zz-rar
-    arch-install-scripts
-    btrfs-progs
-    chntpw
-    cifs-utils
-    clamav
-    dcfldd
-    ddrescue
-    debootstrap
-    dosfstools
-    extundelete
-    eza
-    fastfetch
-    flashrom
-    gdu
-    git
-    hdparm
-    htop
-    htop
-    iperf3
-    jfsutils
-    ldns
-    megatools
-    memtest86plus
-    memtest_vulkan
-    memtester
-    mosh
-    nmap
-    nvme-cli
-    ophcrack
-    ophcrack-cli
-    partclone
-    parted
-    partimage
-    radare2
-    raider
-    restic
-    ripgrep
-    rsync
-    safecopy
-    scrounge-ntfs
-    sdparm
-    socat
-    speedtest-go
-    speedtest-rs
-    squashfsTools
-    testdisk
-    tmux
-    veracrypt
-    whois
-    xfs-undelete
-    xfsprogs
-
-    alacritty
-    gimp
-    gparted
-    grim
-    grimblast
-    rose-pine-hyprcursor
-    kitty
-    mpv
-    papirus-icon-theme
-    rose-pine-cursor
-    slurp
-    sway-contrib.grimshot
-    swaynotificationcenter
-    awww
-    tor-browser
-    wl-clipboard
-
-    bind
-    massdns
-    subfinder
-    subprober
-    subzerod
-    wtfis
-
     aircrack-ng
     airgeddon
+    alacritty
     amass
+    arch-install-scripts
     arp-scan
     arping
     arpoison
+    awww
+    bind
+    bingrep
+    binwalk
     bloodhound-py
+    btrfs-progs
     capstone
+    chntpw
+    cifs-utils
+    clamav
     crowbar
+    ctpv
     das
+    dcfldd
+    ddrescue
     ddrescueview
+    debootstrap
     dislocker
     dismember
+    distrobox
+    distrobox-tui
+    dosfstools
     exiflooter
     exiv2
     exploitdb
     ext4magic
+    extundelete
+    eza
+    fastfetch
+    flashrom
     foremost
+    gdu
     gef
+    gimp
+    git
     go-exploitdb
+    gparted
+    grim
+    grimblast
     gzrt
     hashcat
     hashcat-utils
     hcxtools
+    hdparm
     hivex
     hstsparser
+    htop
+    htop
+    inetutils
     ipcalc
     iperf
+    iperf3
     ipscan
     iputils
+    jfsutils
     keedump
     kismet
+    kitty
+    ldns
     lftp
+    lsiutil
     masscan
+    massdns
+    megatools
+    memtest86plus
+    memtest_vulkan
+    memtester
     metasploit
+    mosh
+    mpv
     mtr
     multimon-ng
     ncftp
     netsniff-ng
+    nmap
     ntfs3g
     ntfsprogs
+    nvme-cli
     nwipe
+    ophcrack
+    ophcrack-cli
+    papirus-icon-theme
+    partclone
+    parted
+    partimage
+    pciutils
     pdf-parser
     pixiewps
     python3Packages.lsassy
     python3Packages.pypykatz
+    radare2
+    raider
     reaverwps
     reaverwps-t6x
     recoverjpeg
+    restic
+    ripgrep
+    rizin
+    rose-pine-cursor
+    rose-pine-hyprcursor
+    rsync
     rustscan
     safecopy
+    safecopy
     scalpel
+    scrounge-ntfs
+    sdparm
     sleuthkit
+    slurp
+    socat
+    speedtest-go
+    speedtest-rs
+    squashfsTools
     sslh
+    subfinder
+    subprober
+    subzerod
+    sway-contrib.grimshot
+    swaynotificationcenter
     sx-go
+    tcpdump
+    testdisk
+    tmux
+    tor-browser
+    unblob
+    veracrypt
+    whois
     whois
     wireshark
     wireshark-cli
+    wl-clipboard
+    wtfis
+    xfs-undelete
+    xfsprogs
     xorex
+    yazi
     yersinia
     zap
     zmap

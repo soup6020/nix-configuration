@@ -1,7 +1,19 @@
 { config, pkgs, ... }:
 {
-  fonts.fontconfig.useEmbeddedBitmaps = true;
-  fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
+  fonts.fontconfig = {
+    useEmbeddedBitmaps = true;
+    defaultFonts.emoji = [ "Twitter Color Emoji" ];
+    antialias = true;
+    hinting = {
+      enable = true;
+      style = "slight";
+    };
+    subpixel = {
+      rgba = "none";
+      lcdfilter = "none";
+    };
+  };
+
   fonts.fontDir.enable = true;
 
   fonts.packages = [
