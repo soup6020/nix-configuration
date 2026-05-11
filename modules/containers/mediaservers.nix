@@ -35,7 +35,7 @@
         "/mnt/cold/Media/Anime Movies:/AniMovies"
         "/mnt/cold/Media/Music:/Music"
       ];
-      # video (group 27) and render (group 303) fo VAAPI.
+      # video (group 27) and render (group 303) for VAAPI.
       addGroups = [
         "27"
         "303"

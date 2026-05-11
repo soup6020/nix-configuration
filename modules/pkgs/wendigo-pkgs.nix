@@ -73,6 +73,7 @@
     bat
     #beets
     bingrep
+    binsider
     binwalk
     bomber-go # Scan SBOMs for vulnerabilities
     bottom
@@ -96,6 +97,7 @@
     distrobox
     distrobox-tui
     dosfstools
+    doxx #docx viewer
     exfatprogs
     exiftool
     e2fsprogs
@@ -133,6 +135,7 @@
     #litecli #better sqlite command line
     lldb
     lm_sensors
+    lnav #advanced logfile pager
     lsiutil
     lynis
     mediainfo
@@ -154,6 +157,7 @@
     nvme-cli
     nvtopPackages.amd
     n-m3u8dl-re # weird stream ripping program
+    ocrmypdf
     openocd # open on-chip debugger
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
     pandoc
