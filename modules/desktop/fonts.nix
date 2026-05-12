@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+  #also see theming.nix, some dconf settings are there instead
   fonts.fontconfig = {
     useEmbeddedBitmaps = true;
     defaultFonts.emoji = [ "Twitter Color Emoji" ];

@@ -97,7 +97,7 @@
     distrobox
     distrobox-tui
     dosfstools
-    doxx #docx viewer
+    doxx # docx viewer
     exfatprogs
     exiftool
     e2fsprogs
@@ -135,7 +135,7 @@
     #litecli #better sqlite command line
     lldb
     lm_sensors
-    lnav #advanced logfile pager
+    lnav # advanced logfile pager
     lsiutil
     lynis
     mediainfo
