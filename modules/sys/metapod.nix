@@ -46,6 +46,14 @@
   };
 
   services.jitterentropy-rngd.enable = true;
+  systemd.services.jitterentropy.serviceConfig = {
+    LimitMEMLOCK = "8M";
+    SystemCallFilter = [
+      ""
+      "@system-service"
+      "~@chown @clock @cpu-emulation @debug @ipc @module @mount @obsolete @privileged @raw-io @reboot @resources @swap memfd_create mincore personality"
+    ];
+  };
   boot.kernelModules = [ "jitterentropy_rng" ];
 
   systemd = {
