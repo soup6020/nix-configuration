@@ -192,7 +192,7 @@
     treefmt
     uefitool
     ugrep
-    unblob
+    #unblob
     unrar
     unzrip
     upx

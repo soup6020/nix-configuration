@@ -5,6 +5,23 @@
   programs.steam = {
     enable = true;
     gamescopeSession.enable = true;
+    package = pkgs.steam.override {
+      extraPkgs =
+        pkgs': with pkgs'; [
+          gamescope
+          keyutils
+          libXScrnSaver
+          libXcursor
+          libXi
+          libXinerama
+          libkrb5
+          libpng
+          libpulseaudio
+          libvorbis
+          mangohud
+          stdenv.cc.cc.lib # Provides libstdc++.so.6
+        ];
+    };
   };
 
   environment.systemPackages = with pkgs; [
