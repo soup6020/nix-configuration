@@ -51,9 +51,14 @@
     "storage"
     "data"
   ];
-  services.zfs.autoScrub.enable = true;
-  services.btrfs.autoScrub.enable = true;
-  services.btrfs.autoScrub.interval = "weekly";
+  services.zfs.autoScrub = {
+    enable = true;
+    interval = "monthly";
+  };
+  services.btrfs.autoScrub = {
+    enable = true;
+    interval = "weekly";
+  };
 
   services.fstrim = {
     enable = true;

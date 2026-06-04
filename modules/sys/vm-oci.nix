@@ -19,29 +19,18 @@
     qemu = {
       package = pkgs.qemu_kvm;
       swtpm.enable = true;
-      verbatimConfig = ''
-        nvram = [ "/run/libvirt/nix-ovmf/AAVMF_CODE.fd:/run/libvirt/nix-ovmf/AAVMF_VARS.fd", "/run/libvirt/nix-ovmf/OVMF_CODE.fd:/run/libvirt/nix-ovmf/OVMF_VARS.fd" ]
-      '';
     };
   };
 
   virtualisation.spiceUSBRedirection.enable = true;
   networking.firewall.trustedInterfaces = [ "virbr0" ];
 
-  environment.etc = {
-    "ovmf/edk2-x86_64-secure-code.fd" = {
-      source = config.virtualisation.libvirtd.qemu.package + "/share/qemu/edk2-x86_64-secure-code.fd";
-    };
-
-    "ovmf/edk2-i386-vars.fd" = {
-      source = config.virtualisation.libvirtd.qemu.package + "/share/qemu/edk2-i386-vars.fd";
-    };
-    #"docker-runtimes/runsc".source = "${pkgs.gvisor}/bin/runsc";
-  };
-  systemd.tmpfiles.rules = [
-    "L+ /var/lib/qemu/firmware - - - - ${pkgs.qemu_kvm}/share/qemu/firmware"
-    "L+ /usr/share/qemu/firmware - - - - ${pkgs.qemu_kvm}/share/qemu/firmware"
-  ];
+  # NOTE: EFI firmware paths are handled entirely by the upstream NixOS libvirtd
+  # module. It rewrites QEMU's firmware descriptor JSONs so /var/lib/qemu/firmware
+  # (libvirt's search dir) points at the stable /run/libvirt/nix-ovmf/ symlinks
+  # instead of GC-able /nix/store paths. Do NOT add tmpfiles rules pointing
+  # /var/lib/qemu/firmware (or /usr/share/qemu/firmware) at the raw qemu store
+  # dir — that overrides the upstream rule and bakes dead store paths into VMs.
 
   virtualisation.docker = {
     enable = true;
