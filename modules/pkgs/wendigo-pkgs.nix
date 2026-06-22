@@ -137,6 +137,7 @@
     lm_sensors
     lnav # advanced logfile pager
     lsiutil
+    lsof
     lynis
     mediainfo
     megatools

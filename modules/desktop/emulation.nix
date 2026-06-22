@@ -74,7 +74,7 @@
     pcsx2 # PS2 emulator
     #retroarch-assets
     #retroarch-joypad-autoconfig
-    rpcs3 # PS3 emulator
+    #rpcs3 # PS3 emulator
     sameboy # Cycle-accurate GB/GBC/SGB emulator
     xdelta # Another ROM patcher
   ];

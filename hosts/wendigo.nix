@@ -39,7 +39,7 @@
         "9.9.9.9"
         "149.112.112.112"
       ];
-      DNSOverTLS = "true";
+      DNSOverTLS = "false";
     };
   };
 
