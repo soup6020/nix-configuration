@@ -3,7 +3,7 @@
   virtualisation.quadlet.containers.transmission = {
     autoStart = true;
     containerConfig = {
-      image = "lscr.io/linuxserver/transmission:4.0.5";
+      image = "lscr.io/linuxserver/transmission:4.1.2";
       publishPorts = [
         "127.0.0.1:9091:9091"
         "51413:51413"
