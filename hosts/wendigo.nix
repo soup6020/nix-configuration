@@ -9,9 +9,10 @@
   imports = [
     ./hw/hw-wendigo.nix
     ../users/ezra.nix
-    ../modules/include/all-wendigo.nix
+    ../modules/wendigo/default.nix
   ];
 
+  #<Begin networking>
   networking.hostName = "wendigo";
   # This option is considered experimental, and uses networkd instead of scripted networking
   # May not be necessary for this configuration
@@ -30,6 +31,16 @@
   # Will cause issues if enabled (conflict with networkd), useless on this machine because the connection is wired
   networking.networkmanager.enable = false;
 
+  services.chrony = {
+    enable = true;
+    enableNTS = true;
+    servers = [ "time.cloudflare.com" ];
+    extraFlags = [
+      "-F 1"
+      "-r"
+    ];
+  };
+
   services.resolved = {
     enable = true;
     settings.Resolve = {
@@ -39,9 +50,10 @@
         "9.9.9.9"
         "149.112.112.112"
       ];
-      DNSOverTLS = "false";
+      DNSOverTLS = "false"; # FIXME: This completely breaks DNS resolution in some programs if true
     };
   };
+  #<End networking>
 
   services.smartd = {
     enable = true;
@@ -131,16 +143,7 @@
 
   environment.variables.EDITOR = "nvim";
 
-  services.chrony = {
-    enable = true;
-    enableNTS = true;
-    servers = [ "time.cloudflare.com" ];
-    extraFlags = [
-      "-F 1"
-      "-r"
-    ];
-  };
-
+  #Audio
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -176,19 +179,6 @@
   # Does not work with flakes
   #system.copySystemConfiguration = true;
 
-  # This option defines the first version of NixOS you have installed on this particular machine,
-  # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
-  #
-  # Most users should NEVER change this value after the initial install, for any reason,
-  # even if you've upgraded your system to a new NixOS release.
-  #
-  # This value being lower than the current NixOS release does NOT mean your system is
-  # out of date, out of support, or vulnerable.
-  #
-  # Do NOT change this value unless you have manually inspected all the changes it would make to your configuration,
-  # and migrated your data accordingly.
-  #
-  # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
-  system.stateVersion = "24.11"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Do not change this without RTFM, bad things happen
 
 }

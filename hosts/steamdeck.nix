@@ -9,8 +9,8 @@
 {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
-    ../../users/ezra/nix
-    ../../modules/include/steamdeck.nix
+    ../users/ezra/nix
+    ../modules/steamdeck/default.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -40,6 +40,12 @@
   services.fstrim = {
     enable = true;
     interval = "weekly";
+  };
+
+  services.flatpak.enable = true;
+  programs.appimage = {
+    enable = true;
+    binfmt = true;
   };
 
   users.users.root.openssh.authorizedKeys.keys = [

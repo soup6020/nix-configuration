@@ -7,7 +7,7 @@
 }:
 {
   imports = [
-    ../modules/include/mbp.nix
+    ../modules/darwin/default.nix
   ];
 
   system.primaryUser = "ezra";

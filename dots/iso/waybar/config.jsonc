@@ -1,5 +1,5 @@
 {
-    // "output": ["HDMI-A-1", "HDMI-A-2"],
+    "output": ["DP-1", "HDMI-A-2"],
     "layer": "top",
     "position": "top",
     "mod": "dock",
@@ -29,7 +29,6 @@
      "on-scroll-up": "hyprctl dispatch workspace e+1",
      "on-scroll-down": "hyprctl dispatch workspace e-1",
         "all-outputs": false,
-        "on-click": "activate",
         "format": "{name}",
         "format-icons": {
             "1": "1",

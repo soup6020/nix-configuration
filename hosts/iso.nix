@@ -7,12 +7,12 @@
 }:
 {
   imports = [
-    ../modules/desktop/wayland/hypr.nix
-    ../modules/desktop/greetd.nix
+    ../modules/wendigo/desktop/wayland/hypr.nix
+    ../modules/wendigo/desktop/greetd.nix
     ../modules/common/nvf.nix
-    ../modules/pkgs/pkgs-essential.nix
-    ../modules/pkgs/liveiso.nix
-    ../modules/svc/openssh.nix
+    ../modules/common/pkgs-essential.nix
+    ../modules/liveiso/iso-pkgs.nix
+    ../modules/wendigo/svc/openssh.nix
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
