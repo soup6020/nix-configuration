@@ -12,7 +12,7 @@
     ../modules/common/nvf.nix
     ../modules/common/pkgs-essential.nix
     ../modules/liveiso/iso-pkgs.nix
-    ../modules/wendigo/svc/openssh.nix
+    ../modules/common/openssh.nix
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
