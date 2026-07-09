@@ -36,7 +36,7 @@
   };
   nixpkgs.config.allowUnfree = true;
 
-  boot.kernelPackages = pkgs.linuxPackages_latest; # Latest vanilla kernel
+  #boot.kernelPackages = pkgs.linuxPackages_latest; # Latest vanilla kernel
 
   networking.networkmanager.enable = true;
   services.openssh.enable = true;
