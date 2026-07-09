@@ -102,6 +102,7 @@
     exiftool
     e2fsprogs
     ffmpegthumbnailer
+    ffmpeg-full
     #Nixpkgs disables a lot of the offensive fortunes even with the following override
     (fortune.override { withOffensive = true; })
     gammastep

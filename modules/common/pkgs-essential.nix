@@ -20,7 +20,6 @@
     eza
     fastfetch
     fd
-    ffmpeg-full
     file
     fzf
     gdu

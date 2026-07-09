@@ -44,7 +44,7 @@
     pkgs.wavpack
     pkgs.weechat
     pkgs.yara
-    pkgs.yt-dlp
+    #pkgs.yt-dlp
 
     #Emacs
     pkgs.nixd
