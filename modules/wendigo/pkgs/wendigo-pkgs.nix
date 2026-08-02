@@ -12,7 +12,6 @@
     avalonia-ilspy # Graphical .NET disassembler
     brave
     calibre
-    cool-retro-term
     #(cutter.withPlugins (
     #  ps: with ps; [
     #    jsdec
@@ -31,10 +30,9 @@
       ]
     ))
     gimp
-    handbrake
+    #handbrake
     hobbits # Various bit-processing/analysis tools
     iaito # Radare2 GUI
-    #imhex
     inputs.firefox-nightly.packages.${pkgs.stdenv.hostPlatform.system}.firefox-nightly-bin
     ghostty
     kitty
@@ -52,12 +50,8 @@
     obsidian
     pavucontrol
     picard
-    qgis # FOSS GIS software
-    qucs-s
     rawtherapee
     remmina
-    rymdport # magic-wormhole GUI
-    sdrangel
     sdrpp
     signal-desktop
     spotify
@@ -152,6 +146,7 @@
     })
     netcat-openbsd
     nix-forecast
+    nodejs # necessary for pi packages
     nono
     ntfsprogs
     nurl
@@ -164,6 +159,7 @@
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
     pandoc
     pciutils
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.pi
     plan9port
     pngcrush
     pngquant
@@ -179,6 +175,7 @@
     smartmontools
     sn0int
     sniffglue
+    sacd
     socat
     sox
     speedtest-go
@@ -192,6 +189,8 @@
     tlrc
     torsocks
     treefmt
+    trzsz-ssh
+    tsshd
     uefitool
     ugrep
     #unblob

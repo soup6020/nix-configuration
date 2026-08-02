@@ -6,15 +6,17 @@
 }:
 {
   environment.systemPackages = with pkgs; [
-    catppuccin-gtk
+    amarena-theme
+    #catppuccin-gtk
     nwg-look
+    oceanic-theme
     papirus-icon-theme
+    palenight-theme
     qt6Packages.qt6ct
     rose-pine-cursor
-    rose-pine-gtk-theme
     rose-pine-hyprcursor
     rose-pine-icon-theme
-    tokyonight-gtk-theme
+    #tokyonight-gtk-theme
   ];
 
   #Gnome/GTK applications
@@ -22,7 +24,7 @@
   programs.dconf.profiles.user.databases = [
     {
       settings."org/gnome/desktop/interface" = {
-        gtk-theme = "Tokyonight-Dark";
+        gtk-theme = "amarena";
         icon-theme = "Papirus-Dark";
         font-name = "IBM Plex Sans 11";
         document-font-name = "Sans Regular 11";

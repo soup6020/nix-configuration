@@ -20,6 +20,7 @@
   ];
 
   nix.settings = {
+    max-substitution-jobs = 24; # download up to 24 derivations at a time
     substituters = [
       "https://hyprland.cachix.org"
       "https://nix-community.cachix.org"

@@ -19,6 +19,7 @@
     hyprshade
     hyprshot
     mpvpaper
+    quickshell
     slurp
     sway-contrib.grimshot
     swaynotificationcenter
