@@ -1,6 +1,4 @@
 {
-  config,
-  lib,
   pkgs,
   inputs,
   ...
@@ -44,13 +42,14 @@
   services.resolved = {
     enable = true;
     settings.Resolve = {
+      DNS = "9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net";
       DNSSEC = "true";
-      Domains = [ "dns.quad9.net" ];
+      Domains = [ "~." ];
       FallbackDNS = [
         "9.9.9.9"
         "149.112.112.112"
       ];
-      DNSOverTLS = "false"; # FIXME: This completely breaks DNS resolution in some programs if true
+      DNSOverTLS = "yes"; # FIXME: This completely breaks DNS resolution in some programs if "yes"
     };
   };
   #<End networking>
@@ -106,6 +105,7 @@
   };
 
   services.flatpak.enable = true;
+  services.protonmail-bridge.enable = true;
   programs.appimage = {
     enable = true;
     binfmt = true;

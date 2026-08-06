@@ -55,6 +55,7 @@
     sdrpp
     signal-desktop
     spotify
+    thunderbird-latest
     tor-browser
     transmission-remote-gtk
     udiskie
@@ -156,6 +157,7 @@
     n-m3u8dl-re # weird stream ripping program
     ocrmypdf
     openocd # open on-chip debugger
+    openspec
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
     pandoc
     pciutils
