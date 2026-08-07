@@ -27,7 +27,6 @@
     clamav
     crowbar
     ctpv
-    das
     dcfldd
     ddrescue
     ddrescueview
@@ -139,7 +138,7 @@
     testdisk
     tmux
     tor-browser
-    unblob
+    #unblob
     veracrypt
     whois
     whois

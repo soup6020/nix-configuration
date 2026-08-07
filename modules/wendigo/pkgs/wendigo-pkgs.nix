@@ -201,7 +201,9 @@
     upx
     usbutils
     uv
+    volatility3
     weechat
+    woeusb-ng
     wormhole-william
     xfsprogs
     yara-x

@@ -75,7 +75,7 @@
     clobberFiles = lib.mkForce true;
     files = {
       ".config/fuzzel/fuzzel.ini".source = ../dots/iso/fuzzel/fuzzel.ini;
-      ".config/hypr/hyprland.conf".source = ../dots/iso/hypr/hyprland.conf;
+      ".config/hypr/hyprland.lua".source = ../dots/iso/hypr/hyprland.lua;
       ".config/kitty/kitty.conf".source = ../dots/iso/kitty/kitty.conf;
       ".config/kitty/current-theme.conf".source = ../dots/iso/kitty/current-theme.conf;
       ".config/waybar/style.css".source = ../dots/iso/waybar/style.css;
