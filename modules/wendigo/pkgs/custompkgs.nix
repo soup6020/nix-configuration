@@ -9,6 +9,7 @@
     #inputs.capa.packages.${pkgs.stdenv.hostPlatform.system}.default
     #inputs.rom64.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.romcat.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.rzq.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.oftp.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

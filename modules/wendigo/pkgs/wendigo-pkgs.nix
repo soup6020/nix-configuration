@@ -195,6 +195,7 @@
     tsshd
     uefitool
     ugrep
+    unar
     #unblob
     unrar
     unzrip

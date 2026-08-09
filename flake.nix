@@ -54,6 +54,10 @@
       url = "github:soup6020/oftp";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rzq = {
+      url = "github:soup6020/rzq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
