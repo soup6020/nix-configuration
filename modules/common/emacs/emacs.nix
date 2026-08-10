@@ -19,14 +19,26 @@ let
       epkgs.use-package
       epkgs.vterm
       (epkgs.treesit-grammars.with-grammars (grammars: [
+        grammars.tree-sitter-bash
+        grammars.tree-sitter-c
+        grammars.tree-sitter-cpp
+        grammars.tree-sitter-css
         grammars.tree-sitter-dockerfile
         grammars.tree-sitter-elisp
-        grammars.tree-sitter-hyprlang
+        grammars.tree-sitter-go
+        grammars.tree-sitter-gomod
+        grammars.tree-sitter-java
+        grammars.tree-sitter-latex
         grammars.tree-sitter-llvm
+        grammars.tree-sitter-lua
         grammars.tree-sitter-markdown
         grammars.tree-sitter-markdown-inline
+        grammars.tree-sitter-nasm
         grammars.tree-sitter-nix
         grammars.tree-sitter-nu
+        grammars.tree-sitter-python
+        grammars.tree-sitter-rust
+        grammars.tree-sitter-yaml
       ]))
     ];
   };

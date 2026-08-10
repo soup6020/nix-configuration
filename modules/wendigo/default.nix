@@ -5,7 +5,7 @@
     ../common/emacs/emacs.nix
     ../common/locale.nix
     ../common/nix-options.nix
-    ../common/nvf.nix
+    #../common/nvf.nix
     ../common/openssh.nix
     ../common/pkgs-essential.nix
     ../common/zsh.nix

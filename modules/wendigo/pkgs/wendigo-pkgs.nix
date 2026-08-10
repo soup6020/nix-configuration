@@ -86,7 +86,7 @@
     ctpv
     ctop
     curlie
-    cyanrip
+    #cyanrip
     debootstrap
     delta
     distrobox
@@ -141,7 +141,7 @@
     mktorrent
     modprobed-db
     mpc
-    (inputs.nixpkgs.legacyPackages.${pkgs.stdenv.hostPlatform.system}.ncmpcpp.override {
+    (pkgs.ncmpcpp.override {
       visualizerSupport = true;
       clockSupport = true;
     })
@@ -181,7 +181,6 @@
     socat
     sox
     speedtest-go
-    speedtest-rs
     sqlite
     starship
     swayimg

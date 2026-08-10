@@ -26,6 +26,7 @@
     pkgs.nerd-fonts.lilex # modified version of IBM Plex
     pkgs.nerd-fonts.meslo-lg
     pkgs.nerd-fonts.mononoki
+    pkgs.nerd-fonts.symbols-only # for emacs
     pkgs.nerd-fonts.terminess-ttf
     pkgs.nerd-fonts.zed-mono # modified Iosevka
     pkgs.noto-fonts # Useful fallback fonts

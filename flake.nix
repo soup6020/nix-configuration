@@ -45,7 +45,10 @@
     emacs-overlay.url = "github:nix-community/emacs-overlay";
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     llm-agents.url = "github:numtide/llm-agents.nix";
-    pwndbg.url = "github:pwndbg/pwndbg";
+    pwndbg = {
+      url = "github:pwndbg/pwndbg";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     romcat = {
       url = "github:soup6020/romcat";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -79,7 +82,7 @@
           specialArgs = { inherit inputs; };
           modules = [
             ./hosts/wendigo.nix
-            nvf.nixosModules.default
+            #nvf.nixosModules.default
             agenix.nixosModules.default
             quadlet-nix.nixosModules.quadlet
           ];
