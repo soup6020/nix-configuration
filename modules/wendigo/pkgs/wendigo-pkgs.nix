@@ -58,7 +58,7 @@
     thunderbird-latest
     tor-browser
     transmission-remote-gtk
-    udiskie
+    #udiskie
     xournalpp
 
     #CLI Programs
@@ -93,6 +93,7 @@
     distrobox-tui
     dosfstools
     doxx # docx viewer
+    evil-helix
     exfatprogs
     exiftool
     e2fsprogs
@@ -203,6 +204,7 @@
     uv
     volatility3
     weechat
+    wget2
     woeusb-ng
     wormhole-william
     xfsprogs

@@ -18,6 +18,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   #boot.kernelPackages = pkgs.linuxPackages_hardened;
+  boot.kernelPackages = pkgs.linuxPackages_7_2;
 
   boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [

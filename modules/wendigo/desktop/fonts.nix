@@ -18,7 +18,9 @@
   fonts.fontDir.enable = true;
 
   fonts.packages = [
+    pkgs.corefonts # Basic M$ fonts
     pkgs.ibm-plex
+    pkgs.lato
     pkgs.nerd-fonts.blex-mono # Nerd fonts IBM Plex
     pkgs.nerd-fonts.droid-sans-mono
     pkgs.nerd-fonts.hack
@@ -30,7 +32,8 @@
     pkgs.nerd-fonts.terminess-ttf
     pkgs.nerd-fonts.zed-mono # modified Iosevka
     pkgs.noto-fonts # Useful fallback fonts
-    pkgs.plemoljp-nf # IBM Plex Mono/Plex Sans for Japanese
+    pkgs.plemoljp-nf # nerd-fonts Plex Mono with correct CJK behaviour
     pkgs.twitter-color-emoji
+    pkgs.vista-fonts # Additional M$ fonts
   ];
 }
