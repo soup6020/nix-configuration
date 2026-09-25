@@ -107,7 +107,6 @@
     gh
     gifsicle
     gifski
-    git-annex
     gping
     hashcat
     hashcat-utils
@@ -124,6 +123,7 @@
     inputs.colmena.packages.${pkgs.stdenv.hostPlatform.system}.colmena
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
     inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
+    intermodal
     jfsutils
     just
     kalker

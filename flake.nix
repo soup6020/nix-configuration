@@ -61,6 +61,10 @@
       url = "github:soup6020/rzq";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sameboy-qt = {
+      url = "github:soup6020/sameboy-qt";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

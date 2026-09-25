@@ -24,7 +24,7 @@ format:
 pull-images:
 	#!/usr/bin/env bash
 	set -euo pipefail
-	grep -h '^Image=' /etc/containers/systemd/*.container \
+	sudo grep -h '^Image=' /etc/containers/systemd/*.container \
 	  | sed 's/^Image=//' \
 	  | sort -u \
 	  | xargs -rn1 sudo podman pull
@@ -32,6 +32,17 @@ pull-images:
 restart-containers:
 	#!/usr/bin/env bash
 	set -euo pipefail
+	for f in /etc/containers/systemd/*.container; do
+	  basename "$f" .container
+	done | xargs -r sudo systemctl restart
+
+container-aio:
+	#!/usr/bin/env bash
+	set -euo pipefail
+	sudo grep -h '^Image=' /etc/containers/systemd/*.container \
+	  | sed 's/^Image=//' \
+	  | sort -u \
+	  | xargs -rn1 sudo podman pull
 	for f in /etc/containers/systemd/*.container; do
 	  basename "$f" .container
 	done | xargs -r sudo systemctl restart

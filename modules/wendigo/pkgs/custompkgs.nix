@@ -20,5 +20,6 @@
     inputs.romcat.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.rzq.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.oftp.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.sameboy-qt.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
