@@ -21,6 +21,7 @@
   virtualisation.quadlet.containers.nadeko = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "registry.gitlab.com/kwoth/nadekobot:latest";
       #networks = [ "discord-bots.network" ];
       environments = {
@@ -39,6 +40,7 @@
   virtualisation.quadlet.containers.mayuri = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "docker.io/phasecorex/red-discordbot:extra-audio";
       volumes = [
         "/var/lib/containers/storage/volumes/mayuri:/data"

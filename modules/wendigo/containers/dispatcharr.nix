@@ -3,6 +3,7 @@
   virtualisation.quadlet.containers.dispatcharr = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "ghcr.io/dispatcharr/dispatcharr:latest";
       publishPorts = [ "127.0.0.1:9191:9191" ];
       volumes = [

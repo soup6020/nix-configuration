@@ -3,6 +3,7 @@
   virtualisation.quadlet.containers.glance = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "docker.io/glanceapp/glance:latest";
       publishPorts = [ "127.0.0.1:8080:8080" ];
       volumes = [

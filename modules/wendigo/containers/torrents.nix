@@ -3,6 +3,7 @@
   virtualisation.quadlet.containers.transmission = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "lscr.io/linuxserver/transmission:4.1.2";
       publishPorts = [
         "127.0.0.1:9091:9091"
@@ -21,6 +22,7 @@
   virtualisation.quadlet.containers.prowlarr = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "lscr.io/linuxserver/prowlarr:nightly";
       publishPorts = [ "127.0.0.1:9696:9696" ];
       volumes = [

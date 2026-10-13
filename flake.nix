@@ -45,10 +45,10 @@
     emacs-overlay.url = "github:nix-community/emacs-overlay";
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     llm-agents.url = "github:numtide/llm-agents.nix";
-    pwndbg = {
-      url = "github:pwndbg/pwndbg";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    #pwndbg = {
+    #  url = "github:pwndbg/pwndbg";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
     romcat = {
       url = "github:soup6020/romcat";
       inputs.nixpkgs.follows = "nixpkgs";

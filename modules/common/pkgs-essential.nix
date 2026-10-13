@@ -37,7 +37,6 @@
     neovim
     nixfmt
     nix-index
-    nix-tree
     nmap
     pass-nodmenu
     radare2

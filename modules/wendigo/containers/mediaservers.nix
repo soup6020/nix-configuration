@@ -3,6 +3,7 @@
   virtualisation.quadlet.containers.plex = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "lscr.io/linuxserver/plex:latest";
       networks = [ "host" ];
       volumes = [
@@ -24,6 +25,7 @@
   virtualisation.quadlet.containers.jellyfin = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "docker.io/jellyfin/jellyfin:latest";
       networks = [ "host" ];
       volumes = [

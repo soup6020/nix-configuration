@@ -49,10 +49,11 @@
     })
     obsidian
     pavucontrol
+    pdf4qt
     picard
     rawtherapee
     remmina
-    sdrpp
+    #sdrpp
     signal-desktop
     spotify
     thunderbird-latest
@@ -121,8 +122,8 @@
     ilspycmd
     imv
     inputs.colmena.packages.${pkgs.stdenv.hostPlatform.system}.colmena
-    inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
-    inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
+    #inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg
+    #inputs.pwndbg.packages.${pkgs.stdenv.hostPlatform.system}.pwndbg-lldb
     intermodal
     jfsutils
     just

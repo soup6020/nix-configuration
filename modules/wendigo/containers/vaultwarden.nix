@@ -3,6 +3,7 @@
   virtualisation.quadlet.containers.vaultwarden = {
     autoStart = true;
     containerConfig = {
+      healthCmd = "none";
       image = "docker.io/vaultwarden/server:latest";
       publishPorts = [ "127.0.0.1:8000:80" ];
       volumes = [ "/var/lib/containers/storage/volumes/vaultwarden:/data" ];
