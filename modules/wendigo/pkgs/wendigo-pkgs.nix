@@ -59,7 +59,6 @@
     thunderbird-latest
     tor-browser
     transmission-remote-gtk
-    #udiskie
     xournalpp
 
     #CLI Programs

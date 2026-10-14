@@ -14,7 +14,6 @@
     ./desktop/fonts.nix
     ./desktop/gaming.nix
     ./desktop/greetd.nix
-    ./desktop/polkit.nix
     ./desktop/theming.nix
     ./desktop/wayland/hypr.nix
     ./dev/fhs.nix

@@ -15,7 +15,7 @@
     allowedTCPPorts = [
       22 # ssh
       34758 # tailscale
-      65142 # amnezia
+      51820 # wg
     ];
 
     allowedUDPPorts = [

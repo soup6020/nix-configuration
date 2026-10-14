@@ -32,7 +32,6 @@
       32469 # plex dlna
       34758 # tailscale
       51413 # transmission
-      65142 # amnezia
     ];
     allowedUDPPorts = [
       111 # rpcbind (NFS)

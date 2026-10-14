@@ -6,10 +6,12 @@
 }:
 {
 
-  services.xserver.enable = true;
-  services.xserver.xkb.layout = "us";
-  services.xserver.videoDrivers = [ "amdgpu" ];
-  services.xserver.excludePackages = with pkgs; [ xterm ];
+  services.xserver = {
+    enable = true;
+    xkb.layout = "us";
+    videoDrivers = [ "amdgpu" ];
+    excludePackages = with pkgs; [ xterm ];
+  };
 
   services.greetd = {
     enable = true;

@@ -14,7 +14,6 @@
     ];
     brews = [ ];
     casks = [
-      "altserver"
       "bitwarden"
       "blockblock"
       "cutter"

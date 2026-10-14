@@ -362,7 +362,6 @@ hl.window_rule({
 hl.on("hyprland.start", function()
     hl.exec_cmd("swaync & waybar & awww-daemon")
     hl.exec_cmd("gammastep-indicator -l 53.9:-122.7")
-    -- hl.exec_cmd("udiskie &")
     hl.exec_cmd("easyeffects -w &")
 end)
 
