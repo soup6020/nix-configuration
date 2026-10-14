@@ -11,7 +11,6 @@
     isNormalUser = true;
     hashedPasswordFile = config.age.secrets.ezra.path;
     shell = pkgs.zsh;
-    #shell = pkgs.nushell;
     extraGroups = [
       "wheel"
       "video"

@@ -47,7 +47,6 @@
         obs-pipewire-audio-capture
       ];
     })
-    obsidian
     pavucontrol
     pdf4qt
     picard
@@ -70,7 +69,6 @@
     bingrep
     binsider
     binwalk
-    bomber-go # Scan SBOMs for vulnerabilities
     bottom
     btop
     bubblewrap
@@ -172,12 +170,9 @@
     rmpc
     rustscan
     samurai
-    #sbomnix #broken dependency
     scanmem
     shellcheck
     smartmontools
-    sn0int
-    sniffglue
     sacd
     socat
     sox
