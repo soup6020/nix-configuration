@@ -35,7 +35,6 @@
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nvf.url = "github:notashelf/nvf/main";
     nh.url = "github:nix-community/nh";
     colmena.url = "github:zhaofengli/colmena";
 
@@ -71,7 +70,6 @@
       self,
       nix-darwin,
       nixpkgs,
-      nvf,
       agenix,
       disko,
       quadlet-nix,
@@ -83,8 +81,8 @@
         wendigo = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
-            ./hosts/wendigo.nix
-            #nvf.nixosModules.default
+            ./hosts/wendigo/default.nix
+            ./users/ezra.nix
             agenix.nixosModules.default
             quadlet-nix.nixosModules.quadlet
           ];
@@ -93,8 +91,7 @@
         live-iso = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs; };
           modules = [
-            ./hosts/iso.nix # Define a separate configuration for the ISO
-            nvf.nixosModules.default
+            ./hosts/liveiso/default.nix
             agenix.nixosModules.default
             inputs.hjem.nixosModules.default
           ];
@@ -104,7 +101,7 @@
       darwinConfigurations.Ezras-MacBook-Pro = nix-darwin.lib.darwinSystem {
         specialArgs = { inherit inputs; };
         modules = [
-          ./hosts/macbook.nix
+          ./hosts/darwin/default.nix
           agenix.darwinModules.default
         ];
       };

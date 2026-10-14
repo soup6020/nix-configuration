@@ -5,12 +5,20 @@
   ...
 }:
 {
-  imports = [ ./common.nix ];
+  xdg.portal = {
+    enable = true;
+    config.common = {
+      default = [
+        "gtk"
+      ];
+    };
 
-  xdg.portal.extraPortals = [
-    pkgs.xdg-desktop-portal-gtk
-    inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland
-  ];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland
+    ];
+  };
+
   services.gnome.gnome-keyring.enable = true;
   security.pam.services.login.enableGnomeKeyring = true;
 
@@ -30,4 +38,20 @@
       binPath = "/run/current-system/sw/bin/start-hyprland";
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    foot
+    fuzzel
+    gammastep
+    hypridle
+    hyprlock
+    hyprshade
+    hyprshot
+    mpvpaper
+    quickshell
+    slurp
+    swaynotificationcenter
+    awww
+    wl-clipboard
+  ];
 }

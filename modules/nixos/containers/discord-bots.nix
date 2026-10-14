@@ -37,15 +37,15 @@
     serviceConfig.Restart = "always";
   };
 
-  virtualisation.quadlet.containers.mayuri = {
-    autoStart = true;
-    containerConfig = {
-      healthCmd = "none";
-      image = "docker.io/phasecorex/red-discordbot:extra-audio";
-      volumes = [
-        "/var/lib/containers/storage/volumes/mayuri:/data"
-      ];
-    };
-    serviceConfig.Restart = "always";
-  };
+  #virtualisation.quadlet.containers.mayuri = {
+  #  autoStart = true;
+  #  containerConfig = {
+  #    healthCmd = "none";
+  #    image = "docker.io/phasecorex/red-discordbot:extra-audio";
+  #    volumes = [
+  #      "/var/lib/containers/storage/volumes/mayuri:/data"
+  #    ];
+  #  };
+  #  serviceConfig.Restart = "always";
+  #};
 }

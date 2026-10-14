@@ -6,6 +6,7 @@
   ...
 }:
 {
+  programs.zsh.enable = true;
   users.users.ezra = {
     isNormalUser = true;
     hashedPasswordFile = config.age.secrets.ezra.path;

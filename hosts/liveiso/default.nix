@@ -7,12 +7,12 @@
 }:
 {
   imports = [
-    ../modules/wendigo/desktop/wayland/hypr.nix
-    ../modules/wendigo/desktop/greetd.nix
-    ../modules/common/nvf.nix
-    ../modules/common/pkgs-essential.nix
-    ../modules/liveiso/iso-pkgs.nix
-    ../modules/common/openssh.nix
+    ../../modules/nixos/desktop/hypr.nix
+    ../../modules/nixos/desktop/greetd.nix
+    ../../modules/shared/pkgs-essential.nix
+    ./pkgs.nix
+    ../../modules/nixos/svc/openssh.nix
+    ../../users/ezra.nix
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
@@ -21,12 +21,10 @@
     substituters = [
       "https://hyprland.cachix.org"
       "https://nix-community.cachix.org"
-      "https://nvf.cachix.org"
     ];
     trusted-public-keys = [
       "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-      "nvf.cachix.org-1:GMQWiUhZ6ux9D5CvFFMwnc2nFrUHTeGaXRlVBXo+naI="
     ];
     experimental-features = [
       "nix-command"

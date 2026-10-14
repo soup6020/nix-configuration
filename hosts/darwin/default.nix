@@ -7,7 +7,8 @@
 }:
 {
   imports = [
-    ../modules/darwin/default.nix
+    ./pkgs.nix
+    ./brew.nix
   ];
 
   system.primaryUser = "ezra";
