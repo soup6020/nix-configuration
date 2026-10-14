@@ -34,5 +34,5 @@
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILBKwY3/8eK1UEECe2MSfZFHccMU4W+TWHOFpEtRVDdO u0_a279@localhost"
     ];
   };
-  environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "hx";
 }

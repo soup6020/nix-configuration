@@ -18,6 +18,7 @@
     duf
     dust
     eza
+    evil-helix
     fastfetch
     fd
     file

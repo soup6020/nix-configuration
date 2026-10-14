@@ -63,7 +63,7 @@
       { device = "/dev/disk/by-id/ata-ST12000NM0538-2K2101_ZHZ69XZN"; }
       { device = "/dev/disk/by-id/ata-WDC_WD122KRYZ-01CDAB0_B010A3PD"; }
       { device = "/dev/disk/by-id/ata-ST12000VN0008-2YS101_ZR800P6Y"; }
-     #{ device = "/dev/disk/by-id/ata-WDC_WD40EZRZ-00GXCB0_WD-WCC7K5ZLRDJJ"; }
+      #{ device = "/dev/disk/by-id/ata-WDC_WD40EZRZ-00GXCB0_WD-WCC7K5ZLRDJJ"; }
     ];
     extraOptions = [
       "-A /var/log/smartd/"
@@ -141,7 +141,7 @@
 
   # services.libinput.enable = true;
 
-  environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "hx";
 
   #Audio
   security.rtkit.enable = true;
