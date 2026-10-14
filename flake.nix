@@ -43,7 +43,6 @@
     hyprland.url = "github:hyprwm/Hyprland";
     firefox-nightly.url = "github:nix-community/flake-firefox-nightly";
     emacs-overlay.url = "github:nix-community/emacs-overlay";
-    jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     llm-agents.url = "github:numtide/llm-agents.nix";
     #pwndbg = {
     #  url = "github:pwndbg/pwndbg";
@@ -75,7 +74,6 @@
       nvf,
       agenix,
       disko,
-      jovian,
       quadlet-nix,
       ...
     }@inputs:
@@ -89,17 +87,6 @@
             #nvf.nixosModules.default
             agenix.nixosModules.default
             quadlet-nix.nixosModules.quadlet
-          ];
-        };
-
-        steamdeck = nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs; };
-          modules = [
-            disko.nixosModules.disko
-            ./hosts/hw/hw-steamdeck.nix
-            ./hosts/steamdeck.nix
-            agenix.nixosModules.default
-            jovian.nixosModules.default
           ];
         };
 
