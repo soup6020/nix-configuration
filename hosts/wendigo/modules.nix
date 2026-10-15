@@ -7,12 +7,7 @@
     ../../modules/nixos/nix.nix
     ../../modules/nixos/zsh.nix
     ../../modules/nixos/containers/default.nix
-    ../../modules/nixos/desktop/emulation.nix
-    ../../modules/nixos/desktop/fonts.nix
-    ../../modules/nixos/desktop/gaming.nix
-    ../../modules/nixos/desktop/greetd.nix
-    ../../modules/nixos/desktop/theming.nix
-    ../../modules/nixos/desktop/hypr.nix
+    ../../modules/nixos/desktop
     ../../modules/nixos/dev/fhs.nix
     ../../modules/nixos/pkgs/custompkgs.nix
     ../../modules/nixos/pkgs/pins.nix
@@ -21,9 +16,6 @@
     ../../modules/nixos/svc/nfs-roms.nix
     ../../modules/nixos/svc/printing.nix
     ../../modules/nixos/svc/openssh.nix
-    ../../modules/nixos/sys/firewall.nix
-    ../../modules/nixos/sys/metapod.nix
-    ../../modules/nixos/sys/sysctl.nix
-    ../../modules/nixos/sys/vm-oci.nix
+    ../../modules/nixos/sys
   ];
 }

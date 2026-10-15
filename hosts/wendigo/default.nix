@@ -39,19 +39,6 @@
     ];
   };
 
-  services.resolved = {
-    enable = true;
-    settings.Resolve = {
-      DNS = "9.9.9.9#dns.quad9.net 149.112.112.112#dns.quad9.net 2620:fe::fe#dns.quad9.net 2620:fe::9#dns.quad9.net";
-      DNSSEC = "true";
-      Domains = [ "~." ];
-      FallbackDNS = [
-        "9.9.9.9"
-        "149.112.112.112"
-      ];
-      DNSOverTLS = "yes"; # FIXME: This completely breaks DNS resolution in some programs if "yes"
-    };
-  };
   #<End networking>
 
   services.smartd = {
@@ -137,26 +124,6 @@
   # services.libinput.enable = true;
 
   environment.variables.EDITOR = "hx";
-
-  #Audio
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    extraConfig.pipewire.adjust-sample-rate = {
-      "context.properties" = {
-        "default.clock.rate" = 192000;
-        "default.allowed-rates" = [ 192000 ];
-        "default.clock.quantum-limit" = 8192;
-      };
-    };
-    wireplumber = {
-      enable = true;
-      package = pkgs.wireplumber;
-    };
-  };
 
   time.timeZone = "America/Vancouver";
   i18n.defaultLocale = "en_US.UTF-8";
