@@ -18,7 +18,24 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   #boot.kernelPackages = pkgs.linuxPackages_hardened;
-  boot.kernelPackages = pkgs.linuxPackages_7_2;
+  # Newest mainline kernel series the ZFS package supports. Each ZFS build is
+  # marked broken outside its supported kernel range, so this moves up on its
+  # own when ZFS gains support for a newer kernel. tryEval skips the throwing
+  # stubs nixpkgs leaves behind for removed kernels.
+  boot.kernelPackages =
+    let
+      zfsAttr = config.boot.zfs.package.kernelModuleAttribute;
+      compatible = lib.filterAttrs (
+        name: kp:
+        builtins.match "linux_[0-9]+_[0-9]+" name != null
+        && (builtins.tryEval kp).success
+        && (builtins.tryEval kp.${zfsAttr}).success
+        && !kp.${zfsAttr}.meta.broken
+      ) pkgs.linuxKernel.packages;
+    in
+    lib.last (
+      lib.sort (a: b: lib.versionOlder a.kernel.version b.kernel.version) (builtins.attrValues compatible)
+    );
 
   boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [
