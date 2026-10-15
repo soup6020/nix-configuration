@@ -2,6 +2,20 @@
   services.openssh.enable = true;
   programs.mosh.enable = true;
 
+  # Keep host keys out of /etc so they survive an etc overlay. agenix derives
+  # age.identityPaths from this list, so it decrypts with the same keys.
+  services.openssh.hostKeys = [
+    {
+      path = "/var/lib/ssh/ssh_host_rsa_key";
+      type = "rsa";
+      bits = 4096;
+    }
+    {
+      path = "/var/lib/ssh/ssh_host_ed25519_key";
+      type = "ed25519";
+    }
+  ];
+
   #Enable sftp explicitly.
   services.openssh.allowSFTP = true;
 

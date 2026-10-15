@@ -44,4 +44,5 @@ Live ISO:
 ~nixos-rebuild build-image --flake .#live-iso --image-variant iso-installer~
 
 * Backup considerations
-+ Container data lives in ~/var/lib/containers/storage/volumes~ and needs to be backed up manually
++ Container data lives in ~/var/lib/containers/storage/volumes~ and needs to be backed up manually.
++ SSH host keys are in ~/var/lib/ssh~ and need to be backed up manually.

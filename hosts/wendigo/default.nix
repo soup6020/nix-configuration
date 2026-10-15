@@ -139,6 +139,12 @@
 
   documentation.man.cache.enable = true;
 
+  # /etc is an overlay: Nix-managed files below, a persistent writable layer
+  # (/.rw-etc/upper) on top. Users are managed by userborn instead of the
+  # perl activation script.
+  system.etc.overlay.enable = true;
+  services.userborn.enable = true;
+
   services.tailscale = {
     enable = true;
     package = pkgs.tailscale;

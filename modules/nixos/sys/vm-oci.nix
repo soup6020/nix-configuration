@@ -28,7 +28,6 @@
 
   virtualisation.docker = {
     enable = true;
-    #extraPackages = [ pkgs.gvisor ];
     enableOnBoot = true;
     autoPrune = {
       enable = true;
@@ -40,7 +39,7 @@
     liveRestore = lib.mkForce false; # work around a strange issue where shutdowns hang, not ideal
     daemon.settings = {
       runtimes.runsc = {
-        path = "/etc/docker-runtimes/runsc";
+        path = "${pkgs.gvisor}/bin/runsc";
         runtimeArgs = [ "--platform=kvm" ];
       };
     };
