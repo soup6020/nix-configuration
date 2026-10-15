@@ -1,10 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  inputs,
-  ...
-}:
+{ lib, pkgs, ... }:
 {
   users.groups.libvirtd.members = [ "ezra" ];
   programs.virt-manager.enable = true;

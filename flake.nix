@@ -10,8 +10,6 @@
     nixpkgs.follows = "nixos-unstable";
 
     #System
-    disko.url = "github:nix-community/disko";
-    disko.inputs.nixpkgs.follows = "nixpkgs";
     quadlet-nix = {
       url = "github:SEIAROTg/quadlet-nix";
     };
@@ -35,7 +33,6 @@
       url = "github:feel-co/hjem";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nh.url = "github:nix-community/nh";
     colmena.url = "github:zhaofengli/colmena";
 
     #User-facing/applications
@@ -68,10 +65,8 @@
   outputs =
     {
       self,
-      nix-darwin,
       nixpkgs,
       agenix,
-      disko,
       quadlet-nix,
       ...
     }@inputs:
@@ -96,14 +91,6 @@
             inputs.hjem.nixosModules.default
           ];
         };
-      };
-
-      darwinConfigurations.Ezras-MacBook-Pro = nix-darwin.lib.darwinSystem {
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./hosts/darwin/default.nix
-          agenix.darwinModules.default
-        ];
       };
 
       formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.treefmt;

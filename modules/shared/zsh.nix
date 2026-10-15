@@ -1,30 +1,19 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}:
+{ pkgs, ... }:
 {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    #This syntax highlighting is extremely slow, keep it off
-    syntaxHighlighting.enable = false;
     histSize = 15000;
-
-    setOptions = [
-      "APPEND_HISTORY"
-      "EXTENDED_HISTORY"
-      "HIST_IGNORE_DUPS"
-      "HIST_IGNORE_SPACE"
-      "INC_APPEND_HISTORY"
-    ];
 
     shellInit = ''
       autoload -U promptinit; promptinit
     '';
 
     interactiveShellInit = ''
+      #History options. Set here instead of setOptions, which nix-darwin lacks.
+      #INC_APPEND_HISTORY is left out: SHARE_HISTORY already appends incrementally.
+      setopt APPEND_HISTORY EXTENDED_HISTORY HIST_FCNTL_LOCK HIST_IGNORE_DUPS HIST_IGNORE_SPACE SHARE_HISTORY
+
       #Plugins from nixpkgs
       source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
       source ${pkgs.zsh-fast-syntax-highlighting}/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh

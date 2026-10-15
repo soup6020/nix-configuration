@@ -1,24 +1,34 @@
 * Basics
 This is my NixOS/nix-darwin configuration. It is not the prettiest you'll ever see, but it works for me. I am specifically avoiding home-manager for the sake of eval times.
 
-One of my flake outputs builds a live iso, this uses hjem to copy some dotfiles into place. My neovim configuration is generated using NVF. Big thanks to NotAShelf for maintaining both of these projects.
+One of my flake outputs builds a live iso, this uses hjem to copy some dotfiles into place.
 
 * Directories explained
-~hosts/~: Configurations for individual machines. Most of the things in here are either deployment specific, or trivial enough I don't feel like splitting it into a module.
+~hosts/~: Configurations for individual machines. Most of the things in here are either deployment specific, or trivial enough I don't feel like splitting them into a module.
 
-~hosts/hw~: Hardware configuration, largely automatically generated.
+~hosts/<name>/hardware.nix~: Hardware configuration, largely automatically generated.
 
-~modules/common~: Modules shared by multiple machines, sometimes on multiple platforms.
+~modules/shared~: Modules that must evaluate on both NixOS and nix-darwin. Platform-specific options belong in ~modules/nixos~ or ~modules/darwin~.
 
-~modules/darwin~: Darwin-specific modules. Pretty barebones because I strongly prefer Linux.
+~modules/nixos~: NixOS-specific modules, including the NixOS-only halves of ~modules/shared~.
 
-~modules/svc~: Modules that define and configure services. Trivial service definitions are generally left inside host configurations.
+~modules/nixos/containers~: Podman containers (via quadlet-nix) and the Caddy reverse proxy in front of them.
 
-~modules/sys~: Modules that demand system level functionality changes. Invasive or resource-intensive services may be found here, as well as lower level configuration changes.
+~modules/nixos/svc~: Modules that define and configure services. Trivial service definitions are generally left inside host configurations.
 
-~modules/desktop~: Graphical, desktop-oriented functionality.
+~modules/nixos/sys~: Modules that demand system level functionality changes. Invasive or resource-intensive services may be found here, as well as lower level configuration changes.
 
-~modules/pkgs~: Loosely-organized sets of programs to install from nixpkgs.
+~modules/nixos/desktop~: Graphical, desktop-oriented functionality.
+
+~modules/nixos/dev~: Development environment tweaks.
+
+~modules/nixos/pkgs~: Some nonsense I have yet to organize into a better location.
+
+~modules/darwin~: Darwin-specific modules, including the nix-darwin halves of ~modules/shared~. Pretty barebones because I strongly prefer Linux.
+
+~secrets/~: agenix-encrypted secrets and ~agenix-rules.nix~. Each secret is declared by the module that uses it.
+
+~templates/~: Starting points for new modules; not imported anywhere.
 
 ~dots/~: Non-nix dotfiles to copy into an iso file.
 
@@ -32,10 +42,6 @@ Main workstation:
 Live ISO:
 
 ~nixos-rebuild build-image --flake .#live-iso --image-variant iso-installer~
-
-Macbook:
-
-~darwin-rebuild switch .#Ezras-MacBook-Pro~
 
 * Backup considerations
 + Container data lives in ~/var/lib/containers/storage/volumes~ and needs to be backed up manually

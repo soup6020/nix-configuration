@@ -23,6 +23,7 @@
     containerConfig = {
       healthCmd = "none";
       image = "registry.gitlab.com/kwoth/nadekobot:latest";
+      autoUpdate = "registry";
       #networks = [ "discord-bots.network" ];
       environments = {
         TZ = "America/Vancouver";

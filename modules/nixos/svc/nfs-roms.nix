@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 {
   #First set up a read-only bind mount for the ROM directory
   fileSystems."/srv/nfs/shares/roms" = {

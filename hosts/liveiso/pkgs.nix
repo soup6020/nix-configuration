@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  inputs,
-  ...
-}:
+{ pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
     _7zz-rar
@@ -51,6 +46,7 @@
     git
     go-exploitdb
     gparted
+    gptfdisk
     grim
     grimblast
     gzrt

@@ -1,10 +1,7 @@
+{ config, ... }:
 {
-  config,
-  lib,
-  inputs,
-  ...
-}:
-{
+  age.secrets.mpdscribble.file = ../../../secrets/mpdscribble.age;
+
   services.mpd = {
     enable = true;
     user = "ezra";

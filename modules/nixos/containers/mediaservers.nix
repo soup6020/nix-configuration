@@ -1,10 +1,13 @@
 { config, ... }:
 {
+  age.secrets."plex-env".file = ../../../secrets/plex-env.age;
+
   virtualisation.quadlet.containers.plex = {
     autoStart = true;
     containerConfig = {
       healthCmd = "none";
       image = "lscr.io/linuxserver/plex:latest";
+      autoUpdate = "registry";
       networks = [ "host" ];
       volumes = [
         "/var/lib/containers/storage/volumes/plex/config:/config"
@@ -27,6 +30,7 @@
     containerConfig = {
       healthCmd = "none";
       image = "docker.io/jellyfin/jellyfin:latest";
+      autoUpdate = "registry";
       networks = [ "host" ];
       volumes = [
         "/var/lib/containers/storage/volumes/jellyfin/config:/config"

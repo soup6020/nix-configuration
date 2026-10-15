@@ -6,9 +6,6 @@ default:
 rebuild:
 	nh os switch --ask
 
-darwin-rebuild:
-  nh darwin switch . --ask
-
 update-rebuild:
 	nix flake update ; nh os switch --ask
 
@@ -21,28 +18,8 @@ build-iso:
 format:
 	nix fmt
 
-pull-images:
-	#!/usr/bin/env bash
-	set -euo pipefail
-	sudo grep -h '^Image=' /etc/containers/systemd/*.container \
-	  | sed 's/^Image=//' \
-	  | sort -u \
-	  | xargs -rn1 sudo podman pull
+update-containers:
+	sudo systemctl start podman-auto-update.service
 
-restart-containers:
-	#!/usr/bin/env bash
-	set -euo pipefail
-	for f in /etc/containers/systemd/*.container; do
-	  basename "$f" .container
-	done | xargs -r sudo systemctl restart
-
-container-aio:
-	#!/usr/bin/env bash
-	set -euo pipefail
-	sudo grep -h '^Image=' /etc/containers/systemd/*.container \
-	  | sed 's/^Image=//' \
-	  | sort -u \
-	  | xargs -rn1 sudo podman pull
-	for f in /etc/containers/systemd/*.container; do
-	  basename "$f" .container
-	done | xargs -r sudo systemctl restart
+check-containers:
+	sudo podman auto-update --dry-run

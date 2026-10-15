@@ -5,6 +5,7 @@
     containerConfig = {
       healthCmd = "none";
       image = "ghcr.io/dispatcharr/dispatcharr:latest";
+      autoUpdate = "registry";
       publishPorts = [ "127.0.0.1:9191:9191" ];
       volumes = [
         "/var/lib/containers/storage/volumes/dispatcharr:/data"

@@ -1,11 +1,7 @@
+{ pkgs, config, ... }:
 {
-  pkgs,
-  config,
-  lib,
-  inputs,
-  ...
-}:
-{
+  age.secrets.ezra.file = ../secrets/ezra.age;
+
   programs.zsh.enable = true;
   users.users.ezra = {
     isNormalUser = true;

@@ -1,10 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  inputs,
-  ...
-}:
+{ pkgs, ... }:
 {
   #Lixify
   nix.package = pkgs.lixPackageSets.stable.lix;
@@ -42,14 +36,9 @@
     #auto-optimise-store = true; #Slows down rebuilds as optimization happens every rebuild
   };
 
-  #Automatic optimization with systemd. If the machine is off, it will run on startup.
+  # Schedules are platform-specific; see modules/{nixos,darwin}/nix.nix.
   nix.optimise.automatic = true;
-  nix.optimise.dates = [ "03:45" ];
-
-  nix.gc = {
-    automatic = true;
-    dates = "weekly";
-  };
+  nix.gc.automatic = true;
 
   nixpkgs.config.allowUnfree = true;
 }

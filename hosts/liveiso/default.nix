@@ -12,7 +12,6 @@
     ../../modules/shared/pkgs-essential.nix
     ./pkgs.nix
     ../../modules/nixos/svc/openssh.nix
-    ../../users/ezra.nix
   ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
@@ -72,13 +71,13 @@
     directory = config.users.users.nixos.home;
     clobberFiles = lib.mkForce true;
     files = {
-      ".config/fuzzel/fuzzel.ini".source = ../dots/iso/fuzzel/fuzzel.ini;
-      ".config/hypr/hyprland.lua".source = ../dots/iso/hypr/hyprland.lua;
-      ".config/kitty/kitty.conf".source = ../dots/iso/kitty/kitty.conf;
-      ".config/kitty/current-theme.conf".source = ../dots/iso/kitty/current-theme.conf;
-      ".config/waybar/style.css".source = ../dots/iso/waybar/style.css;
-      ".config/waybar/config.jsonc".source = ../dots/iso/waybar/config.jsonc;
-      "Pictures/wallpaper.jpg".source = ../dots/1657650318010.jpg;
+      ".config/fuzzel/fuzzel.ini".source = ../../dots/iso/fuzzel/fuzzel.ini;
+      ".config/hypr/hyprland.lua".source = ../../dots/iso/hypr/hyprland.lua;
+      ".config/kitty/kitty.conf".source = ../../dots/iso/kitty/kitty.conf;
+      ".config/kitty/current-theme.conf".source = ../../dots/iso/kitty/current-theme.conf;
+      ".config/waybar/style.css".source = ../../dots/iso/waybar/style.css;
+      ".config/waybar/config.jsonc".source = ../../dots/iso/waybar/config.jsonc;
+      "Pictures/wallpaper.jpg".source = ../../dots/1657650318010.jpg;
     };
   };
 

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   #also see theming.nix, some dconf settings are there instead
   fonts.fontconfig = {

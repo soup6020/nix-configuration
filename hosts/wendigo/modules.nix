@@ -1,12 +1,11 @@
 {
   #NOTE: This file is intended for wendigo, it may cause undesirable operation on other hosts.
   imports = [
-    ../../modules/shared/agenix/agenix.nix
-    ../../modules/shared/emacs/emacs.nix
-    ../../modules/shared/nix-options.nix
-    ../../modules/shared/pkgs-essential.nix
-    ../../modules/shared/zsh.nix
+    ../../modules/shared
 
+    ../../modules/nixos/emacs
+    ../../modules/nixos/nix.nix
+    ../../modules/nixos/zsh.nix
     ../../modules/nixos/containers/default.nix
     ../../modules/nixos/desktop/emulation.nix
     ../../modules/nixos/desktop/fonts.nix
