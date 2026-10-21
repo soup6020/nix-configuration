@@ -54,7 +54,7 @@
     "nct6775"
   ];
 
-  boot.extraModulePackages = with config.boot.kernelPackages; [ zenpower ];
+#  boot.extraModulePackages = with config.boot.kernelPackages; [ zenpower ];
   boot.blacklistedKernelModules = [ "k10temp" ];
   boot.kernelParams = [
     "amd_iommu=on"
