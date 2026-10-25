@@ -8,7 +8,7 @@
     #GUI programs
     aegisub
     alacritty
-    audacity
+    #audacity
     avalonia-ilspy # Graphical .NET disassembler
     brave
     calibre
@@ -32,7 +32,7 @@
     gimp
     #handbrake
     hobbits # Various bit-processing/analysis tools
-    iaito # Radare2 GUI
+    #iaito # Radare2 GUI
     inputs.firefox-nightly.packages.${pkgs.stdenv.hostPlatform.system}.firefox-nightly-bin
     ghostty
     kitty

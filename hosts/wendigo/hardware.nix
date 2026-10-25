@@ -37,7 +37,6 @@
       lib.sort (a: b: lib.versionOlder a.kernel.version b.kernel.version) (builtins.attrValues compatible)
     );
 
-  boot.initrd.systemd.enable = true;
   boot.initrd.availableKernelModules = [
     "nvme"
     "mpt3sas"
