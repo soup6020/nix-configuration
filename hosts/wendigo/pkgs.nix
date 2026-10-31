@@ -8,7 +8,6 @@
     #GUI programs
     aegisub
     alacritty
-    #audacity
     avalonia-ilspy # Graphical .NET disassembler
     brave
     calibre
@@ -52,7 +51,7 @@
     picard
     rawtherapee
     remmina
-    #sdrpp
+    sdrpp
     signal-desktop
     spotify
     thunderbird-latest
@@ -157,7 +156,6 @@
     ocrmypdf
     openocd # open on-chip debugger
     openspec
-    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.opencode
     pandoc
     pciutils
     inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.pi
