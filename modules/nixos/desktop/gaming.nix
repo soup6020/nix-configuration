@@ -36,7 +36,7 @@
       additionalPrograms = [ ffmpeg ];
       jdks = [
         graalvmPackages.graalvm-ce
-        zulu8
+        #zulu8 #depends on gtk2
         zulu17
         zulu
       ];

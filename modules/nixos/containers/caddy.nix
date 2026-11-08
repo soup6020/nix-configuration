@@ -15,8 +15,10 @@ let
 
   # Upstreams that present self-signed / invalid certs — skip TLS verify.
   insecureProxies = {
-    "pf" = "https://192.168.1.1:8443"; # OPNSense
-    "photoprism" = "https://127.0.0.1:2342";
+    "pf" = {
+      upstream = "https://192.168.1.1:8443"; # OPNSense
+      siteExtra = "header -Alt-Svc";
+    };
   };
 
   mkProxy = name: upstream: {
@@ -26,16 +28,26 @@ let
     '';
   };
 
-  mkInsecureProxy = name: upstream: {
-    hostName = "${name}.${domain}";
-    extraConfig = ''
-      reverse_proxy ${upstream} {
-        transport http {
-          tls_insecure_skip_verify
+  mkInsecureProxy =
+    name:
+    {
+      upstream,
+      siteExtra ? "",
+      extra ? "",
+    }:
+    {
+      hostName = "${name}.${domain}";
+      extraConfig = ''
+        ${siteExtra}
+        reverse_proxy ${upstream} {
+          ${extra}
+          transport http {
+            tls_insecure_skip_verify
+          }
         }
-      }
-    '';
-  };
+      '';
+    };
+
 in
 {
   services.caddy = {

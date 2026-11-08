@@ -9,7 +9,6 @@
     aegisub
     alacritty
     avalonia-ilspy # Graphical .NET disassembler
-    brave
     calibre
     #(cutter.withPlugins (
     #  ps: with ps; [
@@ -64,7 +63,7 @@
     android-tools
     arch-install-scripts
     bat
-    #beets
+    beets
     bingrep
     binsider
     binwalk
@@ -89,7 +88,7 @@
     distrobox
     distrobox-tui
     dosfstools
-    doxx # docx viewer
+    #doxx # docx viewer
     evil-helix
     exfatprogs
     exiftool
@@ -126,7 +125,7 @@
     kalker
     lazygit
     libimobiledevice
-    #litecli #better sqlite command line
+    litecli # better sqlite command line
     lldb
     lm_sensors
     lnav # advanced logfile pager
@@ -146,7 +145,7 @@
     netcat-openbsd
     nix-forecast
     nodejs # necessary for pi packages
-    nono
+    inputs.llm-agents.packages.${pkgs.stdenv.hostPlatform.system}.nono
     ntfsprogs
     nurl
     nushell
